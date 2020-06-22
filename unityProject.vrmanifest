@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.skin.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "D:\\Matias\\RESEARCH\\Research2020\\RapidResponse\\SIM_R&D\\Skin\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "Skin [Testing]"
+        }
+      }
+    }
+  ]
+}
