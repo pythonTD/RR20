@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: idle
+    second: Take 001
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -33,364 +33,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: idle
-      takeName: Take 001
-      internalID: 0
-      firstFrame: 1
-      lastFrame: 120
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: m_bob_tPose:Body
-        weight: 0
-      - path: m_bob_tPose:Bottoms
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_ChestEndEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_ChestOriginEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_HeadEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_LeftUpLeg
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_LeftUpLeg/m_bob_tPose:Character1_Ctrl_LeftLeg
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_LeftUpLeg/m_bob_tPose:Character1_Ctrl_LeftLeg/m_bob_tPose:Character1_Ctrl_LeftFoot
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_LeftUpLeg/m_bob_tPose:Character1_Ctrl_LeftLeg/m_bob_tPose:Character1_Ctrl_LeftFoot/m_bob_tPose:Character1_Ctrl_LeftToeBase
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_RightUpLeg
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_RightUpLeg/m_bob_tPose:Character1_Ctrl_RightLeg
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_RightUpLeg/m_bob_tPose:Character1_Ctrl_RightLeg/m_bob_tPose:Character1_Ctrl_RightFoot
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_RightUpLeg/m_bob_tPose:Character1_Ctrl_RightLeg/m_bob_tPose:Character1_Ctrl_RightFoot/m_bob_tPose:Character1_Ctrl_RightToeBase
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandIndex1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandIndex1/m_bob_tPose:Character1_Ctrl_LeftHandIndex2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandIndex1/m_bob_tPose:Character1_Ctrl_LeftHandIndex2/m_bob_tPose:Character1_Ctrl_LeftHandIndex3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandIndex1/m_bob_tPose:Character1_Ctrl_LeftHandIndex2/m_bob_tPose:Character1_Ctrl_LeftHandIndex3/m_bob_tPose:Character1_Ctrl_LeftHandIndex4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandMiddle1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandMiddle1/m_bob_tPose:Character1_Ctrl_LeftHandMiddle2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandMiddle1/m_bob_tPose:Character1_Ctrl_LeftHandMiddle2/m_bob_tPose:Character1_Ctrl_LeftHandMiddle3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandMiddle1/m_bob_tPose:Character1_Ctrl_LeftHandMiddle2/m_bob_tPose:Character1_Ctrl_LeftHandMiddle3/m_bob_tPose:Character1_Ctrl_LeftHandMiddle4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandPinky1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandPinky1/m_bob_tPose:Character1_Ctrl_LeftHandPinky2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandPinky1/m_bob_tPose:Character1_Ctrl_LeftHandPinky2/m_bob_tPose:Character1_Ctrl_LeftHandPinky3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandPinky1/m_bob_tPose:Character1_Ctrl_LeftHandPinky2/m_bob_tPose:Character1_Ctrl_LeftHandPinky3/m_bob_tPose:Character1_Ctrl_LeftHandPinky4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandRing1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandRing1/m_bob_tPose:Character1_Ctrl_LeftHandRing2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandRing1/m_bob_tPose:Character1_Ctrl_LeftHandRing2/m_bob_tPose:Character1_Ctrl_LeftHandRing3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandRing1/m_bob_tPose:Character1_Ctrl_LeftHandRing2/m_bob_tPose:Character1_Ctrl_LeftHandRing3/m_bob_tPose:Character1_Ctrl_LeftHandRing4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandThumb1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandThumb1/m_bob_tPose:Character1_Ctrl_LeftHandThumb2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandThumb1/m_bob_tPose:Character1_Ctrl_LeftHandThumb2/m_bob_tPose:Character1_Ctrl_LeftHandThumb3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_LeftShoulder/m_bob_tPose:Character1_Ctrl_LeftArm/m_bob_tPose:Character1_Ctrl_LeftForeArm/m_bob_tPose:Character1_Ctrl_LeftHand/m_bob_tPose:Character1_Ctrl_LeftHandThumb1/m_bob_tPose:Character1_Ctrl_LeftHandThumb2/m_bob_tPose:Character1_Ctrl_LeftHandThumb3/m_bob_tPose:Character1_Ctrl_LeftHandThumb4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_Neck
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_Neck/m_bob_tPose:Character1_Ctrl_Head
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandIndex1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandIndex1/m_bob_tPose:Character1_Ctrl_RightHandIndex2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandIndex1/m_bob_tPose:Character1_Ctrl_RightHandIndex2/m_bob_tPose:Character1_Ctrl_RightHandIndex3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandIndex1/m_bob_tPose:Character1_Ctrl_RightHandIndex2/m_bob_tPose:Character1_Ctrl_RightHandIndex3/m_bob_tPose:Character1_Ctrl_RightHandIndex4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandMiddle1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandMiddle1/m_bob_tPose:Character1_Ctrl_RightHandMiddle2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandMiddle1/m_bob_tPose:Character1_Ctrl_RightHandMiddle2/m_bob_tPose:Character1_Ctrl_RightHandMiddle3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandMiddle1/m_bob_tPose:Character1_Ctrl_RightHandMiddle2/m_bob_tPose:Character1_Ctrl_RightHandMiddle3/m_bob_tPose:Character1_Ctrl_RightHandMiddle4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandPinky1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandPinky1/m_bob_tPose:Character1_Ctrl_RightHandPinky2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandPinky1/m_bob_tPose:Character1_Ctrl_RightHandPinky2/m_bob_tPose:Character1_Ctrl_RightHandPinky3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandPinky1/m_bob_tPose:Character1_Ctrl_RightHandPinky2/m_bob_tPose:Character1_Ctrl_RightHandPinky3/m_bob_tPose:Character1_Ctrl_RightHandPinky4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandRing1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandRing1/m_bob_tPose:Character1_Ctrl_RightHandRing2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandRing1/m_bob_tPose:Character1_Ctrl_RightHandRing2/m_bob_tPose:Character1_Ctrl_RightHandRing3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandRing1/m_bob_tPose:Character1_Ctrl_RightHandRing2/m_bob_tPose:Character1_Ctrl_RightHandRing3/m_bob_tPose:Character1_Ctrl_RightHandRing4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandThumb1
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandThumb1/m_bob_tPose:Character1_Ctrl_RightHandThumb2
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandThumb1/m_bob_tPose:Character1_Ctrl_RightHandThumb2/m_bob_tPose:Character1_Ctrl_RightHandThumb3
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_Hips/m_bob_tPose:Character1_Ctrl_Spine/m_bob_tPose:Character1_Ctrl_Spine1/m_bob_tPose:Character1_Ctrl_Spine2/m_bob_tPose:Character1_Ctrl_RightShoulder/m_bob_tPose:Character1_Ctrl_RightArm/m_bob_tPose:Character1_Ctrl_RightForeArm/m_bob_tPose:Character1_Ctrl_RightHand/m_bob_tPose:Character1_Ctrl_RightHandThumb1/m_bob_tPose:Character1_Ctrl_RightHandThumb2/m_bob_tPose:Character1_Ctrl_RightHandThumb3/m_bob_tPose:Character1_Ctrl_RightHandThumb4
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_HipsEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftAnkleEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftElbowEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftFootEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHandIndexEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHandMiddleEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHandPinkyEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHandRingEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHandThumbEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftHipEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftKneeEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftShoulderEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_LeftWristEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightAnkleEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightElbowEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightFootEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHandIndexEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHandMiddleEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHandPinkyEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHandRingEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHandThumbEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightHipEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightKneeEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightShoulderEffector
-        weight: 0
-      - path: m_bob_tPose:Character1_Ctrl_Reference/m_bob_tPose:Character1_Ctrl_RightWristEffector
-        weight: 0
-      - path: m_bob_tPose:default1
-        weight: 0
-      - path: m_bob_tPose:Eyes
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:LeftUpLeg
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:LeftUpLeg/m_bob_tPose:mixamorig:LeftLeg
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:LeftUpLeg/m_bob_tPose:mixamorig:LeftLeg/m_bob_tPose:mixamorig:LeftFoot
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:LeftUpLeg/m_bob_tPose:mixamorig:LeftLeg/m_bob_tPose:mixamorig:LeftFoot/m_bob_tPose:mixamorig:LeftToeBase
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:LeftUpLeg/m_bob_tPose:mixamorig:LeftLeg/m_bob_tPose:mixamorig:LeftFoot/m_bob_tPose:mixamorig:LeftToeBase/m_bob_tPose:mixamorig:LeftToe_End
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:RightUpLeg
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:RightUpLeg/m_bob_tPose:mixamorig:RightLeg
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:RightUpLeg/m_bob_tPose:mixamorig:RightLeg/m_bob_tPose:mixamorig:RightFoot
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:RightUpLeg/m_bob_tPose:mixamorig:RightLeg/m_bob_tPose:mixamorig:RightFoot/m_bob_tPose:mixamorig:RightToeBase
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:RightUpLeg/m_bob_tPose:mixamorig:RightLeg/m_bob_tPose:mixamorig:RightFoot/m_bob_tPose:mixamorig:RightToeBase/m_bob_tPose:mixamorig:RightToe_End
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandIndex1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandIndex1/m_bob_tPose:mixamorig:LeftHandIndex2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandIndex1/m_bob_tPose:mixamorig:LeftHandIndex2/m_bob_tPose:mixamorig:LeftHandIndex3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandIndex1/m_bob_tPose:mixamorig:LeftHandIndex2/m_bob_tPose:mixamorig:LeftHandIndex3/m_bob_tPose:mixamorig:LeftHandIndex4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandMiddle1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandMiddle1/m_bob_tPose:mixamorig:LeftHandMiddle2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandMiddle1/m_bob_tPose:mixamorig:LeftHandMiddle2/m_bob_tPose:mixamorig:LeftHandMiddle3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandMiddle1/m_bob_tPose:mixamorig:LeftHandMiddle2/m_bob_tPose:mixamorig:LeftHandMiddle3/m_bob_tPose:mixamorig:LeftHandMiddle4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandPinky1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandPinky1/m_bob_tPose:mixamorig:LeftHandPinky2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandPinky1/m_bob_tPose:mixamorig:LeftHandPinky2/m_bob_tPose:mixamorig:LeftHandPinky3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandPinky1/m_bob_tPose:mixamorig:LeftHandPinky2/m_bob_tPose:mixamorig:LeftHandPinky3/m_bob_tPose:mixamorig:LeftHandPinky4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandRing1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandRing1/m_bob_tPose:mixamorig:LeftHandRing2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandRing1/m_bob_tPose:mixamorig:LeftHandRing2/m_bob_tPose:mixamorig:LeftHandRing3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandRing1/m_bob_tPose:mixamorig:LeftHandRing2/m_bob_tPose:mixamorig:LeftHandRing3/m_bob_tPose:mixamorig:LeftHandRing4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandThumb1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandThumb1/m_bob_tPose:mixamorig:LeftHandThumb2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandThumb1/m_bob_tPose:mixamorig:LeftHandThumb2/m_bob_tPose:mixamorig:LeftHandThumb3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:LeftShoulder/m_bob_tPose:mixamorig:LeftArm/m_bob_tPose:mixamorig:LeftForeArm/m_bob_tPose:mixamorig:LeftHand/m_bob_tPose:mixamorig:LeftHandThumb1/m_bob_tPose:mixamorig:LeftHandThumb2/m_bob_tPose:mixamorig:LeftHandThumb3/m_bob_tPose:mixamorig:LeftHandThumb4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:Neck
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:Neck/m_bob_tPose:mixamorig:Head
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:Neck/m_bob_tPose:mixamorig:Head/m_bob_tPose:mixamorig:HeadTop_End
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:Neck/m_bob_tPose:mixamorig:Head/m_bob_tPose:mixamorig:LeftEye
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:Neck/m_bob_tPose:mixamorig:Head/m_bob_tPose:mixamorig:RightEye
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandIndex1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandIndex1/m_bob_tPose:mixamorig:RightHandIndex2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandIndex1/m_bob_tPose:mixamorig:RightHandIndex2/m_bob_tPose:mixamorig:RightHandIndex3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandIndex1/m_bob_tPose:mixamorig:RightHandIndex2/m_bob_tPose:mixamorig:RightHandIndex3/m_bob_tPose:mixamorig:RightHandIndex4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandMiddle1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandMiddle1/m_bob_tPose:mixamorig:RightHandMiddle2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandMiddle1/m_bob_tPose:mixamorig:RightHandMiddle2/m_bob_tPose:mixamorig:RightHandMiddle3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandMiddle1/m_bob_tPose:mixamorig:RightHandMiddle2/m_bob_tPose:mixamorig:RightHandMiddle3/m_bob_tPose:mixamorig:RightHandMiddle4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandPinky1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandPinky1/m_bob_tPose:mixamorig:RightHandPinky2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandPinky1/m_bob_tPose:mixamorig:RightHandPinky2/m_bob_tPose:mixamorig:RightHandPinky3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandPinky1/m_bob_tPose:mixamorig:RightHandPinky2/m_bob_tPose:mixamorig:RightHandPinky3/m_bob_tPose:mixamorig:RightHandPinky4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandRing1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandRing1/m_bob_tPose:mixamorig:RightHandRing2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandRing1/m_bob_tPose:mixamorig:RightHandRing2/m_bob_tPose:mixamorig:RightHandRing3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandRing1/m_bob_tPose:mixamorig:RightHandRing2/m_bob_tPose:mixamorig:RightHandRing3/m_bob_tPose:mixamorig:RightHandRing4
-        weight: 0
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandThumb1
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandThumb1/m_bob_tPose:mixamorig:RightHandThumb2
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandThumb1/m_bob_tPose:mixamorig:RightHandThumb2/m_bob_tPose:mixamorig:RightHandThumb3
-        weight: 1
-      - path: m_bob_tPose:mixamorig:Hips/m_bob_tPose:mixamorig:Spine/m_bob_tPose:mixamorig:Spine1/m_bob_tPose:mixamorig:Spine2/m_bob_tPose:mixamorig:RightShoulder/m_bob_tPose:mixamorig:RightArm/m_bob_tPose:mixamorig:RightForeArm/m_bob_tPose:mixamorig:RightHand/m_bob_tPose:mixamorig:RightHandThumb1/m_bob_tPose:mixamorig:RightHandThumb2/m_bob_tPose:mixamorig:RightHandThumb3/m_bob_tPose:mixamorig:RightHandThumb4
-        weight: 0
-      - path: m_bob_tPose:Tops
-        weight: 0
-      maskType: 0
-      maskSource: {fileID: 31900000, guid: c8d3152b5ea1a794e941285fb5231f93, type: 2}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -443,11 +86,6 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:default1
-      parentName: bob_idle(Clone)
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Body
       parentName: bob_idle(Clone)
       position: {x: -0, y: 0, z: 0}
@@ -463,265 +101,277 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:Character1_Ctrl_Reference
+    - name: m_bob_tPose:Head
       parentName: bob_idle(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: m_bob_tPose:Teeth1
+      parentName: bob_idle(Clone)
+      position: {x: -0.011540396, y: 1.5540291, z: 0.05915072}
+      rotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: -6.123234e-17}
+      scale: {x: 9.690786, y: 9.690786, z: 9.690786}
+    - name: m_bob_tPose:Character1_Ctrl_Reference
+      parentName: bob_idle(Clone)
+      position: {x: -0.33334345, y: 0.86422193, z: 0.58196664}
+      rotation: {x: -0.709937, y: 0, z: -0, w: 0.70426524}
+      scale: {x: 1.4335858, y: 1.4335858, z: 1.4335858}
     - name: m_bob_tPose:Character1_Ctrl_HipsEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.00000024318695, y: 0.8549261, z: -0.15595911}
-      rotation: {x: -0.31488967, y: -0.000000018811729, z: -0.00000005670159, w: 0.9491283}
+      position: {x: 0.0000005971606, y: 0.9287132, z: -0.00045608977}
+      rotation: {x: 0.4177455, y: 8.5836387e-17, z: -7.093926e-17, w: 0.9085641}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftAnkleEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.18053253, y: 0.8462528, z: 0.6605193}
-      rotation: {x: -0.7633528, y: 0.011106864, z: -0.013426351, w: 0.6457467}
+      position: {x: -0.090939984, y: 0.107826956, z: -0.026140906}
+      rotation: {x: 1.4549614e-14, y: 1.8735014e-16, z: 1.3704315e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightAnkleEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.09106358, y: 0.8440869, z: 0.66535294}
-      rotation: {x: -0.73202264, y: -0.020873342, z: 0.0024701909, w: 0.680956}
+      position: {x: 0.10548221, y: 0.107614554, z: -0.019094491}
+      rotation: {x: -0.000000046708717, y: -0.000000046801816, z: 0.00000009553699,
+        w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftWristEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.21808389, y: 0.97075796, z: -0.10265085}
-      rotation: {x: -0.22612947, y: 0.73499835, z: 0.2576535, w: 0.5850278}
+      position: {x: -0.16957259, y: 0.81180924, z: 0.14048995}
+      rotation: {x: 0.32382217, y: 0.4365417, z: 0.73176557, w: 0.41120517}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightWristEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.2018661, y: 0.96348834, z: -0.05668438}
-      rotation: {x: -0.24547979, y: -0.7710472, z: -0.19420896, w: 0.55453473}
+      position: {x: 0.2010463, y: 0.87824005, z: 0.12829913}
+      rotation: {x: -0.2693377, y: 0.3821913, z: 0.7515723, w: -0.4653236}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftKneeEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.1369027, y: 0.85047376, z: 0.24465132}
-      rotation: {x: -0.720459, y: -0.07571222, z: -0.004344434, w: 0.68933856}
+      position: {x: -0.093389526, y: 0.5254869, z: -0.005604892}
+      rotation: {x: -0.0000007152556, y: -0.0000002384185, z: -0.00000011920943, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightKneeEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.09565412, y: 0.85113263, z: 0.24726596}
-      rotation: {x: -0.71847343, y: -0.017754776, z: 0.013094657, w: 0.69520444}
+      position: {x: 0.09921654, y: 0.5256266, z: -0.00939059}
+      rotation: {x: -0.013071025, y: -0.005305022, z: 0.010223263, w: 0.99984825}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftElbowEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.21967657, y: 1.0079085, z: -0.37534434}
-      rotation: {x: -0.42680347, y: 0.501343, z: 0.5015474, w: 0.56119895}
+      position: {x: -0.30258167, y: 1.0424716, z: 0.2101164}
+      rotation: {x: 0.32711217, y: 0.34009895, z: 0.79118717, w: 0.38904133}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightElbowEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.27489793, y: 1.0433948, z: -0.3097172}
-      rotation: {x: -0.20057619, y: -0.63647777, z: -0.47704974, w: 0.57191676}
+      position: {x: 0.32735157, y: 1.1129245, z: 0.19696191}
+      rotation: {x: -0.2649858, y: 0.21124259, z: 0.82755136, w: -0.44756895}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_ChestOriginEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.0000016996177, y: 0.97996974, z: -0.26376098}
-      rotation: {x: -0.26720533, y: -0.0042104525, z: 0.00056715385, w: 0.96363026}
+      position: {x: 0.0000017147587, y: 1.0738682, z: 0.07820257}
+      rotation: {x: 0.3607801, y: 0.0000002346208, z: 0.00000008190544, w: 0.9326509}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_ChestEndEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.001049087, y: 1.282002, z: -0.40101254}
-      rotation: {x: -0.07048404, y: -0.03190969, z: 0.008850405, w: 0.99696314}
+      position: {x: 0.0000028855757, y: 1.252342, z: 0.34547737}
+      rotation: {x: 0.65238017, y: 0.0000011315057, z: 0.00000039499275, w: 0.75789195}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftFootEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.17991288, y: 0.98781943, z: 0.742401}
-      rotation: {x: -0.7633528, y: 0.011106796, z: -0.01342628, w: 0.6457467}
+      position: {x: -0.094672166, y: 0.0036102007, z: 0.0998394}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightFootEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.08790937, y: 0.97727156, z: 0.760211}
-      rotation: {x: -0.73202264, y: -0.020873452, z: 0.0024703115, w: 0.680956}
+      position: {x: 0.10920244, y: 0.0033973884, z: 0.10688599}
+      rotation: {x: -6.3170946e-15, y: -0.00000006612197, z: 0.000000095537, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftShoulderEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.18590164, y: 1.2716167, z: -0.43791416}
-      rotation: {x: -0.06703885, y: 0.09460008, z: 0.6551497, w: 0.74654907}
+      position: {x: -0.18697572, y: 1.1640191, z: 0.42566046}
+      rotation: {x: 0.80930245, y: 0.12114525, z: 0.5232311, w: 0.23787099}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightShoulderEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.18724714, y: 1.2798983, z: -0.41458496}
-      rotation: {x: 0.05908892, y: -0.27430966, z: -0.51411414, w: 0.8105241}
+      position: {x: 0.18699321, y: 1.1640182, z: 0.4256598}
+      rotation: {x: 0.82918143, y: 0.043221153, z: -0.49113277, w: 0.26339832}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_HeadEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.0075647817, y: 0.9503981, z: 0.68269044}
-      rotation: {x: 0.69501805, y: 0.0048364876, z: 0.0017814701, w: 0.7189738}
+      position: {x: 0.0000024797366, y: 1.5936034, z: -0.003300476}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHipEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.09094075, y: 0.854926, z: -0.15595917}
-      rotation: {x: -0.70494634, y: -0.1454028, z: 0.06730094, w: 0.6909264}
+      position: {x: -0.09094063, y: 0.9287096, z: -0.00045584678}
+      rotation: {x: -0.004115239, y: 0.000024774808, z: 0.000013826943, w: 0.99999154}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHipEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.0909412, y: 0.8549263, z: -0.15595901}
-      rotation: {x: -0.7077108, y: -0.01882345, z: 0.022357253, w: 0.7058975}
+      position: {x: 0.09094117, y: 0.92871284, z: -0.0004558238}
+      rotation: {x: 0.0052585723, y: -0.012343247, z: 0.0070293825, w: 0.9998853}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandThumbEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.8126513, y: 1.2988353, z: -0.06626767}
-      rotation: {x: -0.15272638, y: 0.3405968, z: 0.0635493, w: 0.9255431}
+      position: {x: -0.87019026, y: 1.3520184, z: 0.024613768}
+      rotation: {x: 2.0816682e-16, y: 2.220446e-16, z: -8.326673e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandIndexEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.9419156, y: 1.3941027, z: -0.15379944}
-      rotation: {x: -0.052686177, y: 0.050802715, z: -0.23982535, w: 0.9680532}
+      position: {x: -0.9610571, y: 1.4273183, z: -0.033286314}
+      rotation: {x: 1.3729968e-11, y: 8.8310385e-17, z: -1.4548305e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandMiddleEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.95346886, y: 1.3965126, z: -0.18097407}
-      rotation: {x: -0.052684993, y: 0.050803285, z: -0.2398177, w: 0.9680552}
+      position: {x: -0.96981114, y: 1.4296197, z: -0.061411068}
+      rotation: {x: 6.123234e-17, y: 1.2246487e-16, z: 6.123188e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandRingEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.94821775, y: 1.3943285, z: -0.20378801}
-      rotation: {x: -0.05268492, y: 0.050802466, z: -0.23982383, w: 0.9680537}
+      position: {x: -0.96169734, y: 1.4297178, z: -0.08350093}
+      rotation: {x: -2.1880114e-11, y: -2.7585237e-16, z: -3.8966642e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandPinkyEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: -0.930904, y: 1.3860378, z: -0.2305744}
-      rotation: {x: -0.05268584, y: 0.05080314, z: -0.23982199, w: 0.96805406}
+      position: {x: -0.9402504, y: 1.4273707, z: -0.10850352}
+      rotation: {x: 6.123234e-17, y: -9.9579734e-17, z: 6.1231515e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandThumbEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.837371, y: 1.2974316, z: -0.1182612}
-      rotation: {x: -0.2406488, y: -0.35511544, z: 0.10197287, w: 0.8975426}
+      position: {x: 0.8702357, y: 1.3520175, z: 0.024616098}
+      rotation: {x: -1.6653345e-16, y: 2.0816682e-17, z: 5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandIndexEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.9483985, y: 1.3882588, z: -0.21907005}
-      rotation: {x: -0.03456175, y: -0.021550095, z: 0.36534747, w: 0.92997974}
+      position: {x: 0.9611035, y: 1.4273181, z: -0.033283964}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandMiddleEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.9573575, y: 1.3927766, z: -0.24692124}
-      rotation: {x: -0.03456068, y: -0.021549555, z: 0.3653427, w: 0.9299817}
+      position: {x: 0.9698561, y: 1.4296196, z: -0.061408732}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandRingEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.9509126, y: 1.3904386, z: -0.2693933}
-      rotation: {x: -0.03455947, y: -0.021550002, z: 0.36534253, w: 0.92998177}
+      position: {x: 0.9617417, y: 1.4297178, z: -0.08349873}
+      rotation: {x: 0, y: -1.5881868e-21, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandPinkyEffector
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.9334906, y: 1.3800836, z: -0.295116}
-      rotation: {x: -0.034565408, y: -0.02155016, z: 0.3653435, w: 0.9299812}
+      position: {x: 0.94029576, y: 1.4273703, z: -0.10850019}
+      rotation: {x: 0, y: 1.3552527e-20, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Hips
       parentName: m_bob_tPose:Character1_Ctrl_Reference
-      position: {x: 0.0000013716539, y: 0.90826076, z: -0.19503695}
-      rotation: {x: -0.31488967, y: -0.000000018811729, z: -0.000000056701595, w: 0.9491283}
+      position: {x: 0.0000017147587, y: 0.9713343, z: 0.05009193}
+      rotation: {x: 0.4177455, y: 8.583639e-17, z: -7.093926e-17, w: 0.9085641}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftUpLeg
       parentName: m_bob_tPose:Character1_Ctrl_Hips
       position: {x: -0.09094206, y: -0.06611626, z: -0.0005521977}
-      rotation: {x: -0.45151898, y: -0.15919831, z: 0.018091442, w: 0.8777581}
+      rotation: {x: -0.00051441, y: 0.0000031080567, z: 0.0000017285349, w: 0.9999999}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftLeg
       parentName: m_bob_tPose:Character1_Ctrl_LeftUpLeg
       position: {x: -0.0024488925, y: -0.40322277, z: -0.0051490455}
-      rotation: {x: -0.017564602, y: 0.099470355, z: 0.0019888894, w: 0.99488354}
+      rotation: {x: 0.0005143206, y: -0.000003137851, z: -0.0000017434517, w: 0.9999999}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftFoot
       parentName: m_bob_tPose:Character1_Ctrl_LeftLeg
       position: {x: 0.0024495411, y: -0.4176599, z: -0.020536015}
-      rotation: {x: -0.06203942, y: 0.0629041, z: 0.059347283, w: 0.9943199}
+      rotation: {x: 0.000000089406974, y: 0.00000002980232, z: 0.000000014901161,
+        w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftToeBase
       parentName: m_bob_tPose:Character1_Ctrl_LeftFoot
       position: {x: -0.0037321758, y: -0.104216754, z: 0.1259803}
-      rotation: {x: 3.4691419e-32, y: -0.00000014680269, z: -1.2246469e-16, w: 1}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightUpLeg
       parentName: m_bob_tPose:Character1_Ctrl_Hips
       position: {x: 0.090939805, y: -0.0661161, z: -0.00055189314}
-      rotation: {x: -0.4494286, y: -0.024905961, z: 0.015292646, w: 0.89283806}
+      rotation: {x: -0.2741433, y: -0.009889527, z: 0.010196335, w: 0.961584}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightLeg
       parentName: m_bob_tPose:Character1_Ctrl_RightUpLeg
       position: {x: 0.0024396037, y: -0.4032311, z: -0.0050363415}
-      rotation: {x: -0.01531534, y: 0.0073489547, z: -0.0053404775, w: 0.99984145}
+      rotation: {x: -0.0182384, y: 0.007182602, z: 0.0033830095, w: 0.9998022}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightFoot
       parentName: m_bob_tPose:Character1_Ctrl_RightLeg
       position: {x: -0.002439928, y: -0.4176543, z: -0.02064877}
-      rotation: {x: -0.019886054, y: 0.005389801, z: -0.009199642, w: 0.9997454}
+      rotation: {x: 0.01307098, y: 0.005304974, z: -0.010223167, w: 0.99984825}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightToeBase
       parentName: m_bob_tPose:Character1_Ctrl_RightFoot
       position: {x: 0.0037202262, y: -0.104217134, z: 0.12598036}
-      rotation: {x: 3.4691416e-32, y: -0.00000016255323, z: -1.2246469e-16, w: 1}
+      rotation: {x: 3.469142e-32, y: -0, z: -1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Spine
       parentName: m_bob_tPose:Character1_Ctrl_Hips
       position: {x: 0.0000003066499, y: 0.09856758, z: -0.012231837}
-      rotation: {x: 0.049825035, y: -0.004174848, z: -0.00078746636, w: 0.99874896}
+      rotation: {x: 0.08529947, y: 0.00000024610904, z: 0.000000013029537, w: 0.99635535}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Spine1
       parentName: m_bob_tPose:Character1_Ctrl_Spine
       position: {x: 0.0000018289591, y: 0.11567199, z: -0.014175472}
-      rotation: {x: 0.09957255, y: -0.012058629, z: -0.00076384743, w: 0.994957}
+      rotation: {x: 0.16997893, y: 0.00000049041455, z: 0.000000025953751, w: 0.9854477}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Spine2
       parentName: m_bob_tPose:Character1_Ctrl_Spine1
       position: {x: -0.00000037654186, y: 0.13270408, z: -0.016209817}
-      rotation: {x: 0.09996138, y: -0.01679211, z: 0.00096483284, w: 0.99484915}
+      rotation: {x: 0.16997884, y: 0.00000049041324, z: 0.000000025953927, w: 0.9854477}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftShoulder
       parentName: m_bob_tPose:Character1_Ctrl_Spine2
       position: {x: -0.060853586, y: 0.09049209, z: 0.0070316526}
-      rotation: {x: -0.000000066465205, y: 1.8306484e-14, z: -0.0000002756384, w: 1}
+      rotation: {x: 0.00000003410599, y: 3.7421522e-24, z: 1.0972126e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftArm
       parentName: m_bob_tPose:Character1_Ctrl_LeftShoulder
       position: {x: -0.12612563, y: -0.0026428222, z: -0.025921427}
-      rotation: {x: 0.0075274245, y: 0.072550625, z: 0.65536004, w: 0.75178653}
+      rotation: {x: 0.3493001, y: 0.47506124, z: 0.2505264, w: 0.7678169}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftForeArm
       parentName: m_bob_tPose:Character1_Ctrl_LeftArm
       position: {x: -0.27312583, y: 0.00000045776366, z: -0.00000008106232}
-      rotation: {x: 0.00000069652395, y: 0.5671847, z: -0.000005778089, w: 0.82359064}
+      rotation: {x: -0.15493985, y: 0.5029237, z: -0.2509729, w: 0.81244946}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHand
       parentName: m_bob_tPose:Character1_Ctrl_LeftForeArm
       position: {x: -0.2752169, y: 0.00000045776366, z: -0.00000021457672}
-      rotation: {x: 0.3622521, y: 0.12262793, z: 0.05150714, w: 0.92254156}
+      rotation: {x: 0.08798347, y: 0.013147796, z: -0.07331972, w: 0.9933329}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandThumb1
       parentName: m_bob_tPose:Character1_Ctrl_LeftHand
       position: {x: -0.037747495, y: -0.021526946, z: 0.029950118}
-      rotation: {x: -0.0029238716, y: -0.006936468, z: -0.00788557, w: 0.99994063}
+      rotation: {x: 3.469447e-16, y: 9.7144515e-17, z: -2.7755576e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandThumb2
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandThumb1
       position: {x: -0.036619034, y: -0.021141814, z: 0.021141788}
-      rotation: {x: -0.0029238197, y: -0.0069366843, z: -0.007885607, w: 0.9999406}
+      rotation: {x: 4.3021142e-16, y: 1.3877788e-17, z: 5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandThumb3
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandThumb2
       position: {x: -0.033811186, y: -0.019521026, z: 0.019521125}
-      rotation: {x: 0.00064425246, y: -0.020976285, z: -0.0081076445, w: 0.9997469}
+      rotation: {x: 6.938894e-16, y: 7.632783e-17, z: -1.6653345e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandThumb4
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandThumb3
       position: {x: -0.0266938, y: -0.015411529, z: 0.015411584}
-      rotation: {x: 1.3187323e-15, y: -0.000000021503055, z: 0.000000052292254, w: 1}
+      rotation: {x: 6.938894e-17, y: 4.57967e-16, z: -8.326673e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandIndex1
       parentName: m_bob_tPose:Character1_Ctrl_LeftHand
       position: {x: -0.12225189, y: -0.0023016357, z: 0.028124709}
-      rotation: {x: -0.00000013910795, y: 5.471873e-13, z: 0.046183567, w: 0.998933}
+      rotation: {x: 4.8467614e-27, y: 2.1175824e-22, z: -7.903552e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandIndex2
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandIndex1
       position: {x: -0.038785703, y: 0.00000015258789, z: -0.0000001168251}
-      rotation: {x: -0.0000003106149, y: -4.032453e-17, z: 0.046183567, w: 0.998933}
+      rotation: {x: 0, y: -0, z: -4.1182778e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandIndex3
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandIndex2
       position: {x: -0.03403114, y: 0, z: -0.00000022888183}
-      rotation: {x: 0.00000025490442, y: -1.2683996e-12, z: 0.046183567, w: 0.998933}
+      rotation: {x: 6.4623485e-27, y: 4.2351647e-22, z: 2.4766814e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandIndex4
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandIndex3
@@ -731,17 +381,17 @@ ModelImporter:
     - name: m_bob_tPose:Character1_Ctrl_LeftHandMiddle1
       parentName: m_bob_tPose:Character1_Ctrl_LeftHand
       position: {x: -0.12732162, y: -0.00000015258789, z: -0.000000085830685}
-      rotation: {x: -0.00000053804314, y: -1.0926889e-15, z: 0.046183567, w: 0.998933}
+      rotation: {x: 3.625e-42, y: 5.0821977e-21, z: -7.133628e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandMiddle2
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandMiddle1
       position: {x: -0.036018293, y: 0, z: -0.0000004196167}
-      rotation: {x: 0.0000000063873022, y: -2.8261647e-14, z: 0.046183567, w: 0.998933}
+      rotation: {x: -5.553581e-28, y: -1.0587912e-22, z: 2.5749498e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandMiddle3
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandMiddle2
       position: {x: -0.034477845, y: 0.00000015258789, z: 0.0000000047683715}
-      rotation: {x: 0.0000003482728, y: -1.3770397e-16, z: 0.046183567, w: 0.998933}
+      rotation: {x: -1.2246469e-16, y: -5.654885e-38, z: 4.617564e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandMiddle4
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandMiddle3
@@ -751,37 +401,37 @@ ModelImporter:
     - name: m_bob_tPose:Character1_Ctrl_LeftHandRing1
       parentName: m_bob_tPose:Character1_Ctrl_LeftHand
       position: {x: -0.12105514, y: 0.000097808836, z: -0.022089928}
-      rotation: {x: 0.00000013498887, y: -5.7411e-13, z: 0.046183567, w: 0.998933}
+      rotation: {x: -1.21169035e-26, y: -2.9646153e-21, z: 9.434457e-23, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandRing2
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandRing1
       position: {x: -0.035890732, y: 0.00000015258789, z: 0.000000104904174}
-      rotation: {x: 0.00000017370964, y: -1.5890623e-16, z: 0.046183567, w: 0.998933}
+      rotation: {x: -1.2246469e-16, y: -1.0587912e-21, z: 2.303124e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandRing3
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandRing2
       position: {x: -0.032961503, y: 0, z: 0.00000012397766}
-      rotation: {x: -0.0000004830554, y: 2.0207451e-12, z: 0.046183567, w: 0.998933}
+      rotation: {x: 2.5849394e-26, y: 7.6232965e-21, z: 1.5433979e-21, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandRing4
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandRing3
       position: {x: -0.03647125, y: 0.00000015258789, z: -0.0000003814697}
-      rotation: {x: -2.1880114e-11, y: 1.7343439e-16, z: -0.00000021536452, w: 1}
+      rotation: {x: -2.1880114e-11, y: -2.7585237e-16, z: -3.8966642e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandPinky1
       parentName: m_bob_tPose:Character1_Ctrl_LeftHand
       position: {x: -0.10870407, y: -0.0022491454, z: -0.047092617}
-      rotation: {x: -0.0000005662087, y: 2.0955568e-12, z: 0.046183567, w: 0.998933}
+      rotation: {x: 2.261822e-26, y: 8.4703295e-22, z: -8.774619e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandPinky2
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandPinky1
       position: {x: -0.041227493, y: 0.00000015258789, z: -0.00000050544736}
-      rotation: {x: 0.000000102187485, y: 8.852527e-18, z: 0.046183567, w: 0.998933}
+      rotation: {x: -1.2246469e-16, y: -1.6592124e-38, z: 1.3548497e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandPinky3
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandPinky2
       position: {x: -0.025860747, y: 0, z: 0.000000057220458}
-      rotation: {x: 0.00000061971485, y: -4.6575785e-16, z: 0.046183567, w: 0.998933}
+      rotation: {x: -1.2246469e-16, y: -1.0164395e-20, z: 8.2164697e-22, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_LeftHandPinky4
       parentName: m_bob_tPose:Character1_Ctrl_LeftHandPinky3
@@ -791,469 +441,468 @@ ModelImporter:
     - name: m_bob_tPose:Character1_Ctrl_RightShoulder
       parentName: m_bob_tPose:Character1_Ctrl_Spine2
       position: {x: 0.06085281, y: 0.0904924, z: 0.007031903}
-      rotation: {x: -0.00000002920384, y: -1.3877788e-17, z: 2.7105013e-19, w: 1}
+      rotation: {x: 0.00000003410601, y: 2.7755586e-17, z: 2.67039e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightArm
       parentName: m_bob_tPose:Character1_Ctrl_RightShoulder
       position: {x: 0.1261368, y: -0.00264328, z: -0.025919894}
-      rotation: {x: 0.09720556, y: -0.21189919, z: -0.54094636, w: 0.8081008}
+      rotation: {x: 0.34298927, y: -0.34328952, z: -0.35388094, w: 0.7995492}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightForeArm
       parentName: m_bob_tPose:Character1_Ctrl_RightArm
       position: {x: 0.27315497, y: 0.00000015258789, z: -0.000000038146972}
-      rotation: {x: -0.0000028961022, y: -0.4903057, z: -0.0000010255892, w: 0.87155056}
+      rotation: {x: -0.16180319, y: -0.63103235, z: 0.1884515, w: 0.73491764}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHand
       parentName: m_bob_tPose:Character1_Ctrl_RightForeArm
       position: {x: 0.27521682, y: 0.00000015258789, z: 0.00000009059906}
-      rotation: {x: 0.21505067, y: -0.1661782, z: 0.155058, w: 0.9497869}
+      rotation: {x: 0.15476185, y: -0.04902603, z: 0.09307839, w: 0.9823348}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandThumb1
       parentName: m_bob_tPose:Character1_Ctrl_RightHand
       position: {x: 0.037747268, y: -0.021527098, z: 0.02995041}
-      rotation: {x: -0.0010211859, y: 0.020249896, z: 0.014622678, w: 0.9996875}
+      rotation: {x: -4.1633363e-17, y: 1.3183898e-16, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandThumb2
       parentName: m_bob_tPose:Character1_Ctrl_RightHandThumb1
       position: {x: 0.036619492, y: -0.02114212, z: 0.021141915}
-      rotation: {x: -0.0010210027, y: 0.02025071, z: 0.014622881, w: 0.9996875}
+      rotation: {x: 2.0816682e-16, y: -6.938894e-17, z: 1.110223e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandThumb3
       parentName: m_bob_tPose:Character1_Ctrl_RightHandThumb2
       position: {x: 0.033810806, y: -0.01952072, z: 0.01952094}
-      rotation: {x: -0.001021284, y: 0.020249875, z: 0.014622698, w: 0.9996875}
+      rotation: {x: -8.326673e-17, y: -3.0531133e-16, z: 5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandThumb4
       parentName: m_bob_tPose:Character1_Ctrl_RightHandThumb3
       position: {x: 0.026693497, y: -0.015411529, z: 0.0154115455}
-      rotation: {x: -1.2490009e-16, y: 2.0816683e-17, z: -0.000000012865356, w: 1}
+      rotation: {x: -1.5265567e-16, y: 1.2490009e-16, z: -5.551115e-17, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandIndex1
       parentName: m_bob_tPose:Character1_Ctrl_RightHand
       position: {x: 0.1222509, y: -0.0023010254, z: 0.028124822}
-      rotation: {x: -0.00000053166946, y: -6.146809e-10, z: -0.10311665, w: 0.99466926}
+      rotation: {x: -1.0157014e-11, y: -3.9959626e-17, z: -1.6959844e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandIndex2
       parentName: m_bob_tPose:Character1_Ctrl_RightHandIndex1
       position: {x: 0.038785703, y: 0.00000015258789, z: -0.0000002002716}
-      rotation: {x: -0.00000038248186, y: 5.860946e-11, z: -0.10311663, w: 0.99466926}
+      rotation: {x: -2.2735562e-22, y: -0, z: 8.441711e-28, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandIndex3
       parentName: m_bob_tPose:Character1_Ctrl_RightHandIndex2
       position: {x: 0.034032285, y: 0, z: -0.00000012636184}
-      rotation: {x: 0.0000008567192, y: 3.060916e-10, z: -0.10311664, w: 0.99466926}
+      rotation: {x: -1.5279601e-21, y: 4.2351647e-21, z: 1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandIndex4
       parentName: m_bob_tPose:Character1_Ctrl_RightHandIndex3
       position: {x: 0.030670013, y: -2.842171e-16, z: 0.00000025510786}
-      rotation: {x: -1.262434e-28, y: 8.4703295e-22, z: -0.000000089376684, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandMiddle1
       parentName: m_bob_tPose:Character1_Ctrl_RightHand
       position: {x: 0.12732124, y: 0.00000045776366, z: 0.000000057220458}
-      rotation: {x: 0.00000043675328, y: 1.0427173e-10, z: -0.10311664, w: 0.99466926}
+      rotation: {x: -7.7820737e-22, y: -2.1175824e-21, z: 1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandMiddle2
       parentName: m_bob_tPose:Character1_Ctrl_RightHandMiddle1
       position: {x: 0.0360186, y: 0, z: 0.00000015258789}
-      rotation: {x: 0.00000010087351, y: 4.0531156e-10, z: -0.103117175, w: 0.9946692}
+      rotation: {x: 2.1422603e-12, y: 9.4810515e-18, z: 2.0739457e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandMiddle3
       parentName: m_bob_tPose:Character1_Ctrl_RightHandMiddle2
       position: {x: 0.034478072, y: 0.00000015258789, z: 0.0000000333786}
-      rotation: {x: -0.00000073587665, y: 5.998356e-10, z: -0.103116654, w: 0.99466926}
+      rotation: {x: -4.378852e-22, y: -8.4703295e-22, z: 3.1314084e-27, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandMiddle4
       parentName: m_bob_tPose:Character1_Ctrl_RightHandMiddle3
       position: {x: 0.036673583, y: 0, z: -0.00000026226044}
-      rotation: {x: -1.2193804e-28, y: -4.2351647e-22, z: 0.00000018891909, w: 1}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandRing1
       parentName: m_bob_tPose:Character1_Ctrl_RightHand
       position: {x: 0.12105491, y: 0.00009872436, z: -0.022089971}
-      rotation: {x: -0.0000008758832, y: -1.7383749e-10, z: -0.10311663, w: 0.99466926}
+      rotation: {x: -5.206511e-22, y: 8.4703295e-22, z: 4.427032e-27, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandRing2
       parentName: m_bob_tPose:Character1_Ctrl_RightHandRing1
       position: {x: 0.035890885, y: 0, z: -0.00000030517577}
-      rotation: {x: 0.00000098478, y: 4.506238e-12, z: -0.10311678, w: 0.99466926}
+      rotation: {x: 2.210081e-11, y: 1.02311416e-16, z: 2.1102075e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandRing3
       parentName: m_bob_tPose:Character1_Ctrl_RightHandRing2
       position: {x: 0.032960813, y: 0.00000015258789, z: 0.0000003147125}
-      rotation: {x: -0.00000016119246, y: 6.6964434e-10, z: -0.10311664, w: 0.99466926}
+      rotation: {x: -9.6070624e-23, y: -1.0587912e-22, z: 1.5073022e-28, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandRing4
       parentName: m_bob_tPose:Character1_Ctrl_RightHandRing3
       position: {x: 0.036470488, y: -2.842171e-16, z: -0.000000057220458}
-      rotation: {x: 0, y: -4.2351647e-22, z: -0, w: 1}
+      rotation: {x: 0, y: -1.1646703e-21, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandPinky1
       parentName: m_bob_tPose:Character1_Ctrl_RightHand
       position: {x: 0.10870407, y: -0.0022486877, z: -0.04709247}
-      rotation: {x: 0.0000011213209, y: 4.9377896e-10, z: -0.10311663, w: 0.99466926}
+      rotation: {x: -1.9971464e-21, y: -8.4703295e-22, z: 1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandPinky2
       parentName: m_bob_tPose:Character1_Ctrl_RightHandPinky1
       position: {x: 0.0412278, y: 0, z: 0.00000044822693}
-      rotation: {x: 0.00000037900497, y: -0.0000000011218736, z: -0.10311665, w: 0.99466926}
+      rotation: {x: -6.774348e-22, y: -8.296184e-38, z: 1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandPinky3
       parentName: m_bob_tPose:Character1_Ctrl_RightHandPinky2
       position: {x: 0.025860365, y: 0, z: 0.000000095367426}
-      rotation: {x: 0.0000015860481, y: 0.0000000013122429, z: -0.10311665, w: 0.99466926}
+      rotation: {x: -2.825701e-21, y: 1.6940659e-21, z: 1.2246469e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_RightHandPinky4
       parentName: m_bob_tPose:Character1_Ctrl_RightHandPinky3
       position: {x: 0.029138945, y: -2.842171e-16, z: 0.00000044822693}
-      rotation: {x: 0, y: 3.3881318e-21, z: -0, w: 1}
+      rotation: {x: 0, y: 1.0164395e-20, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Neck
       parentName: m_bob_tPose:Character1_Ctrl_Spine2
       position: {x: -0.00000043200154, y: 0.14931427, z: 0.007902222}
-      rotation: {x: 0.005461463, y: 0.017822005, z: 0.0052958657, w: 0.99981225}
+      rotation: {x: -6.662338e-17, y: -1.06178756e-16, z: 1.8960938e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:Character1_Ctrl_Head
       parentName: m_bob_tPose:Character1_Ctrl_Neck
       position: {x: -0.0000002778406, y: 0.10251953, z: 0.031318072}
-      rotation: {x: 0.005801825, y: 0.018077295, z: 0.0038770952, w: 0.99981225}
+      rotation: {x: 1.4163847e-16, y: 2.7415802e-32, z: -1.110223e-16, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: m_bob_tPose:mixamorig:Hips
       parentName: bob_idle(Clone)
-      position: {x: 0.0000013811908, y: 1.0177402, z: 0.0005520284}
-      rotation: {x: 0.000000023283064, y: -1.7763568e-13, z: -3.5527137e-13, w: 1}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.0000016093254, y: 1.4607877, z: 0.00079137087}
+      rotation: {x: -0.000000023282498, y: -0.00000013312206, z: 0.000004254584, w: 1}
+      scale: {x: 1.4335858, y: 1.4335859, z: 1.4335859}
     - name: m_bob_tPose:mixamorig:Spine
       parentName: m_bob_tPose:mixamorig:Hips
-      position: {x: 0.0000011453778, y: 0.09856758, z: -0.01223186}
-      rotation: {x: -0.060932808, y: 0.0000004817158, z: -0.000007891001, w: 0.9981419}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.0000011580422, y: 0.09856762, z: -0.012231837}
+      rotation: {x: -0.060932595, y: 0.0000008738392, z: -0.000012129678, w: 0.9981419}
+      scale: {x: 0.9999999, y: 1.0000001, z: 1.0000001}
     - name: m_bob_tPose:mixamorig:Spine1
       parentName: m_bob_tPose:mixamorig:Spine
-      position: {x: -7.844358e-11, y: 0.11653737, z: -0.00000003406342}
-      rotation: {x: 0.00019647923, y: 8.318465e-10, z: 0.000009255595, w: 1}
-      scale: {x: 1, y: 0.9999999, z: 1}
+      position: {x: -0.000000014382142, y: 0.11653735, z: 0.0000000117717125}
+      rotation: {x: 0.00019641966, y: 0.0000000018188757, z: 0.000009255733, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: m_bob_tPose:mixamorig:Spine2
       parentName: m_bob_tPose:mixamorig:Spine1
-      position: {x: 0.0000000014915739, y: 0.13369045, z: 0.000000025453382}
-      rotation: {x: 0.000000037282007, y: 0.0000000012681504, z: 0.0000000016212165,
-        w: 1}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+      position: {x: -0.00000009379541, y: 0.13369046, z: -0.000000049425417}
+      rotation: {x: 0.000000014901161, y: -2.4313884e-14, z: -3.5728527e-13, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.9999998}
     - name: m_bob_tPose:mixamorig:Neck
       parentName: m_bob_tPose:mixamorig:Spine2
-      position: {x: -0.00000007445245, y: 0.14725462, z: 0.025948118}
-      rotation: {x: 0.060736626, y: -0.0000010448103, z: -0.0000013497936, w: 0.99815387}
-      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+      position: {x: -0.00000007466885, y: 0.14725439, z: 0.025948117}
+      rotation: {x: 0.060736556, y: -0.0000010459627, z: -0.0000013472187, w: 0.99815387}
+      scale: {x: 0.9999999, y: 1, z: 1}
     - name: m_bob_tPose:mixamorig:Head
       parentName: m_bob_tPose:mixamorig:Neck
-      position: {x: -0.00000030053832, y: 0.10251949, z: 0.031318057}
-      rotation: {x: -0, y: -0.0000000014551913, z: 0.0000000013644622, w: 1}
-      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+      position: {x: -0.00000029105442, y: 0.10251946, z: 0.03131806}
+      rotation: {x: -0, y: -0, z: -3.5527137e-14, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000004}
     - name: m_bob_tPose:mixamorig:HeadTop_End
       parentName: m_bob_tPose:mixamorig:Head
       position: {x: -0.000001619791, y: 0.18351176, z: 0.06614052}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftEye
-      parentName: m_bob_tPose:mixamorig:Head
-      position: {x: -0.031244865, y: 0.07607355, z: 0.09154713}
-      rotation: {x: -0, y: -0, z: -2.3283062e-10, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
     - name: m_bob_tPose:mixamorig:RightEye
       parentName: m_bob_tPose:mixamorig:Head
       position: {x: 0.031210653, y: 0.076073445, z: 0.091543704}
-      rotation: {x: -0, y: -0, z: -2.3283062e-10, w: 1}
-      scale: {x: 1, y: 1, z: 0.9999999}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: m_bob_tPose:mixamorig:LeftEye
+      parentName: m_bob_tPose:mixamorig:Head
+      position: {x: -0.031244865, y: 0.07607355, z: 0.09154713}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
     - name: m_bob_tPose:mixamorig:LeftShoulder
       parentName: m_bob_tPose:mixamorig:Spine2
-      position: {x: -0.06085339, y: 0.08897209, z: 0.017951723}
-      rotation: {x: -0.52951294, y: 0.6126829, z: -0.4696194, w: -0.35170075}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+      position: {x: -0.06085339, y: 0.088971965, z: 0.017951714}
+      rotation: {x: -0.5278405, y: 0.6141431, z: -0.46836507, w: -0.3533367}
+      scale: {x: 1.0000011, y: 1.0000006, z: 1.0000011}
     - name: m_bob_tPose:mixamorig:LeftArm
       parentName: m_bob_tPose:mixamorig:LeftShoulder
-      position: {x: 0.00000002900351, y: 0.12878901, z: -0.00000008709747}
-      rotation: {x: -0.010956599, y: 0.00082339335, z: -0.0749489, w: 0.9971269}
-      scale: {x: 1.0000006, y: 1.0000008, z: 1.000001}
+      position: {x: 0.00000000435434, y: 0.12878895, z: -0.00000005180065}
+      rotation: {x: -0.030154422, y: 0.0023327768, z: -0.097109914, w: 0.99481404}
+      scale: {x: 0.9999997, y: 1.0000002, z: 1}
     - name: m_bob_tPose:mixamorig:LeftForeArm
       parentName: m_bob_tPose:mixamorig:LeftArm
-      position: {x: -0.00000013073138, y: 0.2731259, z: -0.0000005502281}
-      rotation: {x: 0.015152936, y: -0.00078484084, z: 0.051708408, w: -0.998547}
-      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000007}
+      position: {x: -0.0001189747, y: 0.2731258, z: -0.000021069585}
+      rotation: {x: 0.000000035390254, y: 0.0007858173, z: 0.0000002180968, w: 0.9999997}
+      scale: {x: 1.0000008, y: 1.0000005, z: 1.0000008}
     - name: m_bob_tPose:mixamorig:LeftHand
       parentName: m_bob_tPose:mixamorig:LeftForeArm
-      position: {x: -0.000000029114421, y: 0.27521694, z: 0.0000011128453}
-      rotation: {x: 0.052862477, y: 0.17537697, z: 0.031196076, w: 0.982586}
-      scale: {x: 1, y: 1, z: 1.0000002}
-    - name: m_bob_tPose:mixamorig:LeftHandThumb1
-      parentName: m_bob_tPose:mixamorig:LeftHand
-      position: {x: 0.0330804, y: 0.035212744, z: 0.021237757}
-      rotation: {x: 0.1097247, y: -0.019421084, z: -0.32362738, w: 0.9396003}
-      scale: {x: 1.0000002, y: 0.99999994, z: 1.0000001}
-    - name: m_bob_tPose:mixamorig:LeftHandThumb2
-      parentName: m_bob_tPose:mixamorig:LeftHandThumb1
-      position: {x: 0.0036208497, y: 0.047135923, z: -0.00000010300741}
-      rotation: {x: 0.017568672, y: 0.00011321339, z: -0.034350134, w: 0.9992555}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000006}
-    - name: m_bob_tPose:mixamorig:LeftHandThumb3
-      parentName: m_bob_tPose:mixamorig:LeftHandThumb2
-      position: {x: -0.0027627882, y: 0.0435627, z: 0.00000014060477}
-      rotation: {x: -0.033264477, y: 0.00000015931484, z: -0.00000013552932, w: 0.9994466}
-      scale: {x: 0.99999994, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftHandThumb4
-      parentName: m_bob_tPose:mixamorig:LeftHandThumb3
-      position: {x: -0.00085804536, y: 0.03445076, z: -0.00000012563083}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftHandRing1
-      parentName: m_bob_tPose:mixamorig:LeftHand
-      position: {x: -0.011679063, y: 0.12249461, z: -0.0009979991}
-      rotation: {x: -0.032873582, y: -0.00013507901, z: 0.00410724, w: 0.9994511}
-      scale: {x: 1, y: 1.0000001, z: 1.0000002}
-    - name: m_bob_tPose:mixamorig:LeftHandRing2
-      parentName: m_bob_tPose:mixamorig:LeftHandRing1
-      position: {x: 0.0001921304, y: 0.03589023, z: -0.00000009182655}
-      rotation: {x: 0.01652019, y: 0.00000011040535, z: -0.00000006237609, w: 0.99986356}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftHandRing3
-      parentName: m_bob_tPose:mixamorig:LeftHandRing2
-      position: {x: 0.00010018913, y: 0.032961354, z: 0.00000004917661}
-      rotation: {x: 0.03963784, y: -0.00009462788, z: -0.0027044273, w: 0.9992105}
-      scale: {x: 1, y: 1, z: 1.0000001}
-    - name: m_bob_tPose:mixamorig:LeftHandRing4
-      parentName: m_bob_tPose:mixamorig:LeftHandRing3
-      position: {x: -0.0002923718, y: 0.036470078, z: -0.000000034611}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.0000000901649, y: 0.27521685, z: 0.0000011253267}
+      rotation: {x: -0.0078819385, y: -0.09726338, z: -0.042139854, w: -0.99433494}
+      scale: {x: 0.9999995, y: 1.0000002, z: 0.9999998}
     - name: m_bob_tPose:mixamorig:LeftHandMiddle1
       parentName: m_bob_tPose:mixamorig:LeftHand
-      position: {x: 0.010865041, y: 0.12685363, z: -0.0009516726}
-      rotation: {x: -0.039161514, y: 0.00071334833, z: -0.018200124, w: 0.9990669}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.010865049, y: 0.12685367, z: -0.00095162034}
+      rotation: {x: 0.0037879972, y: 0.0009908451, z: 0.039568234, w: -0.9992092}
+      scale: {x: 1, y: 1.0000002, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:LeftHandMiddle2
       parentName: m_bob_tPose:mixamorig:LeftHandMiddle1
-      position: {x: 0.00022560221, y: 0.036017597, z: 0.000000099907}
-      rotation: {x: 0.040126473, y: 0.0000418027, z: -0.0019531373, w: 0.9991927}
-      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000005}
+      position: {x: 0.00022562411, y: 0.036017586, z: 0.00000006838492}
+      rotation: {x: -0.00000005634501, y: -0.00010208679, z: 0.004776087, w: -0.9999886}
+      scale: {x: 1.0000001, y: 0.99999946, z: 0.9999999}
     - name: m_bob_tPose:mixamorig:LeftHandMiddle3
       parentName: m_bob_tPose:mixamorig:LeftHandMiddle2
-      position: {x: -0.00011296793, y: 0.03447766, z: -0.00000009652955}
-      rotation: {x: -0.0025050559, y: 0.00000024142633, z: 0.000000013231682, w: 0.99999684}
-      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+      position: {x: -0.00011294418, y: 0.034477677, z: -0.000000114766905}
+      rotation: {x: -0.00000005306738, y: 0.000007889472, z: 0.00009825823, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:LeftHandMiddle4
       parentName: m_bob_tPose:mixamorig:LeftHandMiddle3
-      position: {x: -0.0001126631, y: 0.03667448, z: 0.000000051493867}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftHandPinky1
+      position: {x: -0.00011266136, y: 0.036674466, z: 0.000000040867643}
+      rotation: {x: -0, y: -0, z: 4.186736e-13, w: 1}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000004}
+    - name: m_bob_tPose:mixamorig:LeftHandThumb1
       parentName: m_bob_tPose:mixamorig:LeftHand
-      position: {x: -0.037642557, y: 0.112340085, z: 0.0014465653}
-      rotation: {x: -0.02501522, y: 0.0005597323, z: -0.022352725, w: 0.99943703}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
-    - name: m_bob_tPose:mixamorig:LeftHandPinky2
-      parentName: m_bob_tPose:mixamorig:LeftHandPinky1
-      position: {x: 0.000056538483, y: 0.041227464, z: -0.00000009456114}
-      rotation: {x: 0.013262558, y: -0.00000019592696, z: 0.000000094155425, w: 0.9999121}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
-    - name: m_bob_tPose:mixamorig:LeftHandPinky3
-      parentName: m_bob_tPose:mixamorig:LeftHandPinky2
-      position: {x: -0.0000099255185, y: 0.025860747, z: 0.000000031975187}
-      rotation: {x: 0.0077666556, y: -0.00000003293011, z: 0.00000003502038, w: 0.99996984}
-      scale: {x: 1, y: 1.0000002, z: 1}
-    - name: m_bob_tPose:mixamorig:LeftHandPinky4
-      parentName: m_bob_tPose:mixamorig:LeftHandPinky3
-      position: {x: -0.000046614266, y: 0.029139306, z: 0.00000011835106}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.0330804, y: 0.035212737, z: 0.021237755}
+      rotation: {x: 0.071338125, y: 0.004797272, z: -0.35181937, w: 0.9333333}
+      scale: {x: 1.0000002, y: 1, z: 1.0000004}
+    - name: m_bob_tPose:mixamorig:LeftHandThumb2
+      parentName: m_bob_tPose:mixamorig:LeftHandThumb1
+      position: {x: 0.0036208197, y: 0.047135938, z: -0.000000050498492}
+      rotation: {x: 0.0000017732377, y: 0.00023039425, z: -0.06994788, w: 0.9975506}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:LeftHandThumb3
+      parentName: m_bob_tPose:mixamorig:LeftHandThumb2
+      position: {x: -0.0027627682, y: 0.04356269, z: 0.00000013368772}
+      rotation: {x: -0.000064395295, y: 0.0014668924, z: 0.01921924, w: 0.9998142}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: m_bob_tPose:mixamorig:LeftHandThumb4
+      parentName: m_bob_tPose:mixamorig:LeftHandThumb3
+      position: {x: -0.0008580233, y: 0.034450784, z: -0.000000113912556}
+      rotation: {x: -0, y: 1.1641531e-10, z: -5.3391597e-10, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:LeftHandIndex1
       parentName: m_bob_tPose:mixamorig:LeftHand
-      position: {x: 0.038456634, y: 0.11941945, z: 0.0013815789}
-      rotation: {x: 0.01718819, y: 0.00007210671, z: 0.0041840984, w: 0.9998436}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+      position: {x: 0.03845656, y: 0.11941948, z: 0.0013816481}
+      rotation: {x: -0.0037052045, y: 0.000832863, z: -0.04098348, w: 0.9991526}
+      scale: {x: 1, y: 0.99999994, z: 1.0000004}
     - name: m_bob_tPose:mixamorig:LeftHandIndex2
       parentName: m_bob_tPose:mixamorig:LeftHandIndex1
-      position: {x: 0.00013393187, y: 0.038785473, z: -0.00000009919694}
-      rotation: {x: 0.02604154, y: 0.000000095853466, z: -0.000000004222784, w: 0.99966085}
-      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+      position: {x: 0.00013393244, y: 0.038785473, z: -0.00000009384439}
+      rotation: {x: -0.00000013061799, y: 0.000037172926, z: -0.002035991, w: 0.999998}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999976}
     - name: m_bob_tPose:mixamorig:LeftHandIndex3
       parentName: m_bob_tPose:mixamorig:LeftHandIndex2
-      position: {x: -0.000021189788, y: 0.03403115, z: 0.00000008641977}
-      rotation: {x: 0.02312218, y: -0.00000028825116, z: -0.00000007220912, w: 0.9997327}
-      scale: {x: 1, y: 1.0000002, z: 1.0000002}
+      position: {x: -0.00002117161, y: 0.034031134, z: 0.00000007403087}
+      rotation: {x: -0.00000055144636, y: -0.000049594193, z: -0.0015338189, w: 0.9999988}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
     - name: m_bob_tPose:mixamorig:LeftHandIndex4
       parentName: m_bob_tPose:mixamorig:LeftHandIndex3
-      position: {x: -0.00011278939, y: 0.030669425, z: -0.000000054063467}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.000112794885, y: 0.030669414, z: -0.00000003709734}
+      rotation: {x: 5.6843412e-14, y: -3.6379784e-12, z: -2.7348538e-11, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: m_bob_tPose:mixamorig:LeftHandRing1
+      parentName: m_bob_tPose:mixamorig:LeftHand
+      position: {x: -0.011679058, y: 0.122494616, z: -0.0009980294}
+      rotation: {x: 0.003816273, y: 0.0016226096, z: 0.0400279, w: -0.99919003}
+      scale: {x: 1, y: 1, z: 1.0000004}
+    - name: m_bob_tPose:mixamorig:LeftHandRing2
+      parentName: m_bob_tPose:mixamorig:LeftHandRing1
+      position: {x: 0.00019214279, y: 0.0358902, z: -0.00000007277686}
+      rotation: {x: 0.00000022468151, y: 0.00006913916, z: -0.0011579802, w: 0.99999934}
+      scale: {x: 1.0000002, y: 0.99999976, z: 0.9999999}
+    - name: m_bob_tPose:mixamorig:LeftHandRing3
+      parentName: m_bob_tPose:mixamorig:LeftHandRing2
+      position: {x: 0.000100174715, y: 0.032961354, z: 0.000000051758004}
+      rotation: {x: -0.00000021896678, y: 0.00019328659, z: 0.005519881, w: -0.9999848}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.9999999}
+    - name: m_bob_tPose:mixamorig:LeftHandRing4
+      parentName: m_bob_tPose:mixamorig:LeftHandRing3
+      position: {x: -0.00029234865, y: 0.036470074, z: -0.000000027802452}
+      rotation: {x: -9.947595e-14, y: -0, z: 4.2323336e-11, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: m_bob_tPose:mixamorig:LeftHandPinky1
+      parentName: m_bob_tPose:mixamorig:LeftHand
+      position: {x: -0.037642524, y: 0.112340085, z: 0.0014465643}
+      rotation: {x: 0.0037610098, y: 0.0004377514, z: 0.04201466, w: -0.9991099}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:LeftHandPinky2
+      parentName: m_bob_tPose:mixamorig:LeftHandPinky1
+      position: {x: 0.000056484798, y: 0.04122746, z: -0.00000006803859}
+      rotation: {x: 0.00000046426413, y: -0.0000066290936, z: 0.0008846764, w: -0.99999964}
+      scale: {x: 1.0000006, y: 1.0000004, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:LeftHandPinky3
+      parentName: m_bob_tPose:mixamorig:LeftHandPinky2
+      position: {x: -0.000009924124, y: 0.025860753, z: 0.000000044261945}
+      rotation: {x: -0.00000022544526, y: -0.000007702796, z: -0.0006129897, w: 0.9999999}
+      scale: {x: 0.99999946, y: 0.99999994, z: 0.99999994}
+    - name: m_bob_tPose:mixamorig:LeftHandPinky4
+      parentName: m_bob_tPose:mixamorig:LeftHandPinky3
+      position: {x: -0.000046594607, y: 0.029139284, z: 0.000000115868865}
+      rotation: {x: -0, y: -0, z: -5.99442e-11, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000005}
     - name: m_bob_tPose:mixamorig:RightShoulder
       parentName: m_bob_tPose:mixamorig:Spine2
-      position: {x: 0.060853045, y: 0.08897207, z: 0.01795227}
-      rotation: {x: 0.52952623, y: 0.61266184, z: -0.46962637, w: 0.35170817}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000006}
+      position: {x: 0.060852997, y: 0.0889719, z: 0.017952224}
+      rotation: {x: 0.52784514, y: 0.61412954, z: -0.4683659, w: 0.3533523}
+      scale: {x: 1.0000012, y: 1.0000012, z: 1.0000006}
     - name: m_bob_tPose:mixamorig:RightArm
       parentName: m_bob_tPose:mixamorig:RightShoulder
-      position: {x: 0.000000031822903, y: 0.12879957, z: -0.000000025464637}
-      rotation: {x: -0.010916977, y: -0.00082083035, z: 0.07495921, w: 0.9971265}
-      scale: {x: 1.0000006, y: 1.0000013, z: 1.0000015}
+      position: {x: -0.000000002672908, y: 0.1287996, z: -0.000000114180054}
+      rotation: {x: -0.0301494, y: -0.0023344755, z: 0.09709662, w: 0.9948155}
+      scale: {x: 0.9999998, y: 1.0000007, z: 1.0000013}
     - name: m_bob_tPose:mixamorig:RightForeArm
       parentName: m_bob_tPose:mixamorig:RightArm
-      position: {x: 0.00000006042738, y: 0.27315494, z: -0.00000024424278}
-      rotation: {x: -0.015165601, y: -0.00078530924, z: 0.051699273, w: 0.99854726}
-      scale: {x: 1.0000008, y: 0.99999994, z: 1.0000006}
+      position: {x: 0.00000037181826, y: 0.27315494, z: -0.00000043827578}
+      rotation: {x: -0.00000018067658, y: -0.0007862875, z: 0.0000002013403, w: 0.99999976}
+      scale: {x: 1.0000008, y: 0.9999999, z: 0.9999999}
     - name: m_bob_tPose:mixamorig:RightHand
       parentName: m_bob_tPose:mixamorig:RightForeArm
-      position: {x: 0.000000045478185, y: 0.27521694, z: -0.00000017939266}
-      rotation: {x: -0.052862067, y: 0.17536013, z: 0.0311983, w: -0.98258895}
-      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000005}
-    - name: m_bob_tPose:mixamorig:RightHandThumb1
-      parentName: m_bob_tPose:mixamorig:RightHand
-      position: {x: -0.033080626, y: 0.035212368, z: 0.021238202}
-      rotation: {x: -0.10972274, y: -0.01942242, z: -0.3236262, w: -0.9396009}
-      scale: {x: 1.0000002, y: 1.0000007, z: 1.0000006}
-    - name: m_bob_tPose:mixamorig:RightHandThumb2
-      parentName: m_bob_tPose:mixamorig:RightHandThumb1
-      position: {x: -0.0036207351, y: 0.047136478, z: -0.000000019035236}
-      rotation: {x: 0.017568916, y: -0.00011314074, z: 0.034349583, w: 0.9992555}
-      scale: {x: 1.0000004, y: 0.99999994, z: 0.99999994}
-    - name: m_bob_tPose:mixamorig:RightHandThumb3
-      parentName: m_bob_tPose:mixamorig:RightHandThumb2
-      position: {x: 0.0027627915, y: 0.04356219, z: 0.00000007490126}
-      rotation: {x: -0.033260614, y: 5.0405885e-10, z: 0.0000001441666, w: 0.9994467}
-      scale: {x: 1, y: 1.0000004, z: 1.0000002}
-    - name: m_bob_tPose:mixamorig:RightHandThumb4
-      parentName: m_bob_tPose:mixamorig:RightHandThumb3
-      position: {x: 0.00085796975, y: 0.034450512, z: 0.00000007789414}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:RightHandRing1
-      parentName: m_bob_tPose:mixamorig:RightHand
-      position: {x: 0.011679152, y: 0.12249437, z: -0.0009981343}
-      rotation: {x: 0.032886222, y: -0.00013482566, z: 0.004106449, w: -0.9994506}
-      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000007}
-    - name: m_bob_tPose:mixamorig:RightHandRing2
-      parentName: m_bob_tPose:mixamorig:RightHandRing1
-      position: {x: -0.00019169187, y: 0.035890378, z: 0.00000005180952}
-      rotation: {x: 0.01654341, y: 0.00000012303644, z: 0.0000000025177087, w: 0.9998632}
-      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999997}
-    - name: m_bob_tPose:mixamorig:RightHandRing3
-      parentName: m_bob_tPose:mixamorig:RightHandRing2
-      position: {x: -0.00010034276, y: 0.03296065, z: -0.00000013121996}
-      rotation: {x: -0.039629214, y: -0.00009463943, z: -0.002704269, w: -0.9992109}
-      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
-    - name: m_bob_tPose:mixamorig:RightHandRing4
-      parentName: m_bob_tPose:mixamorig:RightHandRing3
-      position: {x: 0.0002920438, y: 0.036469333, z: 0.00000003936369}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: m_bob_tPose:mixamorig:RightHandPinky1
-      parentName: m_bob_tPose:mixamorig:RightHand
-      position: {x: 0.03764244, y: 0.112340055, z: 0.0014467676}
-      rotation: {x: 0.025007915, y: 0.00055932987, z: -0.02235406, w: -0.9994372}
-      scale: {x: 1, y: 1.0000005, z: 1.0000006}
-    - name: m_bob_tPose:mixamorig:RightHandPinky2
-      parentName: m_bob_tPose:mixamorig:RightHandPinky1
-      position: {x: -0.000056468067, y: 0.041227773, z: 0.000000024957744}
-      rotation: {x: 0.0132550895, y: 0.0000001777662, z: 0.00000004597632, w: 0.9999122}
-      scale: {x: 1.0000001, y: 1.0000002, z: 1}
-    - name: m_bob_tPose:mixamorig:RightHandPinky3
-      parentName: m_bob_tPose:mixamorig:RightHandPinky2
-      position: {x: 0.000009877468, y: 0.025860364, z: -0.0000000146297765}
-      rotation: {x: 0.0077586044, y: -0.000000006109244, z: -0.000000113777055, w: 0.99996996}
-      scale: {x: 1, y: 1.0000006, z: 1.0000004}
-    - name: m_bob_tPose:mixamorig:RightHandPinky4
-      parentName: m_bob_tPose:mixamorig:RightHandPinky3
-      position: {x: 0.000046546967, y: 0.029138923, z: 0.00000001736475}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: -0.00000009747494, y: 0.27521688, z: -0.0000002451927}
+      rotation: {x: -0.007877314, y: 0.09724905, z: 0.042140517, w: -0.99433637}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:RightHandMiddle1
       parentName: m_bob_tPose:mixamorig:RightHand
-      position: {x: -0.010865097, y: 0.12685326, z: -0.0009513663}
-      rotation: {x: 0.03915717, y: 0.000713378, z: -0.01819725, w: -0.99906707}
-      scale: {x: 1.0000001, y: 1.000001, z: 1.0000006}
+      position: {x: -0.010865119, y: 0.12685324, z: -0.0009513461}
+      rotation: {x: 0.0037844214, y: -0.0009908973, z: -0.0395683, w: -0.9992092}
+      scale: {x: 1, y: 0.9999997, z: 1.0000001}
     - name: m_bob_tPose:mixamorig:RightHandMiddle2
       parentName: m_bob_tPose:mixamorig:RightHandMiddle1
-      position: {x: -0.00022616763, y: 0.036017906, z: 0.000000043734303}
-      rotation: {x: -0.04012228, y: 0.000041695832, z: -0.0019570445, w: -0.99919283}
-      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000001}
+      position: {x: -0.00022619274, y: 0.03601787, z: 0.00000006077988}
+      rotation: {x: 0.0000005087349, y: -0.00010207224, z: 0.004775972, w: 0.9999886}
+      scale: {x: 0.9999999, y: 0.99999976, z: 1}
     - name: m_bob_tPose:mixamorig:RightHandMiddle3
       parentName: m_bob_tPose:mixamorig:RightHandMiddle2
-      position: {x: 0.00011294433, y: 0.034477897, z: -0.00000011636809}
-      rotation: {x: -0.0024997361, y: 0.00000014592227, z: -0.000000037280895, w: 0.9999969}
-      scale: {x: 0.9999998, y: 1.0000002, z: 1.0000005}
+      position: {x: 0.00011293677, y: 0.034477897, z: -0.00000013050746}
+      rotation: {x: -0.0000003290746, y: -0.000008012436, z: -0.00009806726, w: 1}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
     - name: m_bob_tPose:mixamorig:RightHandMiddle4
       parentName: m_bob_tPose:mixamorig:RightHandMiddle3
-      position: {x: 0.000113254246, y: 0.03667342, z: 0.00000007623799}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.000113219336, y: 0.036673415, z: 0.000000038951416}
+      rotation: {x: -0, y: -0, z: -2.6366893e-12, w: 1}
+      scale: {x: 0.99999994, y: 1.0000002, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:RightHandIndex1
       parentName: m_bob_tPose:mixamorig:RightHand
-      position: {x: -0.038456522, y: 0.11941846, z: 0.0013819657}
-      rotation: {x: 0.017177546, y: -0.00007183849, z: -0.0041831196, w: 0.9998438}
-      scale: {x: 0.99999994, y: 1.0000005, z: 1.0000002}
+      position: {x: -0.03845653, y: 0.119418435, z: 0.0013820049}
+      rotation: {x: -0.0037011993, y: -0.00083253515, z: 0.040983863, w: 0.9991526}
+      scale: {x: 1.0000001, y: 0.9999995, z: 1}
     - name: m_bob_tPose:mixamorig:RightHandIndex2
       parentName: m_bob_tPose:mixamorig:RightHandIndex1
-      position: {x: -0.00013384865, y: 0.038785476, z: -0.0000001336668}
-      rotation: {x: 0.02605787, y: -0.00000015882686, z: -0.000000086202355, w: 0.99966043}
-      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000002}
+      position: {x: -0.00013383027, y: 0.03878547, z: -0.0000001393909}
+      rotation: {x: -0.00000029616055, y: 0.00003699562, z: -0.0020359515, w: -0.999998}
+      scale: {x: 0.9999999, y: 1.0000004, z: 1.0000001}
     - name: m_bob_tPose:mixamorig:RightHandIndex3
       parentName: m_bob_tPose:mixamorig:RightHandIndex2
-      position: {x: 0.000021112328, y: 0.034032285, z: 0.000000012624955}
-      rotation: {x: 0.023128798, y: 0.00000011198259, z: -0.000000031171478, w: 0.9997325}
-      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000006}
+      position: {x: 0.000021109392, y: 0.034032293, z: 1.7598253e-10}
+      rotation: {x: -0.00000015412301, y: 0.00004978554, z: 0.0015337447, w: 0.9999988}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000006}
     - name: m_bob_tPose:mixamorig:RightHandIndex4
       parentName: m_bob_tPose:mixamorig:RightHandIndex3
-      position: {x: 0.00011271043, y: 0.030669812, z: 0.000000017078253}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      position: {x: 0.000112749076, y: 0.030669805, z: 0.00000004956215}
+      rotation: {x: -0, y: -0, z: 7.673097e-12, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: m_bob_tPose:mixamorig:RightHandRing1
+      parentName: m_bob_tPose:mixamorig:RightHand
+      position: {x: 0.011679141, y: 0.12249438, z: -0.0009981638}
+      rotation: {x: 0.0038122493, y: -0.0016232949, z: -0.040028054, w: -0.99919003}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1}
+    - name: m_bob_tPose:mixamorig:RightHandRing2
+      parentName: m_bob_tPose:mixamorig:RightHandRing1
+      position: {x: -0.00019170438, y: 0.03589036, z: 0.000000077430606}
+      rotation: {x: 0.00000008265486, y: -0.00006942706, z: 0.0011580313, w: 0.99999934}
+      scale: {x: 0.9999996, y: 1, z: 1}
+    - name: m_bob_tPose:mixamorig:RightHandRing3
+      parentName: m_bob_tPose:mixamorig:RightHandRing2
+      position: {x: -0.00010033023, y: 0.032960676, z: -0.00000012419562}
+      rotation: {x: 0.0000006741082, y: 0.00019326607, z: 0.0055200825, w: 0.9999848}
+      scale: {x: 1.0000001, y: 1, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:RightHandRing4
+      parentName: m_bob_tPose:mixamorig:RightHandRing3
+      position: {x: 0.00029202728, y: 0.036469318, z: 0.000000017960827}
+      rotation: {x: -0, y: -0, z: -1.3028223e-10, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:RightHandPinky1
+      parentName: m_bob_tPose:mixamorig:RightHand
+      position: {x: 0.037642404, y: 0.112340055, z: 0.0014467506}
+      rotation: {x: 0.0037568924, y: -0.00043728197, z: -0.042026814, w: -0.9991094}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: m_bob_tPose:mixamorig:RightHandPinky2
+      parentName: m_bob_tPose:mixamorig:RightHandPinky1
+      position: {x: -0.000056463483, y: 0.041227747, z: 0.000000044346983}
+      rotation: {x: 0.00000013574024, y: -0.000006448447, z: 0.00087256264, w: 0.99999964}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: m_bob_tPose:mixamorig:RightHandPinky3
+      parentName: m_bob_tPose:mixamorig:RightHandPinky2
+      position: {x: 0.000009904561, y: 0.025860373, z: 0.0000000050373825}
+      rotation: {x: 0.000000070037274, y: 0.000007692893, z: 0.00061300065, w: 0.9999999}
+      scale: {x: 1, y: 1.0000004, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:RightHandPinky4
+      parentName: m_bob_tPose:mixamorig:RightHandPinky3
+      position: {x: 0.000046548965, y: 0.029138898, z: 0.000000010033234}
+      rotation: {x: -0, y: -0, z: 5.7668852e-11, w: 1}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: m_bob_tPose:mixamorig:RightHandThumb1
+      parentName: m_bob_tPose:mixamorig:RightHand
+      position: {x: -0.033080608, y: 0.035212357, z: 0.021238234}
+      rotation: {x: -0.07133987, y: 0.0047966964, z: -0.3518224, w: -0.933332}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000005}
+    - name: m_bob_tPose:mixamorig:RightHandThumb2
+      parentName: m_bob_tPose:mixamorig:RightHandThumb1
+      position: {x: -0.0036207517, y: 0.047136467, z: -0.000000011562962}
+      rotation: {x: 0.0000016838312, y: -0.00023046878, z: 0.069948636, w: 0.99755055}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:RightHandThumb3
+      parentName: m_bob_tPose:mixamorig:RightHandThumb2
+      position: {x: 0.0027627726, y: 0.04356218, z: 0.00000006636371}
+      rotation: {x: -0.00006514913, y: -0.0014667407, z: -0.01921956, w: 0.9998143}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+    - name: m_bob_tPose:mixamorig:RightHandThumb4
+      parentName: m_bob_tPose:mixamorig:RightHandThumb3
+      position: {x: 0.00085795595, y: 0.034450505, z: 0.00000005993172}
+      rotation: {x: -0, y: -1.16415294e-10, z: -5.6198945e-10, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:RightUpLeg
       parentName: m_bob_tPose:mixamorig:Hips
-      position: {x: 0.09093926, y: -0.06611687, z: -0.0005518556}
-      rotation: {x: -0.000000053431435, y: -0.021830427, z: 0.9997617, w: -0.00000240608}
-      scale: {x: 1.0000005, y: 1.0000005, z: 1.0000002}
+      position: {x: 0.09093926, y: -0.066116884, z: -0.0005518678}
+      rotation: {x: 0.00011334586, y: -0.0062442133, z: 0.999976, w: -0.0030213015}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
     - name: m_bob_tPose:mixamorig:RightLeg
       parentName: m_bob_tPose:mixamorig:RightUpLeg
-      position: {x: 0.000000034050878, y: 0.40326992, z: 0.00000013462379}
-      rotation: {x: -0.018144934, y: 0.000107767686, z: -0.0059382925, w: 0.9998178}
-      scale: {x: 1.0000014, y: 1.0000013, z: 1.0000004}
+      position: {x: 0.000031188913, y: 0.40326983, z: 0.0004603617}
+      rotation: {x: -0.018455585, y: 0.00001874182, z: -0.005936576, w: 0.99981207}
+      scale: {x: 1.0000023, y: 1.0000024, z: 1.0000004}
     - name: m_bob_tPose:mixamorig:RightFoot
       parentName: m_bob_tPose:mixamorig:RightLeg
-      position: {x: 0.000000010932112, y: 0.4181719, z: -0.0000002890137}
-      rotation: {x: 0.46178153, y: -0.016190603, z: 0.008430848, w: 0.8868059}
-      scale: {x: 1.0000007, y: 1.0000004, z: 1.0000004}
+      position: {x: 0.0000000019604867, y: 0.41817153, z: -0.0000000624684}
+      rotation: {x: 0.44812962, y: -0.017279526, z: 0.0059116026, w: 0.8937821}
+      scale: {x: 1.000002, y: 1.0000011, z: 1.0000007}
     - name: m_bob_tPose:mixamorig:RightToeBase
       parentName: m_bob_tPose:mixamorig:RightFoot
-      position: {x: 0.0000000034630676, y: 0.16354254, z: -0.0000000050150786}
-      rotation: {x: 0.33873677, y: 0.027238192, z: -0.009810971, w: 0.94043565}
-      scale: {x: 1.0000006, y: 1.0000002, z: 1.0000004}
+      position: {x: -0.000000015209169, y: 0.16354236, z: -1.6558756e-10}
+      rotation: {x: 0.3387365, y: 0.027238214, z: -0.00981097, w: 0.9404357}
+      scale: {x: 1.0000008, y: 1.000001, z: 0.9999999}
     - name: m_bob_tPose:mixamorig:RightToe_End
       parentName: m_bob_tPose:mixamorig:RightToeBase
       position: {x: -0, y: 0.09958823, z: -4.1633362e-19}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: -0, y: -0, z: -9.313226e-10, w: 1}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000004}
     - name: m_bob_tPose:mixamorig:LeftUpLeg
       parentName: m_bob_tPose:mixamorig:Hips
-      position: {x: -0.09094269, y: -0.06611549, z: -0.000552168}
-      rotation: {x: 0.000001547572, y: -0.021832626, z: 0.99976164, w: 0.00007056919}
-      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000001}
+      position: {x: -0.090942636, y: -0.066115476, z: -0.00055219803}
+      rotation: {x: -0.00011003814, y: -0.0063840738, z: 0.999975, w: 0.0030413854}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
     - name: m_bob_tPose:mixamorig:LeftLeg
       parentName: m_bob_tPose:mixamorig:LeftUpLeg
-      position: {x: -0.00000017982005, y: 0.40326324, z: 0.00000003326181}
-      rotation: {x: -0.018142601, y: -0.000108166285, z: 0.0059614247, w: 0.99981767}
-      scale: {x: 1.0000018, y: 1.0000011, z: 1.0000011}
+      position: {x: 0.00000003759816, y: 0.40326303, z: 0.000000055434047}
+      rotation: {x: -0.018180767, y: -0.000017856211, z: 0.00595982, w: 0.99981695}
+      scale: {x: 1.0000007, y: 1.0000006, z: 1.0000008}
     - name: m_bob_tPose:mixamorig:LeftFoot
       parentName: m_bob_tPose:mixamorig:LeftLeg
-      position: {x: -0.000000034089414, y: 0.41817147, z: 0.00000015657608}
-      rotation: {x: 0.46178162, y: 0.016200805, z: -0.008436108, w: 0.88680553}
-      scale: {x: 1.0000011, y: 1.0000005, z: 1.0000007}
+      position: {x: 0.000000021687924, y: 0.41817203, z: -0.00000006056865}
+      rotation: {x: 0.44800994, y: 0.017265994, z: -0.005971182, w: 0.893842}
+      scale: {x: 1.0000012, y: 1.0000007, z: 1.0000005}
     - name: m_bob_tPose:mixamorig:LeftToeBase
       parentName: m_bob_tPose:mixamorig:LeftFoot
-      position: {x: -0.000000015261957, y: 0.16354233, z: -0.00000005118506}
-      rotation: {x: 0.3387355, y: -0.027238628, z: 0.009811067, w: 0.9404361}
-      scale: {x: 0.9999998, y: 0.9999996, z: 0.99999994}
+      position: {x: -0.000000017476738, y: 0.16354243, z: 0.00000001238116}
+      rotation: {x: 0.33873552, y: -0.027238611, z: 0.009811071, w: 0.9404361}
+      scale: {x: 1.0000001, y: 0.99999976, z: 1.0000006}
     - name: m_bob_tPose:mixamorig:LeftToe_End
       parentName: m_bob_tPose:mixamorig:LeftToeBase
       position: {x: -1.7763568e-17, y: 0.099588335, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
+      rotation: {x: -0.000000029802319, y: -0.0000000018626449, z: -0, w: 1}
+      scale: {x: 1.0000012, y: 1.0000002, z: 1.0000002}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
