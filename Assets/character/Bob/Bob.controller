@@ -9,7 +9,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: lookCameraL
+    m_ConditionEvent: Look_CameraL
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4188310030594075762}
@@ -87,7 +87,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: rubbingEyes
+    m_ConditionEvent: Rubbing_Eyes
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -5935464021371718049}
@@ -329,13 +329,13 @@ AnimatorController:
   m_Name: Bob
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: lookCameraL
+  - m_Name: Look_CameraL
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
-  - m_Name: rubbingEyes
+  - m_Name: Rubbing_Eyes
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -553,7 +553,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: rubbingEyes
+    m_ConditionEvent: Rubbing_Eyes
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6730512652313275042}
@@ -606,7 +606,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: lookCameraL
+    m_ConditionEvent: Look_CameraL
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6730512652313275042}
