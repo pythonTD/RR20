@@ -17,7 +17,7 @@ public class testAnimations : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         if (Input.GetKey("up"))
         {
             anim.SetBool("lookCameraL", true);
@@ -43,6 +43,34 @@ public class testAnimations : MonoBehaviour
         else
         {
             anim.SetBool("LoopTV", false);
+        }
+
+        if (Input.GetKey("w"))
+        {
+            anim.SetBool("faceWipeAnim", true);
+        }
+        else
+        {
+            anim.SetBool("faceWipeAnim", false);
+        }
+
+        if (Input.GetKey("q"))
+        {
+            anim.SetBool("crossArmsAnim", true);
+        }
+        else
+        {
+            anim.SetBool("crossArmsAnim", false);
+        }
+
+
+        if (Input.GetKey("e"))
+        {
+            anim.SetBool("noseWipeAnim", true);
+        }
+        else
+        {
+            anim.SetBool("noseWipeAnim", false);
         }
 
     }
