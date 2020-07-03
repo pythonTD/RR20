@@ -103,7 +103,7 @@ public class DBConnector : MonoBehaviour
 
 	public List<Hashtable> ConstructHash(List<string> colsList, string query)
 	{
-		Debug.Log(query);
+		//Debug.Log(query);
 		List<List<string>> result = executeQuery(query);
 
 		List<Hashtable> returnHash = new List<Hashtable>();
@@ -127,8 +127,9 @@ public class DBConnector : MonoBehaviour
 		string query = "SELECT ";
 		foreach (string item in columns)
 			query = query + item + ",";
-		query.Remove(query.Length - 1, 1);
-
+		
+		query = query.Remove(query.Length - 1, 1);
+		//Debug.Log(query);
 		query = query + " FROM " + tablename + " " + lastClause;
 		return query;
 	}

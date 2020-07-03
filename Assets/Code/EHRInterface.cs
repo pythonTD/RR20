@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
+using System;
 
 public class EHRInterface : MonoBehaviour
 {
@@ -15,7 +16,29 @@ public class EHRInterface : MonoBehaviour
 	public void Awake()
 	{
 		connectionString = "URI=file:" + Application.dataPath + "/ehr.db";
-		connection = new DBConnector(connectionString);
+		try
+		{
+			connection = new DBConnector(connectionString);
+			connection.Open();
+			connection.CheckOpen();
+		}
+
+		catch (Exception e)
+		{
+			Debug.LogError(e.ToString());
+		}
+	}
+
+	public void Start()
+	{
+		Display();
+	}
+
+	public List<Hashtable> GetInstruments()
+	{
+		List<string> colsList = new List<string>() { "INSTRUMENTID", "NAME", "VIEWALLOPTION", "COLLIDERTAG" };
+		string query = connection.BuildQuery(colsList, "INSTRUMENTS", "");
+		return connection.ConstructHash(colsList, query);
 	}
 
 	public List<Hashtable> GetInstrumentInfo(int instrumentID, int patientID, int timeStamp, bool deteriorating)
@@ -70,6 +93,17 @@ public class EHRInterface : MonoBehaviour
 
 		return options;
 
+	}
+
+	public void Display()
+	{
+		List<Hashtable> instruments = GetInstruments();
+		//List<Hashtable> insrumentInfo = GetInstrumentInfo();
+
+		foreach(Hashtable row in instruments)
+		{
+			Debug.Log(row["INSTRUMENTID"] + " || " + row["NAME"] + " || " + row["VIEWALLOPTION"] + " || " + row["COLLIDERTAG"]);
+		}
 	}
 
 }
