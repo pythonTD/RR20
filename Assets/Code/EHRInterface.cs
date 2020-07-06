@@ -31,7 +31,7 @@ public class EHRInterface : MonoBehaviour
 
 	public void Start()
 	{
-		Display();
+		//Display();
 	}
 
 	public List<Hashtable> GetInstruments()

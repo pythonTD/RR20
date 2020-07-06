@@ -16,7 +16,7 @@ public class BehaviorManager : MonoBehaviour
     private static DBConnector connection;
     List<Hashtable> result = new List<Hashtable>();
     public GameObject patient;
-    private TriggerAnim animController;
+    private AnimationManager animManager;
 
 
     public TextMeshProUGUI text;
@@ -29,7 +29,7 @@ public class BehaviorManager : MonoBehaviour
         {
             connection = new DBConnector(connectionString);
             connection.Open();
-            connection.CheckOpen();
+            //connection.CheckOpen();
         }
 
         catch (Exception e)
@@ -37,8 +37,9 @@ public class BehaviorManager : MonoBehaviour
             Debug.LogError(e.ToString());
         }
 
-        animController = patient.GetComponent<TriggerAnim>();
+        animManager = patient.GetComponent<AnimationManager>();
 
+        //Triggering Test Behavior Scenario
         loadBehaviors(4,1,false);
 
 
@@ -68,7 +69,7 @@ public class BehaviorManager : MonoBehaviour
 
         result = connection.ConstructHash(colsList, query);
 
-        animController.SetAnimations(result);
+        animManager.SetAnimations(result);
     }
 
 }
