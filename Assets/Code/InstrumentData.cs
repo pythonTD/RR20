@@ -4,14 +4,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 using System;
+using UnityEngine.UIElements;
+using TMPro;
 
-public class EHRInterface : MonoBehaviour
+
+public class InstrumentData : MonoBehaviour
 {
 	//location of the database
 	private string connectionString; 
-	//database connection
 	private static DBConnector connection;
-
+	public GameObject optionButton;
+	public Transform buttonParent;
+	//public GameObject testbutton;
 
 	public void Awake()
 	{
@@ -31,9 +35,10 @@ public class EHRInterface : MonoBehaviour
 
 	public void Start()
 	{
-		//Display();
+		Display();
 	}
 
+	
 	public List<Hashtable> GetInstruments()
 	{
 		List<string> colsList = new List<string>() { "INSTRUMENTID", "NAME", "VIEWALLOPTION", "COLLIDERTAG" };
@@ -44,7 +49,7 @@ public class EHRInterface : MonoBehaviour
 	public List<Hashtable> GetInstrumentInfo(int instrumentID, int patientID, int timeStamp, bool deteriorating)
 	{
 		List<string> colsList = new List<string>() { "OPTIONID", "FIELDID", "FIELDALIAS", "TAG", "ASSOCIATEDTAG", "VISIBLE" };
-		string query = "SELECT OPTIONID, FIELDID, FIELDALIAS, TAG, ASSOCIATEDTAG, VISIBLE FROM INSTRUMENTOPTION WHERE INSTRUMENTID=" + instrumentID;
+		string query = "SELECT OPTIONID, FIELDID, FIELDALIAS, TAG, ASSOCIATEDTAG, VISIBLE FROM INSTRUMENTOPTIONS WHERE INSTRUMENTID=" + instrumentID;
 
 		List<Hashtable> fieldIDs = connection.ConstructHash(colsList, query);
 		List<Hashtable> options = new List<Hashtable>();
@@ -53,9 +58,9 @@ public class EHRInterface : MonoBehaviour
 		//Conversion since SQLite does not support boolean values
 		string strDet = "";
 		if (deteriorating)
-			strDet = "\"TRUE\"";
+			strDet = "\"True\""; //--------------------- NEED TO USE A CONSISTENT STYLE
 		else
-			strDet = "\"FALSE\"";
+			strDet = "\"False\""; //--------------------- NEED TO USE A CONSISTENT STYLE
 
 		foreach (Hashtable field in fieldIDs)
 		{
@@ -98,12 +103,44 @@ public class EHRInterface : MonoBehaviour
 	public void Display()
 	{
 		List<Hashtable> instruments = GetInstruments();
-		//List<Hashtable> insrumentInfo = GetInstrumentInfo();
+		
 
 		foreach(Hashtable row in instruments)
 		{
 			Debug.Log(row["INSTRUMENTID"] + " || " + row["NAME"] + " || " + row["VIEWALLOPTION"] + " || " + row["COLLIDERTAG"]);
 		}
+		
 	}
 
+	//private void Update()
+	//{
+	//	Debug.Log(Input.mousePosition);
+	//	testbutton.transform.position = Input.mousePosition;
+	//}
+
+	//public void DisplayOptions(int instrumentID, string instrumentName, Vector3 mousePos)
+	//{
+	//	// NEED TO MAKE THIS DYNAMIC
+	//	List<Hashtable> instrumentInfo = GetInstrumentInfo(instrumentID, 4, 0, false);
+
+	//	buttonParent.gameObject.SetActive(true);
+	//	foreach (Hashtable row in instrumentInfo)
+	//	{
+	//		Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+	//	}
+
+
+	//	Vector3 pos = mousePos;
+	//	Debug.Log(mousePos);
+		
+	//	foreach (Hashtable row in instrumentInfo)
+	//	{
+	//		GameObject go = Instantiate(optionButton);
+	//		go.transform.SetParent(buttonParent, false);
+	//		go.GetComponentInChildren<Text>().text = row["FIELDALIAS"].ToString();
+
+
+	//	}
+	//	buttonParent.transform.position = pos;
+	//}
 }

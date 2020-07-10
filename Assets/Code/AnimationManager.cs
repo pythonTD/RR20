@@ -10,20 +10,19 @@ using UnityEngine.UIElements;
 
 public class AnimationManager : MonoBehaviour
 {
-    // Start is called before the first frame update
 
     public GameObject patient;
     public Animator animator;
     public TextMeshProUGUI animationList;
-    //public List<string> animationNames = new List<string>();
-    //public List<float> firstOccurences = new List<float>();
-    //public List<float> intervals = new List<float>();
+    public TextMeshProUGUI lastPlayedAnim;
+    public TextMeshProUGUI currentAnim;
+
 
     public List<int> priorities = new List<int>();
     public int rowCount;
 
     public bool isAnimLock = false;
-    public string currAnim = "";
+  //public string currAnim = "";
     public int currAnimPriority = -1;
 
     public bool initializationLock = true;
@@ -109,6 +108,7 @@ public class AnimationManager : MonoBehaviour
             //Wait for animation to complete
             Debug.Log("Playing " + animName);
             animator.SetBool(animName, true);
+            currentAnim.text = animName;
            // float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
             float adjTimerSeconds = interval - animLength;
           //  Debug.Log(animName + " " + animLength);
@@ -117,10 +117,8 @@ public class AnimationManager : MonoBehaviour
             SetNextActivation(animName, nextActivation);
             yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
             animator.SetBool(animName, false);
-            
-           
-
-            
+            currentAnim.text = "";
+            lastPlayedAnim.text = animName;
 
             //if (state == true)
             //{
@@ -132,8 +130,9 @@ public class AnimationManager : MonoBehaviour
            
         }
 
-    
     }
+
+
     //public void ClearAnimLock()
     //{
     //    currAnim = "";
@@ -141,31 +140,10 @@ public class AnimationManager : MonoBehaviour
     //    currAnimPriority = -1;
     //}
 
-    public float ProcessQueue(PreProcessorQueue animationElement)
-    {
-        foreach(PreProcessorQueue e in animationQueue)
-        {
-            // Debug.Log(animationElement.currentActivation);
-            if (animationElement.animationLayer == e.animationLayer && animationElement.currentActivationTime >= e.currentActivationTime && animationElement.currentActivationTime <= e.currentActivationTime + e.animationLength && animationElement.animationName!= e.animationName)
-            {
-                if(animationElement.priority < e.priority)
-                {
-                    Debug.Log(animationElement.animationName + " " + animationElement.currentActivationTime + " Overlaps with " + e.animationName + " " + e.currentActivationTime);
-                    float delay =  e.currentActivationTime + e.animationLength - animationElement.currentActivationTime + 0.05f;
-                    Debug.Log(e.currentActivationTime + " " + e.animationLength + " " + animationElement.currentActivationTime);
-                    DelayTime(animationElement.animationName, delay);
-                   // Debug.Log("NEW DELAY FOR: " + animationElement.animationName + " " + delay);
-                    return delay;
-                }
-            }
-            
-        }
-        return 0f;
-    }
 
     //public bool ResolveAnimLock(string anim, int priority)
     //{
-   
+
     //    if (currAnim == "" || (isAnimLock && priority > currAnimPriority))
     //    {
     //        //Indicates animation is in the lock.
@@ -184,6 +162,32 @@ public class AnimationManager : MonoBehaviour
     //        return false;
     //}
 
+    public float ProcessQueue(PreProcessorQueue animationElement)
+    {
+        foreach(PreProcessorQueue e in animationQueue)
+        {
+            // Debug.Log(animationElement.currentActivation);
+            if ((animationElement.animationLayer == e.animationLayer && animationElement.animationName != e.animationName) &&
+                ((animationElement.currentActivationTime >= e.currentActivationTime && animationElement.currentActivationTime <= e.currentActivationTime + e.animationLength) ||
+                 (animationElement.currentActivationTime <= e.currentActivationTime && animationElement.currentActivationTime + animationElement.animationLength >= e.currentActivationTime)))
+            {
+                if(animationElement.priority < e.priority)
+                {
+                    Debug.Log(animationElement.animationName + " " + animationElement.currentActivationTime + " "+animationElement.animationLength + " Overlaps with " + e.animationName + " " + e.currentActivationTime + " " + animationElement.animationLength);
+                    float delay =  e.currentActivationTime + e.animationLength - animationElement.currentActivationTime + 0.05f;
+                    Debug.Log(e.currentActivationTime + " " + e.animationLength + " " + animationElement.currentActivationTime);
+                    DelayTime(animationElement.animationName, delay);
+                   // Debug.Log("NEW DELAY FOR: " + animationElement.animationName + " " + delay);
+                    return delay;
+                }
+            }
+            
+        }
+        return 0f;
+    }
+
+
+
 
     public void SetAnimations(List<Hashtable> result)
     {
@@ -200,7 +204,6 @@ public class AnimationManager : MonoBehaviour
         foreach (Hashtable row in result)
         {
 
-            //Fix redundancy later
             priority = int.Parse(row["PRIORITY"].ToString());
             animationName = row["NAME"].ToString();
             animationLength = GetAnimationLength(animationName);

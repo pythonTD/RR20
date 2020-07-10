@@ -18,6 +18,7 @@ public class BehaviorManager : MonoBehaviour
     public GameObject patient;
     private AnimationManager animManager;
 
+    
 
     public TextMeshProUGUI text;
     public float timer = 0f;

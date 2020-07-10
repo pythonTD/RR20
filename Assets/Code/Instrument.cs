@@ -10,9 +10,11 @@ public class Instrument : MonoBehaviour
     public string instrumentName;
     public string colliderTag;
     public Transform targetCameraLocation;
+    public Hashtable optionValues;
     void Start()
     {
-        
+        if (gameObject.transform.childCount > 0)
+            targetCameraLocation = gameObject.transform.GetChild(0);
     }
 
     // Update is called once per frame
