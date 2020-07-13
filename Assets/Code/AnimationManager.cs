@@ -35,7 +35,7 @@ public class AnimationManager : MonoBehaviour
     }
     private void Update()
     {
-        if (!initializationLock)
+       if(!initializationLock)
             Display();
     }
 
@@ -44,16 +44,19 @@ public class AnimationManager : MonoBehaviour
         int nameLength  = 15;
         int layerLength = 8;
         int timeLength =  8;
-        int priorityLength = 8;
+        int priorityLength = 4;
 
-
-
+        //string current = animator.GetCurrentAnimatorStateInfo(0).nameHash.ToString();
+        //Debug.Log(current);
         string displayText = "Name".PadRight(nameLength-2) + "Layer".PadRight(layerLength) + "Time".PadRight(timeLength) + "Repeat".PadRight(timeLength) + "Priority".PadRight(priorityLength) + Environment.NewLine;
-
+        string indi = "";
         foreach (PreProcessorQueue animationElement in animationQueue)
         {
-
-            displayText = displayText + animationElement.animationName.PadRight(nameLength) + animationElement.animationLayer.PadRight(layerLength)  + Math.Round(animationElement.currentActivationTime,2).ToString().PadRight(timeLength)  + Math.Round(animationElement.interval,2).ToString().PadRight(timeLength) + animationElement.priority.ToString().PadRight(priorityLength) + Environment.NewLine;
+            if (animationElement.isPlaying)
+                indi = "<----";
+            else
+                indi = "";
+            displayText = displayText + animationElement.animationName.PadRight(nameLength) + animationElement.animationLayer.PadRight(layerLength)  + Math.Round(animationElement.currentActivationTime,2).ToString().PadRight(timeLength)  + Math.Round(animationElement.interval,2).ToString().PadRight(timeLength) + animationElement.priority.ToString().PadRight(priorityLength) +indi+ Environment.NewLine;
         }
 
         animationList.text = displayText;
@@ -106,17 +109,21 @@ public class AnimationManager : MonoBehaviour
             
 
             //Wait for animation to complete
-            Debug.Log("Playing " + animName);
+            Debug.Log("Playing " + animName + " length "+animLength);
             animator.SetBool(animName, true);
+            self.isPlaying = true; //-----------------------
             currentAnim.text = animName;
            // float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
             float adjTimerSeconds = interval - animLength;
           //  Debug.Log(animName + " " + animLength);
             float nextActivation = self.currentActivationTime + animLength + adjTimerSeconds;
-            Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds +" Played At: "+self.currentActivationTime+ " Next playing at: " + nextActivation);
-            SetNextActivation(animName, nextActivation);
+            
             yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds + " Played At: " + self.currentActivationTime + " Next playing at: " + nextActivation);
+            SetNextActivation(animName, nextActivation);
             animator.SetBool(animName, false);
+            self.isPlaying = false;   //--------------------
+
             currentAnim.text = "";
             lastPlayedAnim.text = animName;
 
@@ -206,6 +213,7 @@ public class AnimationManager : MonoBehaviour
 
             priority = int.Parse(row["PRIORITY"].ToString());
             animationName = row["NAME"].ToString();
+            Debug.Log("Trying to get length " + animationName);
             animationLength = GetAnimationLength(animationName);
             currentActivationTime = float.Parse(row["FIRST_OCCURRENCE"].ToString());
             animationLayer = row["CATEGORY"].ToString();
@@ -219,6 +227,10 @@ public class AnimationManager : MonoBehaviour
         }
         animationQueue = animationQueue.OrderBy(aq => aq.currentActivationTime).ToList();
         initializationLock = false;
+
+
+        if (!initializationLock)
+            Display();
     }
 
     public bool doesExist(string name)
@@ -269,6 +281,10 @@ public class AnimationManager : MonoBehaviour
         }
 
         animationQueue = animationQueue.OrderBy(aq => aq.currentActivationTime).ToList();
+
+
+
+            
     }
 
     void SetNextActivation(string animName, float newActivation)
@@ -295,6 +311,8 @@ public class PreProcessorQueue
     public string animationLayer;
     public float currentActivationTime;
     public float interval;
+
+    public bool isPlaying = false;
   
     public Coroutine co;
   
@@ -312,6 +330,7 @@ public class PreProcessorQueue
         currentActivationTime = ca;
         interval = i;
         co = c;
+
     }
 
         

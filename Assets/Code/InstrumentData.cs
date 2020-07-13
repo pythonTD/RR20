@@ -15,7 +15,6 @@ public class InstrumentData : MonoBehaviour
 	private static DBConnector connection;
 	public GameObject optionButton;
 	public Transform buttonParent;
-	//public GameObject testbutton;
 
 	public void Awake()
 	{
@@ -112,35 +111,5 @@ public class InstrumentData : MonoBehaviour
 		
 	}
 
-	//private void Update()
-	//{
-	//	Debug.Log(Input.mousePosition);
-	//	testbutton.transform.position = Input.mousePosition;
-	//}
 
-	//public void DisplayOptions(int instrumentID, string instrumentName, Vector3 mousePos)
-	//{
-	//	// NEED TO MAKE THIS DYNAMIC
-	//	List<Hashtable> instrumentInfo = GetInstrumentInfo(instrumentID, 4, 0, false);
-
-	//	buttonParent.gameObject.SetActive(true);
-	//	foreach (Hashtable row in instrumentInfo)
-	//	{
-	//		Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
-	//	}
-
-
-	//	Vector3 pos = mousePos;
-	//	Debug.Log(mousePos);
-		
-	//	foreach (Hashtable row in instrumentInfo)
-	//	{
-	//		GameObject go = Instantiate(optionButton);
-	//		go.transform.SetParent(buttonParent, false);
-	//		go.GetComponentInChildren<Text>().text = row["FIELDALIAS"].ToString();
-
-
-	//	}
-	//	buttonParent.transform.position = pos;
-	//}
 }
