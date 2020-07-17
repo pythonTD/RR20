@@ -14,7 +14,7 @@ public class InstrumentData : MonoBehaviour
 	private string connectionString; 
 	private static DBConnector connection;
 	public GameObject optionButton;
-	public Transform buttonParent;
+	//public Transform buttonParent;
 
 	public void Awake()
 	{
@@ -104,10 +104,10 @@ public class InstrumentData : MonoBehaviour
 		List<Hashtable> instruments = GetInstruments();
 		
 
-		foreach(Hashtable row in instruments)
-		{
-			Debug.Log(row["INSTRUMENTID"] + " || " + row["NAME"] + " || " + row["VIEWALLOPTION"] + " || " + row["COLLIDERTAG"]);
-		}
+		//foreach(Hashtable row in instruments)
+		//{
+		//	//Debug.Log(row["INSTRUMENTID"] + " || " + row["NAME"] + " || " + row["VIEWALLOPTION"] + " || " + row["COLLIDERTAG"]);
+		//}
 		
 	}
 

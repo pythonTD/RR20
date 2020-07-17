@@ -1,6 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
+
 
 public class testAnimations : MonoBehaviour
 {
@@ -13,11 +17,18 @@ public class testAnimations : MonoBehaviour
     void Awake()
     {
         anim = patient.GetComponent<Animator>();
+        
     }
-
+    private void Start()
+    {
+        
+    }
     // Update is called once per frame
     void Update()
-    {   
+    {
+        float animationLength = GetAnimationLength("RubHead");
+        Debug.Log(animationLength);
+
         if (Input.GetKey("up"))
         {
             anim.SetBool("lookCameraL", true);
@@ -73,5 +84,16 @@ public class testAnimations : MonoBehaviour
             anim.SetBool("noseWipeAnim", false);
         }
 
+    }
+    float GetAnimationLength(string name)
+    {
+        float time = 0;
+        RuntimeAnimatorController ac = anim.runtimeAnimatorController;
+
+        for (int i = 0; i < ac.animationClips.Length; i++)
+            if (ac.animationClips[i].name == name)
+                time = ac.animationClips[i].length;
+
+        return time;
     }
 }

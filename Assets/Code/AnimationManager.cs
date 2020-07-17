@@ -2,36 +2,43 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Threading;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UIElements;
+
 
 public class AnimationManager : MonoBehaviour
 {
-
+    public BehaviorManager behaviorManager;
     public GameObject patient;
     public Animator animator;
-    public TextMeshProUGUI animationList;
-    public TextMeshProUGUI lastPlayedAnim;
-    public TextMeshProUGUI currentAnim;
+    public TextMeshProUGUI animationQueueDisplay;
 
 
-    public List<int> priorities = new List<int>();
-    public int rowCount;
 
-    public bool isAnimLock = false;
-  //public string currAnim = "";
-    public int currAnimPriority = -1;
+   // public List<int> priorities = new List<int>();
+   // public int rowCount;
 
-    public bool initializationLock = true;
+   // public bool isAnimLock = false;
 
-    public List<PreProcessorQueue> animationQueue = new List<PreProcessorQueue>();
-    public int queueLength = 0;
-    void Awake()
+   // public int currAnimPriority = -1;
+
+    private bool initializationLock = true;
+
+    private List<PreProcessorQueue> animationQueue = new List<PreProcessorQueue>();
+    //public int queueLength = 0;
+    void Start()
     {
-        animator = patient.GetComponent<Animator>();       
+        animator = patient.GetComponent<Animator>();
+        if (animator == null)
+            Debug.Log("ANIMATION MANAGER: ANIMATOR NOT FOUND ON PATIENT!");
+
+        behaviorManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<BehaviorManager>();
+        if (behaviorManager == null)
+            Debug.Log("ANIMATION MANAGER: BEHAVIOR MANAGER NOT FOUND!");
+
+        List<Hashtable> result = new List<Hashtable>();
+        result = behaviorManager.loadAnimations(4, 1, false);
+        SetAnimations(result);
     }
     private void Update()
     {
@@ -59,7 +66,7 @@ public class AnimationManager : MonoBehaviour
             displayText = displayText + animationElement.animationName.PadRight(nameLength) + animationElement.animationLayer.PadRight(layerLength)  + Math.Round(animationElement.currentActivationTime,2).ToString().PadRight(timeLength)  + Math.Round(animationElement.interval,2).ToString().PadRight(timeLength) + animationElement.priority.ToString().PadRight(priorityLength) +indi+ Environment.NewLine;
         }
 
-        animationList.text = displayText;
+        animationQueueDisplay.text = displayText;
 
     }
 
@@ -112,20 +119,18 @@ public class AnimationManager : MonoBehaviour
             Debug.Log("Playing " + animName + " length "+animLength);
             animator.SetBool(animName, true);
             self.isPlaying = true; //-----------------------
-            currentAnim.text = animName;
+           // currentAnim.text = animName;
            // float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
             float adjTimerSeconds = interval - animLength;
           //  Debug.Log(animName + " " + animLength);
             float nextActivation = self.currentActivationTime + animLength + adjTimerSeconds;
             
-            yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length);
+            yield return new WaitForSeconds(animLength);
             Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds + " Played At: " + self.currentActivationTime + " Next playing at: " + nextActivation);
             SetNextActivation(animName, nextActivation);
             animator.SetBool(animName, false);
             self.isPlaying = false;   //--------------------
 
-            currentAnim.text = "";
-            lastPlayedAnim.text = animName;
 
             //if (state == true)
             //{
@@ -206,14 +211,14 @@ public class AnimationManager : MonoBehaviour
         //float nextActivation;
         float interval;
 
-        rowCount = result.Count;
+       // rowCount = result.Count;
         int currIndex = 0;
         foreach (Hashtable row in result)
         {
 
             priority = int.Parse(row["PRIORITY"].ToString());
             animationName = row["NAME"].ToString();
-            Debug.Log("Trying to get length " + animationName);
+          //  Debug.Log("Trying to get length " + animationName);
             animationLength = GetAnimationLength(animationName);
             currentActivationTime = float.Parse(row["FIRST_OCCURRENCE"].ToString());
             animationLayer = row["CATEGORY"].ToString();
@@ -222,7 +227,7 @@ public class AnimationManager : MonoBehaviour
             Coroutine co = StartCoroutine(AnimationLoop(animationName, priority, animationLength, animationLayer, currentActivationTime,interval));
             
             animationQueue.Add(new PreProcessorQueue(animationName, priority, animationLength, animationLayer, currentActivationTime, interval,  co));
-            Debug.Log("Added " + animationName +" "+animationLength);
+         //   Debug.Log("Added " + animationName +" "+animationLength);
             currIndex++;
         }
         animationQueue = animationQueue.OrderBy(aq => aq.currentActivationTime).ToList();
@@ -259,7 +264,11 @@ public class AnimationManager : MonoBehaviour
     float GetAnimationLength(string name)
     {
         float time = 0;
-        RuntimeAnimatorController ac = animator.runtimeAnimatorController;
+
+        Animator my_animator;
+        my_animator = patient.GetComponent<Animator>();
+        //Debug.Log(my_animator);
+        RuntimeAnimatorController ac = my_animator.runtimeAnimatorController;
 
         for (int i = 0; i < ac.animationClips.Length; i++)
             if (ac.animationClips[i].name == name)

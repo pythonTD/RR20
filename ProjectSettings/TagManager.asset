@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Instrument
+  - Manager
+  - Patient
+  - DialogSystem
+  - HospitalCamera
+  - MiscCanvas
   layers:
   - Default
   - TransparentFX
