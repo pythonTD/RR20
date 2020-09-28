@@ -20,12 +20,11 @@ public class BehaviorManager : MonoBehaviour
 
 
 
-    public TextMeshProUGUI text;
-    public float timer = 0f;
+   
 
     void Awake()
     {
-        connectionString = "URI=file:" + Application.dataPath + "/animTestDB.db";
+        connectionString = "URI=file:" + Application.dataPath + "/animations.db";
         try
         {
             connection = new DBConnector(connectionString);
@@ -52,11 +51,7 @@ public class BehaviorManager : MonoBehaviour
         //loadQuestionsInCategory(2, 1, false, 2, new List<int> { });
     }
 
-    private void Update()
-    {
-        timer = timer + Time.deltaTime;
-        text.text = Math.Round(timer, 2).ToString();
-    }
+   
 
     public List<Hashtable> loadAnimations(int patientID, int timestamp, bool isDeteriorating)
     {
@@ -64,15 +59,24 @@ public class BehaviorManager : MonoBehaviour
 
         //////////////////////////////////////////
         if (isDeteriorating)
-            strDet = "\"TRUE\"";
+            strDet = "\"True\"";
         else
-            strDet = "\"FALSE\"";
+            strDet = "\"False\"";
 
-        string query = " SELECT TIMESTAMP, PATIENTID, BEHAVIORTOPATIENTS.BEHAVIORID, NAME, INTERVAL, CATEGORY, PRIORITY, DETERIORATING, FIRST_OCCURRENCE " +
-                        " FROM BEHAVIORTOPATIENTS INNER JOIN BEHAVIORS ON BEHAVIORTOPATIENTS.BEHAVIORID = BEHAVIORS.BEHAVIORID " +
-                        " WHERE PATIENTID = " + patientID.ToString() + " AND BEHAVIORTOPATIENTS.DETERIORATING = " + strDet + " ORDER BY TIMESTAMP, BEHAVIORTOPATIENTS.BEHAVIORID";
+        //string query = " SELECT BEHAVIORTOPATIENTS.TIMESTAMP, BEHAVIORTOPATIENTS.PATIENTID, BEHAVIORTOPATIENTS.BEHAVIORID, NAME, INTERVAL, ANIMATIONTOPATIENTS.CATEGORY, PRIORITY, DETERIORATING, FIRST_OCCURRENCE " +
+        //                " FROM BEHAVIORTOPATIENTS INNER JOIN BEHAVIORS ON BEHAVIORTOPATIENTS.BEHAVIORID = BEHAVIORS.BEHAVIORID  INNER JOIN BEHAVIORSTOANIMATIONS ON BEHAVIORTOPATIENTS.BEHAVIORID = BEHAVIORSTOANIMATIONS.BEHAVIORID " +
+        //                " INNER JOIN ANIMATIONTOPATIENTS ON  BEHAVIORSTOANIMATIONS.ANIMATIONID =  ANIMATIONTOPATIENTS.ANIMATIONID"+
+        //                " WHERE BEHAVIORTOPATIENTS.PATIENTID = " + patientID.ToString() + " AND BEHAVIORTOPATIENTS.DETERIORATING = " + strDet + " ORDER BY  BEHAVIORTOPATIENTS.TIMESTAMP, BEHAVIORTOPATIENTS.BEHAVIORID";
 
-        List<string> colsList = new List<string>() { "TIMESTAMP", "PATIENTID", "BEHAVIORID", "NAME", "INTERVAL", "CATEGORY", "PRIORITY", "DETERIORATING", "FIRST_OCCURRENCE" };
+        string query = " SELECT TIMESTAMP, BEHAVIORTOPATIENTS.PATIENTID, BEHAVIORTOPATIENTS.BEHAVIORID, ANIMATIONS.ANIMATIONNAME,ANIMATIONS.ANIMATIONID, INTERVAL, BEHAVIORTOPATIENTS.CATEGORY,  BEHAVIORTOPATIENTS.PRIORITY, DETERIORATING,BEHAVIORTOPATIENTS.FIRST_OCCURRENCE , BEHAVIORS.NAME "+
+                       " FROM BEHAVIORTOPATIENTS INNER JOIN behaviors ON BEHAVIORTOPATIENTS.BEHAVIORID = BEHAVIORS.BEHAVIORID " +
+                       " INNER JOIN behaviorstoanimations ON BEHAVIORS.BEHAVIORID = BEHAVIORSTOANIMATIONS.BEHAVIORID " +
+                       " INNER JOIN ANIMATIONS ON BEHAVIORSTOANIMATIONS.AnimationID = ANIMATIONS.animationID " +
+                       " WHERE PATIENTID = " + patientID.ToString() + " and BEHAVIORTOPATIENTS.DETERIORATING = " + strDet + " AND TIMESTAMP = " + timestamp.ToString() + "  ORDER BY TIMESTAMP, BEHAVIORTOPATIENTS.BEHAVIORID ";
+
+
+
+        List<string> colsList = new List<string>() { "TIMESTAMP", "PATIENTID", "BEHAVIORID", "NAME","ANIMATIONID", "INTERVAL", "CATEGORY", "PRIORITY", "DETERIORATING", "FIRST_OCCURRENCE", "BEHAVIORNAME" };
 
         List<Hashtable> result = new List<Hashtable>();
         result = connection.ConstructHash(colsList, query);

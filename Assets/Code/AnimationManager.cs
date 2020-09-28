@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 
 
@@ -12,7 +13,8 @@ public class AnimationManager : MonoBehaviour
     public GameObject patient;
     public Animator animator;
     public TextMeshProUGUI animationQueueDisplay;
-
+    public DialogInteraction dialogInteraction;
+    public AudioSource audioSource;
 
 
    // public List<int> priorities = new List<int>();
@@ -36,9 +38,9 @@ public class AnimationManager : MonoBehaviour
         if (behaviorManager == null)
             Debug.Log("ANIMATION MANAGER: BEHAVIOR MANAGER NOT FOUND!");
 
-        List<Hashtable> result = new List<Hashtable>();
-        result = behaviorManager.loadAnimations(4, 1, false);
-        SetAnimations(result);
+        //List<Hashtable> result = new List<Hashtable>();
+        //result = behaviorManager.loadAnimations(4, 0, false);
+        //SetAnimations(result);
     }
     private void Update()
     {
@@ -52,6 +54,7 @@ public class AnimationManager : MonoBehaviour
         int layerLength = 8;
         int timeLength =  8;
         int priorityLength = 4;
+       
 
         //string current = animator.GetCurrentAnimatorStateInfo(0).nameHash.ToString();
         //Debug.Log(current);
@@ -73,7 +76,7 @@ public class AnimationManager : MonoBehaviour
  
 
 
-    public IEnumerator AnimationLoop(string animName, int priority, float animLength, string animLayer, float firstOccur, float interval)
+    public IEnumerator AnimationLoop(string animName, int priority, float animLength, string animLayer, float firstOccur, float interval, string cat, bool isCough)
     {
         //bool selfLock = true;
         PreProcessorQueue self;
@@ -117,6 +120,26 @@ public class AnimationManager : MonoBehaviour
 
             //Wait for animation to complete
             Debug.Log("Playing " + animName + " length "+animLength);
+
+
+            if (isCough)
+            {
+                AudioClip clip = Resources.Load<AudioClip>("General/ShortCough");
+                if (dialogInteraction.isSpeaking)
+                {
+                    Debug.Log("SUSPENDING DIALOG");
+                   
+                    dialogInteraction.SuspendDialog(clip);
+                }
+                else
+                {
+                    audioSource.time = 0;
+                    audioSource.clip = clip;
+                    audioSource.Play();
+                }
+            }
+            
+            
             animator.SetBool(animName, true);
             self.isPlaying = true; //-----------------------
            // currentAnim.text = animName;
@@ -178,7 +201,7 @@ public class AnimationManager : MonoBehaviour
     {
         foreach(PreProcessorQueue e in animationQueue)
         {
-            // Debug.Log(animationElement.currentActivation);
+            Debug.Log(animationElement.currentActivationTime);
             if ((animationElement.animationLayer == e.animationLayer && animationElement.animationName != e.animationName) &&
                 ((animationElement.currentActivationTime >= e.currentActivationTime && animationElement.currentActivationTime <= e.currentActivationTime + e.animationLength) ||
                  (animationElement.currentActivationTime <= e.currentActivationTime && animationElement.currentActivationTime + animationElement.animationLength >= e.currentActivationTime)))
@@ -203,6 +226,8 @@ public class AnimationManager : MonoBehaviour
 
     public void SetAnimations(List<Hashtable> result)
     {
+        ClearQueue();
+        
         int priority;
         string animationName;
         float animationLength;
@@ -210,25 +235,41 @@ public class AnimationManager : MonoBehaviour
         float currentActivationTime;
         //float nextActivation;
         float interval;
-
+        string category;
+        bool isCough = false;
+        int animationID;
        // rowCount = result.Count;
         int currIndex = 0;
         foreach (Hashtable row in result)
         {
+            if (row["CATEGORY"].ToString() != "base")
+          // if (row["CATEGORY"].ToString() != "base" && row["NAME"].ToString() == "ShortCough") //////////////////////////////////// HARDCODED FOR PRESENTATION ////////////////////////////////////////
+            {
+                priority = int.Parse(row["PRIORITY"].ToString());
+                animationName = row["NAME"].ToString();
+                //  Debug.Log("Trying to get length " + animationName);
+                animationLength = GetAnimationLength(animationName);
+                currentActivationTime = float.Parse(row["FIRST_OCCURRENCE"].ToString());
+                animationLayer = row["CATEGORY"].ToString();
+                interval = float.Parse(row["INTERVAL"].ToString());
+                category = row["CATEGORY"].ToString();
+                animationID = int.Parse(row["ANIMATIONID"].ToString());
 
-            priority = int.Parse(row["PRIORITY"].ToString());
-            animationName = row["NAME"].ToString();
-          //  Debug.Log("Trying to get length " + animationName);
-            animationLength = GetAnimationLength(animationName);
-            currentActivationTime = float.Parse(row["FIRST_OCCURRENCE"].ToString());
-            animationLayer = row["CATEGORY"].ToString();
-            interval = float.Parse(row["INTERVAL"].ToString());        
+                //////////////////////////////////// HARDCODED FOR PRESENTATION ////////////////////////////////////////
+                if (row["NAME"].ToString() == "ShortCough")
+                {
+                    isCough = true;
+                    interval =10;
+                    currentActivationTime = 10f;
 
-            Coroutine co = StartCoroutine(AnimationLoop(animationName, priority, animationLength, animationLayer, currentActivationTime,interval));
-            
-            animationQueue.Add(new PreProcessorQueue(animationName, priority, animationLength, animationLayer, currentActivationTime, interval,  co));
-         //   Debug.Log("Added " + animationName +" "+animationLength);
-            currIndex++;
+                } /////////////////////////////////////////////////////////////////////////////
+
+                Coroutine co = StartCoroutine(AnimationLoop(animationName, priority, animationLength, animationLayer, currentActivationTime, interval, category, isCough));
+
+                animationQueue.Add(new PreProcessorQueue(animationName, priority, animationLength, animationLayer, currentActivationTime, interval, isCough, co));
+                //   Debug.Log("Added " + animationName +" "+animationLength);
+                currIndex++;
+            }
         }
         animationQueue = animationQueue.OrderBy(aq => aq.currentActivationTime).ToList();
         initializationLock = false;
@@ -237,7 +278,14 @@ public class AnimationManager : MonoBehaviour
         if (!initializationLock)
             Display();
     }
+    public void ClearQueue()
+    {
+        foreach (PreProcessorQueue animationElement in animationQueue)
+            StopCoroutine(animationElement.co);
 
+        animationQueue = new List<PreProcessorQueue>();
+        initializationLock = true;
+    }
     public bool doesExist(string name)
     {
         foreach (PreProcessorQueue e in animationQueue)
@@ -320,6 +368,7 @@ public class PreProcessorQueue
     public string animationLayer;
     public float currentActivationTime;
     public float interval;
+    public bool isCough;
 
     public bool isPlaying = false;
   
@@ -329,7 +378,7 @@ public class PreProcessorQueue
     {
 
     }
-    public PreProcessorQueue(string n, int p, float l,string layer, float ca, float i, Coroutine c)
+    public PreProcessorQueue(string n, int p, float l,string layer, float ca, float i, bool isC, Coroutine c)
     {
  
         priority = p;
@@ -338,6 +387,7 @@ public class PreProcessorQueue
         animationLayer = layer;
         currentActivationTime = ca;
         interval = i;
+        isCough = isC;
         co = c;
 
     }

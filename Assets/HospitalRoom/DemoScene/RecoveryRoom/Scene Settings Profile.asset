@@ -30,10 +30,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  m_AdvancedMode: 0
   maxShadowDistance:
     m_OverrideState: 1
     m_Value: 500
     min: 0
+  directionalTransmissionMultiplier:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
   cascadeShadowSplitCount:
     m_OverrideState: 1
     m_Value: 4
@@ -42,34 +48,24 @@ MonoBehaviour:
   cascadeShadowSplit0:
     m_OverrideState: 1
     m_Value: 0.05
-    min: 0
-    max: 1
   cascadeShadowSplit1:
     m_OverrideState: 1
     m_Value: 0.15
-    min: 0
-    max: 1
   cascadeShadowSplit2:
     m_OverrideState: 1
     m_Value: 0.3
-    min: 0
-    max: 1
   cascadeShadowBorder0:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder1:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder2:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
   cascadeShadowBorder3:
     m_OverrideState: 1
     m_Value: 0
-    min: 0
 --- !u!114 &114274833068300140
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -82,10 +78,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59b6606ef2548734bb6d11b9d160bc7e, type: 3}
   m_Name: HDRISky
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
+  m_AdvancedMode: 0
   rotation:
     m_OverrideState: 1
-    m_Value: 213
+    m_Value: 184
     min: 0
     max: 360
   skyIntensityMode:
@@ -93,18 +90,21 @@ MonoBehaviour:
     m_Value: 1
   exposure:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   multiplier:
     m_OverrideState: 0
     m_Value: 1
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 0.24927814
+    m_Value: 0.62483627
     min: 0
+  upperHemisphereLuxColor:
+    m_OverrideState: 0
+    m_Value: {x: 0.17754577, y: 0.28199965, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 1
-    m_Value: 0.02
+    m_Value: 10
   updateMode:
     m_OverrideState: 0
     m_Value: 0
@@ -117,7 +117,56 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: ffd48938815f3214cb05fee47c0fd6b0, type: 3}
+    m_Value: {fileID: 0}
+  enableBackplate:
+    m_OverrideState: 0
+    m_Value: 0
+  backplateType:
+    m_OverrideState: 0
+    m_Value: 0
+  groundLevel:
+    m_OverrideState: 0
+    m_Value: 0
+  scale:
+    m_OverrideState: 0
+    m_Value: {x: 32, y: 32}
+  projectionDistance:
+    m_OverrideState: 0
+    m_Value: 16
+    min: 0.0000001
+  plateRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexRotation:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 360
+  plateTexOffset:
+    m_OverrideState: 0
+    m_Value: {x: 0, y: 0}
+  blendAmount:
+    m_OverrideState: 0
+    m_Value: 0
+    min: 0
+    max: 100
+  shadowTint:
+    m_OverrideState: 0
+    m_Value: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    hdr: 0
+    showAlpha: 1
+    showEyeDropper: 1
+  pointLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  dirLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
+  rectLightShadow:
+    m_OverrideState: 0
+    m_Value: 0
 --- !u!114 &114602692894845628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  m_AdvancedMode: 0
   colorMode:
     m_OverrideState: 1
     m_Value: 1
@@ -145,6 +195,10 @@ MonoBehaviour:
     m_Value: 1
     min: 0
     max: 1
+  maxFogDistance:
+    m_OverrideState: 0
+    m_Value: 5000
+    min: 0
   mipFogMaxMip:
     m_OverrideState: 1
     m_Value: 0.5
@@ -183,8 +237,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   active: 1
+  m_AdvancedMode: 0
   skyType:
     m_OverrideState: 1
+    m_Value: 2
+  skyAmbientMode:
+    m_OverrideState: 0
     m_Value: 1
   fogType:
     m_OverrideState: 1

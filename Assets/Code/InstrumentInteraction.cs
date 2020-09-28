@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 
@@ -28,10 +28,17 @@ public class InstrumentInteraction : MonoBehaviour
 
     private List<GameObject> optionList = new List<GameObject>();
     private CanvasGroup miscCanvas;
-    
+
+    public Stethoscope stethoscope;
+    private float breathRate = 0f;
 
     public Coroutine coP;
     public Coroutine coR;
+
+    private string activatedTool;
+
+    private bool canTouchButtons = false;
+
     void Start()
     {
         hospitalCamera = GameObject.FindGameObjectWithTag("HospitalCamera").GetComponent<Camera>();
@@ -64,7 +71,15 @@ public class InstrumentInteraction : MonoBehaviour
                         isInteracting = true;
                         dialogInteraction.CanInteractDialogSystem(false);
                         miscCanvas.interactable = false;
-                        DisplayInstrumentOptions(instrumentHit, Input.mousePosition);                        
+
+                        ActivateInteractionCustomButton(instrumentHit);
+                        AddInstrumentOptionsGO(instrumentHit);
+
+                       // DisplayInstrumentOptions(instrumentHit, Input.mousePosition);          /////////////////////////////////////////////////////////// BUTTON CHANGE ////////////
+                        
+
+
+
                         //StopCoroutine(coP);
                         //StopCoroutine(coR);
                     }
@@ -74,6 +89,12 @@ public class InstrumentInteraction : MonoBehaviour
                     //coR = StartCoroutine(CameraRotation(instrumentHit.targetCameraLocation));
                     
                 }
+                else if(hit.transform.gameObject.tag == "InstrumentOption" )
+                {
+                    InstrumentOptionButton instOp = hit.transform.gameObject.GetComponent<InstrumentOptionButton>();
+                    instOp.DisplayData();
+                }
+
 
             }
         }
@@ -129,6 +150,8 @@ public class InstrumentInteraction : MonoBehaviour
     {
         // NEED TO MAKE THIS DYNAMIC PATIENT RELATED
         List<Hashtable> instrumentInfo = instrumentData.GetInstrumentInfo(inst.instrumentID, 4, 0, false);
+        //float breathRate = 0f;
+
 
         OptionButtonParent.gameObject.SetActive(true);
         foreach (Hashtable row in instrumentInfo)
@@ -142,11 +165,22 @@ public class InstrumentInteraction : MonoBehaviour
 
         foreach (Hashtable row in instrumentInfo)
         {
-            GameObject option = Instantiate(optionButton);
-            option.transform.SetParent(OptionButtonParent, false);
-            option.GetComponentInChildren<Text>().text = row["FIELDALIAS"].ToString();
-            option.GetComponent<Button>().onClick.AddListener(() => { ActivateInteraction(inst,row); });
-            optionList.Add(option);
+            if (int.Parse(row["FIELDID"].ToString()) != 11) // 11 is fieldID for breathing rate
+            {
+                GameObject option = Instantiate(optionButton);
+                option.transform.SetParent(OptionButtonParent, false);
+                option.GetComponentInChildren<Text>().text = row["FIELDALIAS"].ToString();
+                option.GetComponent<Button>().onClick.AddListener(() => { ActivateInteraction(inst, row); });
+                
+                optionList.Add(option);
+            }
+            else 
+            {
+                
+                breathRate = float.Parse(row["TEXTVALUE"].ToString());
+                Debug.Log("SETTING BREATH RATE " + breathRate);
+            }
+
 
         }
 
@@ -156,6 +190,78 @@ public class InstrumentInteraction : MonoBehaviour
         cancel.GetComponent<Button>().onClick.AddListener(CancelInteraction);
         optionList.Add(cancel);
         OptionButtonParent.transform.position = pos;
+    }
+
+    public void AddInstrumentOptionsGO(Instrument inst)
+    {
+        // NEED TO MAKE THIS DYNAMIC PATIENT RELATED
+        List<Hashtable> instrumentInfo = instrumentData.GetInstrumentInfo(inst.instrumentID, 4, 0, false);
+        inst.optionCount = instrumentInfo.Count;
+
+
+
+        //float breathRate = 0f;
+
+
+        ////OptionButtonParent.gameObject.SetActive(true);
+
+        //foreach (Hashtable row in instrumentInfo)
+        //{
+        //    Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+        //}
+
+        ////OptionButtonParent.GetComponent<RectTransform>().sizeDelta = new Vector2(OptionButtonParent.GetComponent<RectTransform>().sizeDelta.x, 20 * instrumentInfo.Count);
+        ////Vector3 pos = mousePos;
+        ////Debug.Log(mousePos);
+
+        //foreach (Hashtable row in instrumentInfo)
+        //{
+        //    if (int.Parse(row["FIELDID"].ToString()) != 11) // 11 is fieldID for breathing rate
+        //    {
+        //        GameObject option = Instantiate(optionButton);
+        //        option.transform.SetParent(OptionButtonParent, false);
+        //        option.GetComponentInChildren<Text>().text = row["FIELDALIAS"].ToString();
+        //        option.GetComponent<Button>().onClick.AddListener(() => { ActivateInteraction(inst, row); });
+
+        //        optionList.Add(option);
+        //    }
+        //    else
+        //    {
+
+        //        breathRate = float.Parse(row["TEXTVALUE"].ToString());
+        //        Debug.Log("SETTING BREATH RATE " + breathRate);
+        //    }
+
+
+        //}
+
+        Debug.Log(instrumentInfo.Count);
+        for(int i = 0; i<instrumentInfo.Count;i++)
+        {
+            Hashtable row = instrumentInfo[i];
+
+            Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+
+            if (int.Parse(row["FIELDID"].ToString()) != 11)
+            {
+                inst.optionButtons[i].GetComponent<InstrumentOptionButton>().row = row;
+               // inst.optionButtons[i].GetComponent<Button>().onClick.AddListener(() => { DisplayData(row); });
+               // inst.optionButtons[i].gameObject.SetActive(false);
+            }
+            else
+            {
+                breathRate = float.Parse(row["TEXTVALUE"].ToString());
+                Debug.Log("SETTING BREATH RATE " + breathRate);
+            }
+
+        }
+
+
+        //GameObject cancel = Instantiate(cancelButton);
+        //cancel.transform.SetParent(OptionButtonParent, false);
+        //cancel.GetComponent<Button>().onClick.AddListener(CancelInteraction);
+        //optionList.Add(cancel);
+        //OptionButtonParent.transform.position = pos;
     }
 
     public void CancelInteraction()
@@ -178,14 +284,31 @@ public class InstrumentInteraction : MonoBehaviour
             coR = StartCoroutine(CameraRotation(initialCameraLoc));
 
         }
+        DeActivateTool(activatedTool);
+        activatedTool = null;
     }
-
+    public void DeActivateTool(string tool)
+    {
+        if (tool == "Stethoscope")
+            stethoscope.DeActivateStethoscope();
+    }
     public void ActivateInteraction(Instrument inst,Hashtable option)
     {
+        canTouchButtons = true;
+        activatedTool = inst.instrumentName;
         DestroyInstrumentOptions();
         fullViewButton.SetActive(true);
         optionData.gameObject.SetActive(true);
-        optionData.text = option["FIELDALIAS"].ToString() + ": " + option["TEXTVALUE"].ToString();
+
+
+
+        if (inst.instrumentName == "Stethoscope")
+        {
+            stethoscope.ActivateStethoscope(option, breathRate);
+        }
+
+
+        DisplayData(option);
 
 
         if (coP != null)
@@ -198,6 +321,33 @@ public class InstrumentInteraction : MonoBehaviour
     }
 
 
+    public void ActivateInteractionCustomButton(Instrument inst)
+    {
+        activatedTool = inst.instrumentName;
+        DestroyInstrumentOptions();
+        fullViewButton.SetActive(true);
+        optionData.gameObject.SetActive(true);
+
+
+
+        //if (inst.instrumentName == "Stethoscope")
+        //{
+        //    stethoscope.ActivateStethoscope(option, breathRate);
+        //}
+
+        if (coP != null)
+            StopCoroutine(coP);
+        if (coR != null)
+            StopCoroutine(coR);
+
+        coP = StartCoroutine(CameraInterpolate(inst.targetCameraLocation));
+        coR = StartCoroutine(CameraRotation(inst.targetCameraLocation));
+    }
+
+    public void DisplayData(Hashtable option)
+    {
+        optionData.text = option["FIELDALIAS"].ToString() + ": " + option["TEXTVALUE"].ToString();
+    }
 
     public void DestroyInstrumentOptions()
     {

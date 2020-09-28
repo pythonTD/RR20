@@ -10,6 +10,7 @@ TagManager:
   - DialogSystem
   - HospitalCamera
   - MiscCanvas
+  - InstrumentOption
   layers:
   - Default
   - TransparentFX
