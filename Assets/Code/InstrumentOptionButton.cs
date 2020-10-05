@@ -31,6 +31,7 @@ public class InstrumentOptionButton : MonoBehaviour
     {
 
         Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+        
     }
 
 

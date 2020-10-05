@@ -13,7 +13,10 @@ public class InstrumentInteraction : MonoBehaviour
     public Transform initialCameraLoc;
     public float cameraPositionSmoothing = 1f;
     public float cameraRotationSmoothing = 5f;
+    
     public bool isInteracting = false;
+    public Instrument interactingInstrument;
+
     public GameObject optionButton;
     public Transform OptionButtonParent;
     public GameObject cancelButton;
@@ -34,6 +37,9 @@ public class InstrumentInteraction : MonoBehaviour
 
     public Coroutine coP;
     public Coroutine coR;
+
+
+    public Instrument activatedInstrument;
 
     private string activatedTool;
 
@@ -58,25 +64,36 @@ public class InstrumentInteraction : MonoBehaviour
         RaycastHit hit;
         Ray ray = hospitalCamera.ScreenPointToRay(Input.mousePosition);
 
-        if (Input.GetMouseButtonDown(0) && isInteracting == false && canInteract)
+        if (Input.GetMouseButtonDown(0) && canInteract)
         {
             if (Physics.Raycast(ray, out hit))
             {
-                
-                if (hit.transform.gameObject.tag == "Instrument")
+
+                if (isInteracting == true && hit.transform.gameObject.tag == "InstrumentOption")
+                {
+                    InstrumentOptionButton instOp = hit.transform.gameObject.GetComponent<InstrumentOptionButton>();
+                    instOp.DisplayData();
+                    Debug.Log(interactingInstrument.instrumentID);
+                    interactingInstrument.UpdateInstrumentVisuals(instOp.row, true);
+                    DisplayData(instOp.row);
+                }
+
+
+                else if (isInteracting == false && hit.transform.gameObject.tag == "Instrument" )
                 {
                     Instrument instrumentHit = hit.transform.gameObject.GetComponent<Instrument>();
                     if (!isInteracting)
                     {
+
                         isInteracting = true;
+                        interactingInstrument = instrumentHit;
                         dialogInteraction.CanInteractDialogSystem(false);
                         miscCanvas.interactable = false;
 
-                        ActivateInteractionCustomButton(instrumentHit);
-                        AddInstrumentOptionsGO(instrumentHit);
+                        ActivateInteractionCustomButton(ref instrumentHit);
+                        AddInstrumentOptionsGO(ref instrumentHit);
 
-                       // DisplayInstrumentOptions(instrumentHit, Input.mousePosition);          /////////////////////////////////////////////////////////// BUTTON CHANGE ////////////
-                        
+                       //DisplayInstrumentOptions(instrumentHit, Input.mousePosition);          /////////////////////////////////////////////////////////// BUTTON CHANGE ////////////                 
 
 
 
@@ -85,15 +102,13 @@ public class InstrumentInteraction : MonoBehaviour
                     }
 
                     
-                    // coP = StartCoroutine(CameraInterpolate(instrumentHit.targetCameraLocation));
+                    //coP = StartCoroutine(CameraInterpolate(instrumentHit.targetCameraLocation));
                     //coR = StartCoroutine(CameraRotation(instrumentHit.targetCameraLocation));
                     
                 }
-                else if(hit.transform.gameObject.tag == "InstrumentOption" )
-                {
-                    InstrumentOptionButton instOp = hit.transform.gameObject.GetComponent<InstrumentOptionButton>();
-                    instOp.DisplayData();
-                }
+
+
+                
 
 
             }
@@ -101,9 +116,11 @@ public class InstrumentInteraction : MonoBehaviour
 
         if(Input.GetMouseButtonDown(1) && isInteracting == true && canInteract)
         {
+           
             DestroyInstrumentOptions();
             CancelInteraction();
-           // isInteracting = false;
+            interactingInstrument = null;
+            isInteracting = false;
         }
 
 
@@ -126,11 +143,9 @@ public class InstrumentInteraction : MonoBehaviour
             hospitalCamera.transform.position = Vector3.Lerp(hospitalCamera.transform.position, targetCameraLoc.position, currentLerpTime/ cameraPositionSmoothing);
            // Hospitalcamera.transform.rotation = Quaternion.Lerp(Hospitalcamera.transform.rotation, targetCameraLoc.rotation, currentLerpTime / cameraRotationSmoothing);
             yield return null;
-        }
+        }     
 
-     
-
-            //Debug.Log("ZOOM COMPLETE");
+         //Debug.Log("ZOOM COMPLETE");
     }
 
     IEnumerator CameraRotation(Transform targetCameraLoc)
@@ -173,6 +188,8 @@ public class InstrumentInteraction : MonoBehaviour
                 option.GetComponent<Button>().onClick.AddListener(() => { ActivateInteraction(inst, row); });
                 
                 optionList.Add(option);
+
+              
             }
             else 
             {
@@ -192,7 +209,7 @@ public class InstrumentInteraction : MonoBehaviour
         OptionButtonParent.transform.position = pos;
     }
 
-    public void AddInstrumentOptionsGO(Instrument inst)
+    public void AddInstrumentOptionsGO(ref Instrument inst)
     {
         // NEED TO MAKE THIS DYNAMIC PATIENT RELATED
         List<Hashtable> instrumentInfo = instrumentData.GetInstrumentInfo(inst.instrumentID, 4, 0, false);
@@ -236,24 +253,34 @@ public class InstrumentInteraction : MonoBehaviour
         //}
 
         Debug.Log(instrumentInfo.Count);
-        for(int i = 0; i<instrumentInfo.Count;i++)
+
+        if (instrumentInfo.Count > 1)
         {
-            Hashtable row = instrumentInfo[i];
-
-            Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
-
-            if (int.Parse(row["FIELDID"].ToString()) != 11)
+            for (int i = 0; i < instrumentInfo.Count; i++)
             {
-                inst.optionButtons[i].GetComponent<InstrumentOptionButton>().row = row;
-               // inst.optionButtons[i].GetComponent<Button>().onClick.AddListener(() => { DisplayData(row); });
-               // inst.optionButtons[i].gameObject.SetActive(false);
-            }
-            else
-            {
-                breathRate = float.Parse(row["TEXTVALUE"].ToString());
-                Debug.Log("SETTING BREATH RATE " + breathRate);
-            }
+                Hashtable row = instrumentInfo[i];
 
+                Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+
+                if (int.Parse(row["FIELDID"].ToString()) != 11)
+                {
+                    inst.optionButtons[i].GetComponent<InstrumentOptionButton>().row = row;
+                   // inst.optionButtons[i].GetComponent<Button>().onClick.AddListener(() => { DisplayData(row); });
+                  //  inst.optionButtons[i].gameObject.SetActive(true);
+                }
+                else
+                {
+                    breathRate = float.Parse(row["TEXTVALUE"].ToString());
+                    Debug.Log("SETTING BREATH RATE " + breathRate);
+                }
+
+            }
+        }
+        else
+        {
+            Debug.Log(inst.instrumentID);
+            inst.UpdateInstrumentVisuals(instrumentInfo[0],true);
+            DisplayData(instrumentInfo[0]);
         }
 
 
@@ -264,10 +291,48 @@ public class InstrumentInteraction : MonoBehaviour
         //OptionButtonParent.transform.position = pos;
     }
 
+
+
+    //public Hashtable GetInstrumentOption(ref Instrument inst, int x)
+    //{
+    //    // NEED TO MAKE THIS DYNAMIC PATIENT RELATED
+    //    List<Hashtable> instrumentInfo = instrumentData.GetInstrumentInfo(inst.instrumentID, 4, 0, false);
+    //    inst.optionCount = instrumentInfo.Count;
+
+    //    Debug.Log(instrumentInfo.Count);
+
+    //    if (instrumentInfo.Count > 1)
+    //    {
+    //        for (int i = 0; i < instrumentInfo.Count; i++)
+    //        {
+    //            Hashtable row = instrumentInfo[i];
+
+    //            Debug.Log(row["FIELDID"] + " || " + row["FIELDALIAS"] + " || " + row["TEXTVALUE"] + " || " + row["TAG"] + " || " + row["ASSOCIATEDTAG"] + " || " + row["VISIBLE"]);
+
+    //            if (int.Parse(row["FIELDID"].ToString()) != 11)
+    //            {
+    //                inst.optionButtons[i].GetComponent<InstrumentOptionButton>().row = row;
+    //                // inst.optionButtons[i].GetComponent<Button>().onClick.AddListener(() => { DisplayData(row); });
+    //                // inst.optionButtons[i].gameObject.SetActive(true);
+    //            }
+    //            else
+    //            {
+    //                breathRate = float.Parse(row["TEXTVALUE"].ToString());
+    //                Debug.Log("SETTING BREATH RATE " + breathRate);
+    //            }
+
+    //        }
+    //    }
+
+    //}
+
+
+
     public void CancelInteraction()
     {
         if (isInteracting)
         {
+            interactingInstrument.UpdateInstrumentVisuals(null, false);
             fullViewButton.SetActive(false);
             optionData.gameObject.SetActive(false);
             isInteracting = false;
@@ -300,8 +365,6 @@ public class InstrumentInteraction : MonoBehaviour
         fullViewButton.SetActive(true);
         optionData.gameObject.SetActive(true);
 
-
-
         if (inst.instrumentName == "Stethoscope")
         {
             stethoscope.ActivateStethoscope(option, breathRate);
@@ -321,7 +384,7 @@ public class InstrumentInteraction : MonoBehaviour
     }
 
 
-    public void ActivateInteractionCustomButton(Instrument inst)
+    public void ActivateInteractionCustomButton(ref Instrument inst)
     {
         activatedTool = inst.instrumentName;
         DestroyInstrumentOptions();
