@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Start.unity
     guid: 9a5b36ba8aa649749b324ae820306c63
   - enabled: 1
-    path: Assets/Scenes/Hospital.unity
+    path: Assets/Scenes/HospitalMain.unity
     guid: dbd4e9777be204e4d9de542ab94f9cf1
   m_configObjects: {}
