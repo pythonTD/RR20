@@ -40,10 +40,10 @@ public class ScenarioManager : MonoBehaviour
         animationManager = patient.GetComponent<AnimationManager>();
         patientAnimator = patient.GetComponent<Animator>();
 
-        timeStamp1.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(0, 4, false); });
-        timeStamp2.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(1, 4, false); });
-        timeStamp3.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(2, 4, false); });
-        timeStamp4.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(3, 4, false); });
+        timeStamp1.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(0, 2, true); });
+        timeStamp2.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(1, 2, true); });
+        timeStamp3.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(2, 2, true); });
+        timeStamp4.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(3, 2, true); });
     }
 
     // Update is called once per frame
@@ -67,21 +67,25 @@ public class ScenarioManager : MonoBehaviour
         {
             patientAnimator.runtimeAnimatorController = ts1;
             clock.SetClockHands(3, 0, 0);
+            timer = 0;
         }
         if (timeStamp == 1)
         {
             patientAnimator.runtimeAnimatorController = ts2;
             clock.SetClockHands(7, 0, 0);
+            timer = 0;
         }
         if (timeStamp == 2)
         {
             patientAnimator.runtimeAnimatorController = ts3;
             clock.SetClockHands(8, 0, 0);
+            timer = 0;
         }
         if (timeStamp == 3)
         {
             patientAnimator.runtimeAnimatorController = ts4;
             clock.SetClockHands(11, 0, 0);
+            timer = 0;
         }
         
     }

@@ -40,7 +40,7 @@ public class AnimationManager : MonoBehaviour
             Debug.Log("ANIMATION MANAGER: BEHAVIOR MANAGER NOT FOUND!");
 
         List<Hashtable> result = new List<Hashtable>();
-        result = behaviorManager.loadAnimations(4, 0, false);
+        result = behaviorManager.loadAnimations(2, 2, true);
         SetAnimations(result);
     }
     private void Update()
@@ -169,35 +169,6 @@ public class AnimationManager : MonoBehaviour
     }
 
 
-    //public void ClearAnimLock()
-    //{
-    //    currAnim = "";
-    //    isAnimLock = false;
-    //    currAnimPriority = -1;
-    //}
-
-
-    //public bool ResolveAnimLock(string anim, int priority)
-    //{
-
-    //    if (currAnim == "" || (isAnimLock && priority > currAnimPriority))
-    //    {
-    //        //Indicates animation is in the lock.
-    //        isAnimLock = true;
-
-    //        if (currAnim != "")
-    //        {
-    //           // Debug.Log("Overriding: " + currAnim + " Priority: " + currAnimPriority + " With: " + anim + " "+ priority);
-    //            animator.SetBool(currAnim, false);
-    //        }
-    //        currAnim = anim;
-    //        currAnimPriority = priority;
-    //        return true;
-    //    }
-    //    else
-    //        return false;
-    //}
-
     public float ProcessQueue(PreProcessorQueue animationElement)
     {
         foreach(PreProcessorQueue e in animationQueue)
@@ -228,7 +199,7 @@ public class AnimationManager : MonoBehaviour
     public void SetAnimations(List<Hashtable> result)
     {
         ClearQueue();
-        
+        initializationLock = true;
         int priority;
         string animationName;
         float animationLength;
