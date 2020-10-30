@@ -31,10 +31,10 @@ Material:
     OriginalShader: Standard
   disabledShaderPasses:
   - DistortionVectors
+  - MOTIONVECTORS
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
-  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -49,7 +49,7 @@ Material:
     - _BaseColorMap:
         m_Texture: {fileID: 2800000, guid: 2c2859d9aa48f714b84eb25874ad24e6, type: 3}
         m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
+        m_Offset: {x: 0.93, y: 1.65}
     - _BentNormalMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}

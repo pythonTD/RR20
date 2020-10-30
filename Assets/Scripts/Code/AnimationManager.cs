@@ -40,7 +40,7 @@ public class AnimationManager : MonoBehaviour
             Debug.Log("ANIMATION MANAGER: BEHAVIOR MANAGER NOT FOUND!");
 
         List<Hashtable> result = new List<Hashtable>();
-        result = behaviorManager.loadAnimations(2, 2, true);
+        result = behaviorManager.loadAnimations(2, 0, true);
         SetAnimations(result);
     }
     private void Update()
@@ -199,7 +199,7 @@ public class AnimationManager : MonoBehaviour
     public void SetAnimations(List<Hashtable> result)
     {
         ClearQueue();
-        initializationLock = true;
+        
         int priority;
         string animationName;
         float animationLength;

@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 6134578645388835902}
   - component: {fileID: 6134578645388835901}
   - component: {fileID: 6134578645388835900}
-  - component: {fileID: 6134578645388835903}
   m_Layer: 0
   m_Name: thermometer (1)
   m_TagString: Untagged
@@ -80,22 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!111 &6134578645388835903
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6134578645388835875}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: aff4967a95315854cba173f4ecaf41d9, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: aff4967a95315854cba173f4ecaf41d9, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &8576061667564132644
 GameObject:
   m_ObjectHideFlags: 0

@@ -56,7 +56,9 @@ public class ScenarioManager : MonoBehaviour
     void SwitchScenario(int timeStamp, int patientID, bool isDet)
     {
         timer = 0f;
+       // string stateName = patientAnimator.GetCurrentAnimatorStateInfo(0).;
         List<Hashtable> result = new List<Hashtable>();
+        //animationManager.initializationLock = true;
         result =  behaviorManager.loadAnimations(patientID, timeStamp, isDet);
         animationManager.SetAnimations(result);
 

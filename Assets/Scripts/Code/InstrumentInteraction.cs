@@ -95,17 +95,8 @@ public class InstrumentInteraction : MonoBehaviour
                         ActivateInteractionCustomButton(ref instrumentHit);
                         AddInstrumentOptionsGO(ref instrumentHit);
 
-                       //DisplayInstrumentOptions(instrumentHit, Input.mousePosition);          /////////////////////////////////////////////////////////// BUTTON CHANGE ////////////                 
-
-
-
-                        //StopCoroutine(coP);
-                        //StopCoroutine(coR);
+                  
                     }
-
-                    
-                    //coP = StartCoroutine(CameraInterpolate(instrumentHit.targetCameraLocation));
-                    //coR = StartCoroutine(CameraRotation(instrumentHit.targetCameraLocation));
                     
                 }
 
