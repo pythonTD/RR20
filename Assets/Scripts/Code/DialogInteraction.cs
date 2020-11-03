@@ -24,6 +24,7 @@ public class DialogInteraction : MonoBehaviour
     private List<GameObject> questionList = new List<GameObject>();
 
     private InstrumentInteraction instrumentInteraction;
+    public int timestep = 0;
     private bool canInteract = true;
     void Start()
     {
@@ -74,7 +75,7 @@ public class DialogInteraction : MonoBehaviour
         List<Hashtable> questions = new List<Hashtable>();
 
         //NEED TO MAKE DYNAIMC PATIENT RELATED
-        questions = behaviorManager.loadQuestionsInCategory(2, 3, false, categoryID, new List<int> { });
+        questions = behaviorManager.loadQuestionsInCategory(2, timestep, false, categoryID, new List<int> { });
         
         foreach (Hashtable row in questions)
         {

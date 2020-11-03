@@ -13,7 +13,7 @@ public class ScenarioManager : MonoBehaviour
 
     public BehaviorManager behaviorManager;
     public AnimationManager animationManager;
-
+    public DialogInteraction dialogInteraction;
     public GameObject patient;
 
     public GameObject timeStamp1;
@@ -70,24 +70,28 @@ public class ScenarioManager : MonoBehaviour
             patientAnimator.runtimeAnimatorController = ts1;
             clock.SetClockHands(3, 0, 0);
             timer = 0;
+            dialogInteraction.timestep = 0;
         }
         if (timeStamp == 1)
         {
             patientAnimator.runtimeAnimatorController = ts2;
             clock.SetClockHands(7, 0, 0);
             timer = 0;
+            dialogInteraction.timestep = 1;
         }
         if (timeStamp == 2)
         {
             patientAnimator.runtimeAnimatorController = ts3;
             clock.SetClockHands(8, 0, 0);
             timer = 0;
+            dialogInteraction.timestep = 2;
         }
         if (timeStamp == 3)
         {
             patientAnimator.runtimeAnimatorController = ts4;
             clock.SetClockHands(11, 0, 0);
             timer = 0;
+            dialogInteraction.timestep = 3;
         }
         
     }
