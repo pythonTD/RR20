@@ -67,7 +67,9 @@ public class ScenarioManager : MonoBehaviour
         Animator anim = gameObject.GetComponent<Animator>();
         if (timeStamp == 0)
         {
+           
             patientAnimator.runtimeAnimatorController = ts1;
+       
             clock.SetClockHands(3, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 0;
@@ -82,6 +84,7 @@ public class ScenarioManager : MonoBehaviour
         if (timeStamp == 2)
         {
             patientAnimator.runtimeAnimatorController = ts3;
+            patientAnimator.Play("Baseline");
             clock.SetClockHands(8, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 2;
@@ -89,6 +92,7 @@ public class ScenarioManager : MonoBehaviour
         if (timeStamp == 3)
         {
             patientAnimator.runtimeAnimatorController = ts4;
+            patientAnimator.Play("Baseline");
             clock.SetClockHands(11, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 3;
