@@ -27,6 +27,11 @@ public class Stethoscope : Instrument
     public void ActivateStethoscope(Hashtable option, float breathRate)
     {
         //Need to add stethoscope animation 
+        Debug.Log("STETHOSCOPE!");
+        gameObject.transform.GetChild(2).gameObject.SetActive(true);
+        gameObject.transform.GetChild(3).gameObject.SetActive(true);
+        gameObject.transform.GetChild(4).gameObject.SetActive(true);
+
         animatedStethoscope.transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("setHeart", false);
         animatedStethoscope.transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("setLungs", false);
         animatedStethoscope.transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("setAbdomen", false);
@@ -97,7 +102,9 @@ public class Stethoscope : Instrument
             go.SetActive(true);
         }
 
-
+        gameObject.transform.GetChild(2).gameObject.SetActive(false);
+        gameObject.transform.GetChild(3).gameObject.SetActive(false);
+        gameObject.transform.GetChild(4).gameObject.SetActive(false);
         audioSource.pitch = 1.0f;
         audioSource.Stop();
         audioSource.clip = null;

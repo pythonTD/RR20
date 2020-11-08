@@ -56,13 +56,12 @@ public class ScenarioManager : MonoBehaviour
     void SwitchScenario(int timeStamp, int patientID, bool isDet)
     {
         timer = 0f;
-       // string stateName = patientAnimator.GetCurrentAnimatorStateInfo(0).;
+       
+       
         List<Hashtable> result = new List<Hashtable>();
         //animationManager.initializationLock = true;
         result =  behaviorManager.loadAnimations(patientID, timeStamp, isDet);
         animationManager.SetAnimations(result);
-
-
 
         Animator anim = gameObject.GetComponent<Animator>();
         if (timeStamp == 0)
@@ -70,14 +69,14 @@ public class ScenarioManager : MonoBehaviour
            
             patientAnimator.runtimeAnimatorController = ts1;
        
-            clock.SetClockHands(3, 0, 0);
+            //clock.SetClockHands(3, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 0;
         }
         if (timeStamp == 1)
         {
             patientAnimator.runtimeAnimatorController = ts2;
-            clock.SetClockHands(7, 0, 0);
+            //clock.SetClockHands(7, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 1;
         }
@@ -85,7 +84,7 @@ public class ScenarioManager : MonoBehaviour
         {
             patientAnimator.runtimeAnimatorController = ts3;
             patientAnimator.Play("Baseline");
-            clock.SetClockHands(8, 0, 0);
+            //clock.SetClockHands(8, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 2;
         }
@@ -93,7 +92,7 @@ public class ScenarioManager : MonoBehaviour
         {
             patientAnimator.runtimeAnimatorController = ts4;
             patientAnimator.Play("Baseline");
-            clock.SetClockHands(11, 0, 0);
+           // clock.SetClockHands(11, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 3;
         }

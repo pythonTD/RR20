@@ -13,14 +13,14 @@ public class Instrument : MonoBehaviour
     public Transform targetCameraLocation;
     public Hashtable optionValues;
 
-
+    public GameObject thermometer;
   
     
     
     public int optionCount;
     public List<GameObject> optionButtons;
 
-
+    private GameObject NOASobj;
     void Start()
     {
         if (gameObject.transform.childCount > 0)
@@ -55,23 +55,31 @@ public class Instrument : MonoBehaviour
     {
         if (activate)
         {
-            Debug.Log("HERE");
+           
             if (option["FIELDID"].ToString() == "7")
             {
-                GameObject thermometer = gameObject.transform.GetChild(1).gameObject;
-                
-              //  thermometer.GetComponent<Animation>().Play();
+                NOASobj = gameObject.transform.GetChild(1).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", true);
             }
+            if (option["FIELDID"].ToString() == "9")
+            {
+                
+                NOASobj = gameObject.transform.GetChild(2).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", true);
+            }
+            if (option["FIELDID"].ToString() == "12")
+            {
+                NOASobj = gameObject.transform.GetChild(3).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", true);
+            }
+            if (option["FIELDID"].ToString() == "14")
+            {
+
+            }
+
         }
 
-        else
-        {
-            
-          
-            GameObject thermometer = gameObject.transform.GetChild(1).gameObject;
-            thermometer.transform.position = gameObject.transform.GetChild(2).position;
-           
-        }
+        
     }
 
     void UpdateCommodeWaterLevel(Hashtable option, bool activate)

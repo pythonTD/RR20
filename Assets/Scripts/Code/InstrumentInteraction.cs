@@ -73,8 +73,9 @@ public class InstrumentInteraction : MonoBehaviour
                 {
                     InstrumentOptionButton instOp = hit.transform.gameObject.GetComponent<InstrumentOptionButton>();
                     // instOp.DisplayData();
-                    
-                    stethoscope.ActivateStethoscope(instOp.row, breathRate);
+
+                    //if(hit.transform.gameObject.GetComponent<Instrument>().instrumentName == "Stethoscope")
+                    //    stethoscope.ActivateStethoscope(instOp.row, breathRate);
                     Debug.Log(interactingInstrument.instrumentID);
                     interactingInstrument.UpdateInstrumentVisuals(instOp.row, true);
                     DisplayData(instOp.row);
@@ -95,14 +96,9 @@ public class InstrumentInteraction : MonoBehaviour
                         ActivateInteractionCustomButton(ref instrumentHit);
                         AddInstrumentOptionsGO(ref instrumentHit);
 
-                  
                     }
                     
                 }
-
-
-                
-
 
             }
         }
@@ -191,9 +187,7 @@ public class InstrumentInteraction : MonoBehaviour
                 Debug.Log("SETTING BREATH RATE " + breathRate);
             }
 
-
         }
-
 
         GameObject cancel = Instantiate(cancelButton);
         cancel.transform.SetParent(OptionButtonParent, false);
@@ -375,8 +369,6 @@ public class InstrumentInteraction : MonoBehaviour
             stethoscope.ActivateStethoscope(option, breathRate);
             activatedTool = "Stethoscope";
         }
-
-
         DisplayData(option);
 
 
