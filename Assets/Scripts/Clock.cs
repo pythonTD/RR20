@@ -64,16 +64,17 @@ public class Clock : MonoBehaviour
         float secondRotation = s * 6;
 
         Quaternion hR = new Quaternion();
-        hR.eulerAngles = new Vector3(360-hourRotation-90f, 90f, 0f);
+        hR.eulerAngles = new Vector3(hourRotation-90f, 90f, 0f);
         hourHand.transform.rotation = hR;
 
 
         Quaternion mR = new Quaternion();
-        mR.eulerAngles = new Vector3(360-minuteRotation-90f, 90f, 0f);
+        mR.eulerAngles = new Vector3(minuteRotation-90f, 90f, 0f);
         minuteHand.transform.rotation = mR;
 
+        Debug.Log("SECOND ROTATION "+secondRotation);
         Quaternion sR = new Quaternion();
-        sR.eulerAngles = new Vector3(360-secondRotation-90f, 90f, 0f);
+        sR.eulerAngles = new Vector3(secondRotation-90f, 90f, 0f);
         secondHand.transform.rotation = sR;
 
         timer = 0f;

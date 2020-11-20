@@ -28,9 +28,7 @@ public class Stethoscope : Instrument
     {
         //Need to add stethoscope animation 
         Debug.Log("STETHOSCOPE!");
-        gameObject.transform.GetChild(2).gameObject.SetActive(true);
-        gameObject.transform.GetChild(3).gameObject.SetActive(true);
-        gameObject.transform.GetChild(4).gameObject.SetActive(true);
+       
 
         animatedStethoscope.transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("setHeart", false);
         animatedStethoscope.transform.GetChild(0).gameObject.GetComponent<Animator>().SetBool("setLungs", false);
@@ -102,9 +100,9 @@ public class Stethoscope : Instrument
             go.SetActive(true);
         }
 
-        gameObject.transform.GetChild(2).gameObject.SetActive(false);
-        gameObject.transform.GetChild(3).gameObject.SetActive(false);
-        gameObject.transform.GetChild(4).gameObject.SetActive(false);
+        gameObject.transform.GetChild(2).GetComponent<BoxCollider>().enabled = false;
+        gameObject.transform.GetChild(3).GetComponent<BoxCollider>().enabled = false;
+        gameObject.transform.GetChild(4).GetComponent<BoxCollider>().enabled = false;
         audioSource.pitch = 1.0f;
         audioSource.Stop();
         audioSource.clip = null;

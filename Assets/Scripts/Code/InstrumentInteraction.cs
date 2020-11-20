@@ -74,17 +74,27 @@ public class InstrumentInteraction : MonoBehaviour
                     InstrumentOptionButton instOp = hit.transform.gameObject.GetComponent<InstrumentOptionButton>();
                     // instOp.DisplayData();
 
-                    //if(hit.transform.gameObject.GetComponent<Instrument>().instrumentName == "Stethoscope")
-                    //    stethoscope.ActivateStethoscope(instOp.row, breathRate);
-                    Debug.Log(interactingInstrument.instrumentID);
-                    interactingInstrument.UpdateInstrumentVisuals(instOp.row, true);
-                    DisplayData(instOp.row);
+                    if (interactingInstrument.instrumentName == "Stethoscope")
+                    {
+                       
+                        stethoscope.ActivateStethoscope(instOp.row, breathRate);
+                        optionData.text = "Breath Rate: " + breathRate;
+                    }
+
+                    else
+                    {
+                        Debug.Log(interactingInstrument.instrumentID);
+                        interactingInstrument.UpdateInstrumentVisuals(instOp.row, true);
+                        DisplayData(instOp.row);
+                    }
                 }
 
 
                 else if (isInteracting == false && hit.transform.gameObject.tag == "Instrument" )
                 {
                     Instrument instrumentHit = hit.transform.gameObject.GetComponent<Instrument>();
+                   
+                  
                     if (!isInteracting)
                     {
 
@@ -95,6 +105,14 @@ public class InstrumentInteraction : MonoBehaviour
 
                         ActivateInteractionCustomButton(ref instrumentHit);
                         AddInstrumentOptionsGO(ref instrumentHit);
+
+                        if (interactingInstrument.instrumentName == "Stethoscope")
+                        {
+                            Debug.Log("HELLO");
+                            interactingInstrument.transform.GetChild(2).gameObject.GetComponent<BoxCollider>().enabled = true;
+                            interactingInstrument.transform.GetChild(3).gameObject.GetComponent<BoxCollider>().enabled = true;
+                            interactingInstrument.transform.GetChild(4).gameObject.GetComponent<BoxCollider>().enabled = true;
+                        }
 
                     }
                     
@@ -251,10 +269,11 @@ public class InstrumentInteraction : MonoBehaviour
 
                 if (int.Parse(row["FIELDID"].ToString()) != 11)
                 {
-                    Debug.Log("HERE!");
+                    //Debug.Log("HERE!");
                     inst.optionButtons[i].GetComponent<InstrumentOptionButton>().row = row;
+                    inst.optionButtons[i].GetComponent<InstrumentOptionButton>().optionID = int.Parse(row["FIELDID"].ToString());
                    // inst.optionButtons[i].GetComponent<Button>().onClick.AddListener(() => { DisplayData(row); });
-                  //  inst.optionButtons[i].gameObject.SetActive(true);
+                   //  inst.optionButtons[i].gameObject.SetActive(true);
 
                 }
                 else

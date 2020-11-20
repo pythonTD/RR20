@@ -100,7 +100,7 @@ public class DialogInteraction : MonoBehaviour
         //Tolerance value 0.05f
         aduioCoroutine = StartCoroutine(WaitForAudio(clip.length + 0.05f));
     }
-   void DestroyQuetions()
+   public void DestroyQuetions()
     {
         foreach (GameObject go in questionList)
             Destroy(go);
@@ -121,6 +121,7 @@ public class DialogInteraction : MonoBehaviour
         if (isInDialog)
             ToggleDialogSystem();
 
+       
         //canInteract = state;
     }
 
@@ -135,42 +136,47 @@ public class DialogInteraction : MonoBehaviour
         }
         else
         {
+
             isInDialog = true;
             dialogSystem.SetActive(true);
             instrumentInteraction.ToggleInstrumentInteraction(false);
+
         }
     }
 
-    public void SuspendDialog(AudioClip clip)
+    public void SuspendDialog(AudioClip clip, float duration)
     {
         float currentTime = audioSource.time;
         AudioClip dialogClip = audioSource.clip;
         audioSource.Stop();
-        float waitTime = clip.length+0.05f;
+        float waitTime = duration - 0.55f;
         isSpeaking = false;
-        float clipLength = audioSource.clip.length;
-        StopCoroutine(aduioCoroutine);
+       
+        if(aduioCoroutine !=null)
+         StopCoroutine(aduioCoroutine);
         
         Debug.Log("PAUSING AUDIO ");
         audioSource.clip = clip;
+        audioSource.loop = true;
         audioSource.Play();
         StartCoroutine(CoughInterruptWait(waitTime,currentTime,dialogClip));
         
     }
 
-    private IEnumerator CoughInterruptWait(float waitTime, float currentTime, AudioClip dialogClip)
+    public  IEnumerator CoughInterruptWait(float waitTime, float currentTime, AudioClip dialogClip)
     {
+       
         Debug.Log("WATING FOR COUGH "+ waitTime);
         yield return new WaitForSeconds(waitTime);
         Debug.Log("DONE WAITING");
         Debug.Log("RESUMING AUDIO FROM "+ currentTime);
         audioSource.clip = dialogClip;
-
+        audioSource.loop = false;
         audioSource.time = currentTime;      
         dialogCanvasGroup.interactable = true;
         isSpeaking = true;
         audioSource.Play();
-        StartCoroutine(WaitForAudio(dialogClip.length - currentTime));
+       // StartCoroutine(WaitForAudio(dialogClip.length - currentTime));
     }
 
 

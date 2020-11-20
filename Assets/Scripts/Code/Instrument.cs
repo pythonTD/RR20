@@ -79,6 +79,30 @@ public class Instrument : MonoBehaviour
 
         }
 
+        else
+        {
+           // if (option["FIELDID"].ToString() == "7")
+            {
+                NOASobj = gameObject.transform.GetChild(1).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", false) ;
+            }
+           // if (option["FIELDID"].ToString() == "9")
+            {
+
+                NOASobj = gameObject.transform.GetChild(2).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", false);
+            }
+           // if (option["FIELDID"].ToString() == "12")
+            {
+                NOASobj = gameObject.transform.GetChild(3).GetChild(0).gameObject;
+                NOASobj.GetComponent<Animator>().SetBool("Activate", false);
+            }
+           // if (option["FIELDID"].ToString() == "14")
+            {
+
+            }
+        }
+
         
     }
 

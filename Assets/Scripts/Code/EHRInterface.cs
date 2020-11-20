@@ -81,7 +81,7 @@ public class EHRInterface : MonoBehaviour
         {
             GameObject leftTab = Instantiate(leftTabButton);
             leftTab.transform.SetParent(leftTabParentTransform, false);
-            Debug.Log(row["TABNAME"].ToString());
+           // Debug.Log(row["TABNAME"].ToString());
             leftTab.GetComponentInChildren<TextMeshProUGUI>().text = row["TABNAME"].ToString();
             leftTab.GetComponent<Button>().onClick.AddListener(() => { UpdateBodyContent(row); });
         }

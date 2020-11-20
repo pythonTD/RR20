@@ -15,7 +15,7 @@ public class AnimationManager : MonoBehaviour
     public TextMeshProUGUI animationQueueDisplay;
     public DialogInteraction dialogInteraction;
     public AudioSource audioSource;
-
+    public InstrumentInteraction instrumentInteraction;
   
 
     // public List<int> priorities = new List<int>();
@@ -80,9 +80,11 @@ public class AnimationManager : MonoBehaviour
     public IEnumerator AnimationLoop(string animName, int priority, float animLength, string animLayer, float firstOccur, float interval, string cat, bool isCough)
     {
         //bool selfLock = true;
+        bool interruptAudioWait = false;
         PreProcessorQueue self;
         while (initializationLock)
         {
+
             yield return null;
         }
 
@@ -95,62 +97,80 @@ public class AnimationManager : MonoBehaviour
             ProcessQueue(self);
         }
 
-        Debug.Log("Setting up coroutine to for anim: "+animName + " FirstOccurence: "+firstOccur+" RepeatInterval: "+interval+ " Priority: " + priority);
+       // Debug.Log("Setting up coroutine to for anim: "+animName + " FirstOccurence: "+firstOccur+" RepeatInterval: "+interval+ " Priority: " + priority);
         yield return new WaitForSeconds(firstOccur);
-        Debug.Log("First Occurrence of anim: " + animName);
-        
+        //Debug.Log("First Occurrence of anim: " + animName);
+
         while (true)
         {
 
             // bool state = ResolveAnimLock(animName, priority);
             // animator.SetBool(animName, state);
+          
+            //if (dialogInteraction.isInDialog)
+            //{
+            //    Debug.Log("LOOK CAMERA");
+            //    animator.SetBool(animName, false);
+            //    animator.SetBool("LookCamera", true);
+
+            //}
+
+   
+
             float delay = Mathf.Infinity;
 
             int count = 0;
-            while(delay > 0.05f)
+            while (delay > 0.05f)
             {
-                
-                Debug.Log("CHECKING TO DELAY "+animName+" " +count);
+
+                //  Debug.Log("CHECKING TO DELAY " + animName + " " + count);
                 delay = ProcessQueue(self);
                 count++;
-                
+
                 yield return new WaitForSeconds(delay);
             }
 
-            
+
 
             //Wait for animation to complete
-            Debug.Log("Playing " + animName + " length "+animLength);
+            Debug.Log("Playing " + animName + " length " + animLength);
 
 
-            if (isCough)
+            if (isCough && interruptAudioWait == false)
             {
                 AudioClip clip = Resources.Load<AudioClip>("General/ShortCough");
                 if (dialogInteraction.isSpeaking)
                 {
                     Debug.Log("SUSPENDING DIALOG");
-                   
-                    dialogInteraction.SuspendDialog(clip);
+
+                    dialogInteraction.SuspendDialog(clip, animLength);
                 }
-                else
+                else if(instrumentInteraction.isInteracting == false && dialogInteraction.isInDialog == false)
                 {
+                    audioSource.loop = true;
                     audioSource.time = 0;
                     audioSource.clip = clip;
                     audioSource.Play();
                 }
             }
+
             
-            
-            animator.SetBool(animName, true);
-            self.isPlaying = true; //-----------------------
-           // currentAnim.text = animName;
-           // float animLength = animator.GetCurrentAnimatorStateInfo(0).length;
+            if (instrumentInteraction.isInteracting == false && dialogInteraction.isInDialog == false)
+            {
+                Debug.Log("Setting Animation");
+                animator.SetBool(animName, true);
+            }
+
+
+            self.isPlaying = true;
+
             float adjTimerSeconds = interval - animLength;
-          //  Debug.Log(animName + " " + animLength);
             float nextActivation = self.currentActivationTime + animLength + adjTimerSeconds;
-            
+
             yield return new WaitForSeconds(animLength);
-            Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds + " Played At: " + self.currentActivationTime + " Next playing at: " + nextActivation);
+            if (isCough)
+                audioSource.loop = false;
+            //  Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds + " Played At: " + self.currentActivationTime + " Next playing at: " + nextActivation);
             SetNextActivation(animName, nextActivation);
             animator.SetBool(animName, false);
             self.isPlaying = false;   //--------------------
@@ -162,10 +182,14 @@ public class AnimationManager : MonoBehaviour
             //    animator.SetBool(animName, false);
             //}
             yield return new WaitForSeconds(adjTimerSeconds);
-           
-           
-        }
 
+            //if (isCough)
+            //{
+            //    audioSource.Stop();
+            //    audioSource.loop = false;
+            //}
+            
+        }
     }
 
 
@@ -173,7 +197,7 @@ public class AnimationManager : MonoBehaviour
     {
         foreach(PreProcessorQueue e in animationQueue)
         {
-            Debug.Log(animationElement.currentActivationTime);
+            //Debug.Log(animationElement.currentActivationTime);
             if ((animationElement.animationLayer == e.animationLayer && animationElement.animationName != e.animationName) &&
                 ((animationElement.currentActivationTime >= e.currentActivationTime && animationElement.currentActivationTime <= e.currentActivationTime + e.animationLength) ||
                  (animationElement.currentActivationTime <= e.currentActivationTime && animationElement.currentActivationTime + animationElement.animationLength >= e.currentActivationTime)))
@@ -219,6 +243,10 @@ public class AnimationManager : MonoBehaviour
             {
                 priority = int.Parse(row["PRIORITY"].ToString());
                 animationName = row["NAME"].ToString();
+                if (animationName == "ShortCough" || animationName == "Cough")
+                    isCough = true;
+                else
+                    isCough = false;
                 //  Debug.Log("Trying to get length " + animationName);
                 animationLength = GetAnimationLength(animationName);
                 currentActivationTime = float.Parse(row["FIRST_OCCURRENCE"].ToString());
