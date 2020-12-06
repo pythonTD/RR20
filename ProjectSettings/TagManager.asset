@@ -11,6 +11,7 @@ TagManager:
   - HospitalCamera
   - MiscCanvas
   - InstrumentOption
+  - StethoscopeButton
   layers:
   - Default
   - TransparentFX

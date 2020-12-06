@@ -97,7 +97,7 @@ public class ScenarioManager : MonoBehaviour
         {
             patientAnimator.runtimeAnimatorController = ts4;
             patientAnimator.Play("Baseline");
-           clock.SetClockHands(7, 0, 0);
+            clock.SetClockHands(7, 0, 0);
             timer = 0;
             dialogInteraction.timestep = 3;
         }
