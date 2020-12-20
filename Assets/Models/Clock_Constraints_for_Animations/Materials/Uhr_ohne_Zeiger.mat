@@ -598,7 +598,7 @@ Material:
     - _SVBRDF_BRDFVariants: 0
     - _SVBRDF_HeightMapMaxMM: 0
     - _SVBRDF_SpecularLobeMapScale: 1
-    - _Smoothness: 0.566
+    - _Smoothness: 0.833
     - _Smoothness0: 0.5
     - _Smoothness1: 0.5
     - _Smoothness2: 0.5
