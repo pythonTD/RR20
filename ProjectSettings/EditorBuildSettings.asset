@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HospitalNew.unity
-    guid: 723e30afbfe440e48a6cf35e84e7c8aa
+    path: Assets/Scenes/TS1.unity
+    guid: a6c0e0196466fc94e99c0589790029e0
+  - enabled: 1
+    path: Assets/Scenes/TS2.unity
+    guid: bcf2103221942f84090d5094836fb628
+  - enabled: 1
+    path: Assets/Scenes/TS3.unity
+    guid: 588a75b749f247e4db09bff7b507f452
+  - enabled: 1
+    path: Assets/Scenes/TS4.unity
+    guid: 6018eb7070550b842b59b49799ee54df
   m_configObjects: {}

@@ -12,6 +12,7 @@ TagManager:
   - MiscCanvas
   - InstrumentOption
   - StethoscopeButton
+  - AnimationQueueDisplay
   layers:
   - Default
   - TransparentFX

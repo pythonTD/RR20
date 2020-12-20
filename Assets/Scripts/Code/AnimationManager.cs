@@ -39,6 +39,18 @@ public class AnimationManager : MonoBehaviour
         if (behaviorManager == null)
             Debug.Log("ANIMATION MANAGER: BEHAVIOR MANAGER NOT FOUND!");
 
+        dialogInteraction = GameObject.FindGameObjectWithTag("Manager").GetComponent<DialogInteraction>();
+        if (dialogInteraction == null)
+            Debug.Log("ANIMATION MANAGER: DIALOG INTERACTION NOT FOUND!");
+
+        instrumentInteraction = GameObject.FindGameObjectWithTag("Manager").GetComponent<InstrumentInteraction>();
+        if (instrumentInteraction == null)
+            Debug.Log("ANIMATION MANAGER: INSTRUMENT INTERACTION NOT FOUND!");
+
+        animationQueueDisplay = GameObject.FindGameObjectWithTag("AnimationQueueDisplay").GetComponent<TextMeshProUGUI>();
+        if (animationQueueDisplay == null)
+            Debug.Log("ANIMATION MANAGER: QUEUE DISPLAY NOT FOUND!");
+
         List<Hashtable> result = new List<Hashtable>();
         result = behaviorManager.loadAnimations(2, 0, true);
         SetAnimations(result);
@@ -84,7 +96,7 @@ public class AnimationManager : MonoBehaviour
         PreProcessorQueue self;
         while (initializationLock)
         {
-
+            
             yield return null;
         }
 
@@ -106,7 +118,7 @@ public class AnimationManager : MonoBehaviour
 
             // bool state = ResolveAnimLock(animName, priority);
             // animator.SetBool(animName, state);
-          
+
             //if (dialogInteraction.isInDialog)
             //{
             //    Debug.Log("LOOK CAMERA");
@@ -114,8 +126,12 @@ public class AnimationManager : MonoBehaviour
             //    animator.SetBool("LookCamera", true);
 
             //}
+            //else
+            //{
+            //    animator.SetBool("LookCamera", false);
+            //}
 
-   
+
 
             float delay = Mathf.Infinity;
 

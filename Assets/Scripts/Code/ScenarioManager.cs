@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 using System;
 using TMPro;
 using Valve.VR.Extras;
@@ -40,10 +40,23 @@ public class ScenarioManager : MonoBehaviour
         animationManager = patient.GetComponent<AnimationManager>();
         patientAnimator = patient.GetComponent<Animator>();
 
-        timeStamp1.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(0, 2, true); });
-        timeStamp2.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(1, 2, true); });
-        timeStamp3.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(2, 2, true); });
-        timeStamp4.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(3, 2, true); });
+        //timeStamp1.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(0, 2, true); });
+        //timeStamp2.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(1, 2, true); });
+        //timeStamp3.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(2, 2, true); });
+        //timeStamp4.GetComponent<Button>().onClick.AddListener(() => { SwitchScenario(3, 2, true); });
+
+
+        timeStamp1.GetComponent<Button>().onClick.AddListener(() => { LoadScenario(0); });
+        timeStamp2.GetComponent<Button>().onClick.AddListener(() => { LoadScenario(1); });
+        timeStamp3.GetComponent<Button>().onClick.AddListener(() => { LoadScenario(2); });
+        timeStamp4.GetComponent<Button>().onClick.AddListener(() => { LoadScenario(3); });
+
+        SwitchScenario(SceneManager.GetActiveScene().buildIndex, 2, true);
+    }
+
+    void LoadScenario(int timeStamp)
+    {
+        SceneManager.LoadScene(timeStamp);
     }
 
     // Update is called once per frame
