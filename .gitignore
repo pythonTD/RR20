@@ -58,3 +58,8 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Assets/Animations/Bob/Pass5/breathingTS1.fbx
+Assets/Animations/Bob/Pass5/breathingTS1.fbx.meta
+Assets/Animations/Bob/Pass5/breathingTS3.fbx
+*.meta
+*.fbx
