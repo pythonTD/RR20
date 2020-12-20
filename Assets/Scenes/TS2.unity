@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5591807, g: 0.61938614, b: 0.756817, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1930,6 +1930,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 153638241}
   m_Mesh: {fileID: 4300060, guid: d3c35f371947e474b9a1485d34e20bbc, type: 3}
+--- !u!1 &163162007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163162008}
+  - component: {fileID: 163162009}
+  m_Layer: 0
+  m_Name: RandomEyes3D_Eye_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &163162008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163162007}
+  m_LocalRotation: {x: 0.00021648241, y: 0.75004214, z: 0.66138995, w: 0.0002769926}
+  m_LocalPosition: {x: 0.014057578, y: -0.24940687, z: 0.6914121}
+  m_LocalScale: {x: 1, y: 0.9999999, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 334578569}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &163162009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163162007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -818653955, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGizmo: 1
 --- !u!1 &166237681 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8576061668928428836, guid: 9f08f45b20d4d1b4fb7dbc942518b40a,
@@ -2395,6 +2439,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 234242032}
   m_Mesh: {fileID: 4300060, guid: d3c35f371947e474b9a1485d34e20bbc, type: 3}
+--- !u!1 &240367562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 240367563}
+  - component: {fileID: 240367564}
+  m_Layer: 0
+  m_Name: RandomEyes3D_Eye_Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &240367563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240367562}
+  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 498333143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &240367564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240367562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -818653955, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showGizmo: 1
 --- !u!4 &285459369 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3190595938322043092, guid: 6fadfbeacf45ac24f865ad00d3596e5b,
@@ -2830,6 +2918,777 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97f2122a7b104b34f9dcc32d53f5cb74, type: 3}
+--- !u!4 &334578569 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2622169477512869558, guid: 97f2122a7b104b34f9dcc32d53f5cb74,
+    type: 3}
+  m_PrefabInstance: {fileID: 334578566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &334578570 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3948140085897531893, guid: 97f2122a7b104b34f9dcc32d53f5cb74,
+    type: 3}
+  m_PrefabInstance: {fileID: 334578566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &334578571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498333142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 525a624e4b9004142be066c74b42ec4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 334578575}
+  randomEyes3D: {fileID: 334578573}
+  body: {fileID: 334578570}
+  eyelashes: {fileID: 0}
+  leftEyeName: LeftEye
+  leftEyeBone: {fileID: 0}
+  rightEyeName: RightEye
+  rightEyeBone: {fileID: 0}
+  blinkEyelidPercent: 80
+  blinkEyelashPercent: 70
+  facialHair: []
+  beardName: Beards
+  moustacheName: Moustaches
+  saySmall: []
+  sayMedium: []
+  sayLarge: []
+  shapeNames:
+  - ANIMATION:BodyBS.JawOpen
+  - ANIMATION:BodyBS.AI
+  - ANIMATION:BodyBS.O
+  - ANIMATION:BodyBS.E1
+  - ANIMATION:BodyBS.F
+  - ANIMATION:BodyBS.WQ
+  - ANIMATION:BodyBS.MBP
+  - ANIMATION:BodyBS.Pain
+  - ANIMATION:BodyBS.Pain1
+  - ANIMATION:BodyBS.Pain2
+  - ANIMATION:BodyBS.LowerLipDown
+  - ANIMATION:BodyBS.Smile
+  - ANIMATION:BodyBS.Pain3
+  - ANIMATION:BodyBS.NoseFrown
+  - ANIMATION:BodyBS.Blink_Left
+  - ANIMATION:BodyBS.Blink_Right
+  - ANIMATION:BodyBS.sad
+  - ANIMATION:BodyBS.openMouth2
+  - ANIMATION:BodyBS.squint1
+  - ANIMATION:BodyBS.sadBrows
+  - ANIMATION:BodyBS.CH
+  - ANIMATION:BodyBS.DD
+  - ANIMATION:BodyBS.E
+  - ANIMATION:BodyBS.FF
+  - ANIMATION:BodyBS.ih
+  - ANIMATION:BodyBS.KK
+  - ANIMATION:BodyBS.nn
+  - ANIMATION:BodyBS.oh
+  - ANIMATION:BodyBS.ou
+  - ANIMATION:BodyBS.PP
+  - ANIMATION:BodyBS.RR
+  - ANIMATION:BodyBS.SS
+  - ANIMATION:BodyBS.laughter
+  initialize: 0
+--- !u!114 &334578572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498333142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 334578575}
+  skinnedMeshRenderer: {fileID: 334578570}
+  prevSkinnedMeshRenderer: {fileID: 334578570}
+  getSkndMshRndr: 0
+  blendShapes:
+  - ANIMATION:BodyBS.JawOpen
+  - ANIMATION:BodyBS.AI
+  - ANIMATION:BodyBS.O
+  - ANIMATION:BodyBS.E1
+  - ANIMATION:BodyBS.F
+  - ANIMATION:BodyBS.WQ
+  - ANIMATION:BodyBS.MBP
+  - ANIMATION:BodyBS.Pain
+  - ANIMATION:BodyBS.Pain1
+  - ANIMATION:BodyBS.Pain2
+  - ANIMATION:BodyBS.LowerLipDown
+  - ANIMATION:BodyBS.Smile
+  - ANIMATION:BodyBS.Pain3
+  - ANIMATION:BodyBS.NoseFrown
+  - ANIMATION:BodyBS.Blink_Left
+  - ANIMATION:BodyBS.Blink_Right
+  - ANIMATION:BodyBS.sad
+  - ANIMATION:BodyBS.openMouth2
+  - ANIMATION:BodyBS.squint1
+  - ANIMATION:BodyBS.sadBrows
+  - ANIMATION:BodyBS.CH
+  - ANIMATION:BodyBS.DD
+  - ANIMATION:BodyBS.E
+  - ANIMATION:BodyBS.FF
+  - ANIMATION:BodyBS.ih
+  - ANIMATION:BodyBS.KK
+  - ANIMATION:BodyBS.nn
+  - ANIMATION:BodyBS.oh
+  - ANIMATION:BodyBS.ou
+  - ANIMATION:BodyBS.PP
+  - ANIMATION:BodyBS.RR
+  - ANIMATION:BodyBS.SS
+  - ANIMATION:BodyBS.laughter
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 15
+  rangeOfMotion: 50
+  blinkDuration: 0.05
+  blinkSpeed: 50
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 240367562}
+  eyePosVerify: {fileID: 0}
+  lookTarget: {fileID: 0}
+  lookTargetTracking: {fileID: 0}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.5
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 33
+  noneShapeIndex: 33
+  excludeEyeShapes: 1
+  dynamicCustomShapes:
+  - ANIMATION:BodyBS.JawOpen
+  - ANIMATION:BodyBS.AI
+  - ANIMATION:BodyBS.O
+  - ANIMATION:BodyBS.E1
+  - ANIMATION:BodyBS.F
+  - ANIMATION:BodyBS.WQ
+  - ANIMATION:BodyBS.MBP
+  - ANIMATION:BodyBS.Pain
+  - ANIMATION:BodyBS.Pain1
+  - ANIMATION:BodyBS.Pain2
+  - ANIMATION:BodyBS.LowerLipDown
+  - ANIMATION:BodyBS.Smile
+  - ANIMATION:BodyBS.Pain3
+  - ANIMATION:BodyBS.NoseFrown
+  - ANIMATION:BodyBS.Blink_Left
+  - ANIMATION:BodyBS.Blink_Right
+  - ANIMATION:BodyBS.sad
+  - ANIMATION:BodyBS.openMouth2
+  - ANIMATION:BodyBS.squint1
+  - ANIMATION:BodyBS.sadBrows
+  - ANIMATION:BodyBS.CH
+  - ANIMATION:BodyBS.DD
+  - ANIMATION:BodyBS.E
+  - ANIMATION:BodyBS.FF
+  - ANIMATION:BodyBS.ih
+  - ANIMATION:BodyBS.KK
+  - ANIMATION:BodyBS.nn
+  - ANIMATION:BodyBS.oh
+  - ANIMATION:BodyBS.ou
+  - ANIMATION:BodyBS.PP
+  - ANIMATION:BodyBS.RR
+  - ANIMATION:BodyBS.SS
+  - ANIMATION:BodyBS.laughter
+  - None
+  customShapeCount: 33
+  expandCustomShapes: 0
+  customShapes:
+  - shapeIndex: 0
+    shapeName: ANIMATION:BodyBS.JawOpen
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 1
+    shapeName: ANIMATION:BodyBS.AI
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 2
+    shapeName: ANIMATION:BodyBS.O
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 3
+    shapeName: ANIMATION:BodyBS.E1
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 4
+    shapeName: ANIMATION:BodyBS.F
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 5
+    shapeName: ANIMATION:BodyBS.WQ
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 6
+    shapeName: ANIMATION:BodyBS.MBP
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 7
+    shapeName: ANIMATION:BodyBS.Pain
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 8
+    shapeName: ANIMATION:BodyBS.Pain1
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 9
+    shapeName: ANIMATION:BodyBS.Pain2
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 10
+    shapeName: ANIMATION:BodyBS.LowerLipDown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 11
+    shapeName: ANIMATION:BodyBS.Smile
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 12
+    shapeName: ANIMATION:BodyBS.Pain3
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 13
+    shapeName: ANIMATION:BodyBS.NoseFrown
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 14
+    shapeName: ANIMATION:BodyBS.Blink_Left
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 15
+    shapeName: ANIMATION:BodyBS.Blink_Right
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 16
+    shapeName: ANIMATION:BodyBS.sad
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 17
+    shapeName: ANIMATION:BodyBS.openMouth2
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 18
+    shapeName: ANIMATION:BodyBS.squint1
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 19
+    shapeName: ANIMATION:BodyBS.sadBrows
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 0
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 20
+    shapeName: ANIMATION:BodyBS.CH
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 21
+    shapeName: ANIMATION:BodyBS.DD
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 22
+    shapeName: ANIMATION:BodyBS.E
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 23
+    shapeName: ANIMATION:BodyBS.FF
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 24
+    shapeName: ANIMATION:BodyBS.ih
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 25
+    shapeName: ANIMATION:BodyBS.KK
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 26
+    shapeName: ANIMATION:BodyBS.nn
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 27
+    shapeName: ANIMATION:BodyBS.oh
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 28
+    shapeName: ANIMATION:BodyBS.ou
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 29
+    shapeName: ANIMATION:BodyBS.PP
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 30
+    shapeName: ANIMATION:BodyBS.RR
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 31
+    shapeName: ANIMATION:BodyBS.SS
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  - shapeIndex: 32
+    shapeName: ANIMATION:BodyBS.laughter
+    shapeValue: 0
+    overrideOn: 0
+    notRandom: 1
+    isOn: 0
+    blendSpeed: 5
+    rangeOfMotion: 100
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 1
+  useCustomShapesOnly: 1
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 1
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!114 &334578573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498333142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1624661579, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  salsa3D: {fileID: 0}
+  skinnedMeshRenderer: {fileID: 334578570}
+  prevSkinnedMeshRenderer: {fileID: 334578570}
+  getSkndMshRndr: 0
+  blendShapes:
+  - ANIMATION:BodyBS.JawOpen
+  - ANIMATION:BodyBS.AI
+  - ANIMATION:BodyBS.O
+  - ANIMATION:BodyBS.E1
+  - ANIMATION:BodyBS.F
+  - ANIMATION:BodyBS.WQ
+  - ANIMATION:BodyBS.MBP
+  - ANIMATION:BodyBS.Pain
+  - ANIMATION:BodyBS.Pain1
+  - ANIMATION:BodyBS.Pain2
+  - ANIMATION:BodyBS.LowerLipDown
+  - ANIMATION:BodyBS.Smile
+  - ANIMATION:BodyBS.Pain3
+  - ANIMATION:BodyBS.NoseFrown
+  - ANIMATION:BodyBS.Blink_Left
+  - ANIMATION:BodyBS.Blink_Right
+  - ANIMATION:BodyBS.sad
+  - ANIMATION:BodyBS.openMouth2
+  - ANIMATION:BodyBS.squint1
+  - ANIMATION:BodyBS.sadBrows
+  - ANIMATION:BodyBS.CH
+  - ANIMATION:BodyBS.DD
+  - ANIMATION:BodyBS.E
+  - ANIMATION:BodyBS.FF
+  - ANIMATION:BodyBS.ih
+  - ANIMATION:BodyBS.KK
+  - ANIMATION:BodyBS.nn
+  - ANIMATION:BodyBS.oh
+  - ANIMATION:BodyBS.ou
+  - ANIMATION:BodyBS.PP
+  - ANIMATION:BodyBS.RR
+  - ANIMATION:BodyBS.SS
+  - ANIMATION:BodyBS.laughter
+  lookUpIndex: 0
+  lookDownIndex: 0
+  lookLeftIndex: 0
+  lookRightIndex: 0
+  blinkIndex: 0
+  lookRandPosition: {x: 0, y: 0, z: 0}
+  lookAmount:
+    lookUp: 0
+    lookDown: 0
+    lookLeft: 0
+    lookRight: 0
+    blink: 0
+  randomEyes: 1
+  maxRandomInterval: 3
+  blendSpeed: 15
+  rangeOfMotion: 60
+  blinkDuration: 0.05
+  blinkSpeed: 50
+  openMax: 5
+  closeMax: 100
+  eyePosition: {fileID: 240367562}
+  eyePosVerify: {fileID: 240367562}
+  lookTarget: {fileID: 0}
+  lookTargetTracking: {fileID: 0}
+  targetAffinity: 0
+  targetAffinityPercentage: 0.5
+  invertTracking: 0
+  trackBehind: 1
+  randomBlink: 1
+  maxBlinkInterval: 5
+  broadcastNeeded: 0
+  broadcastCS: 0
+  broadcastCSReceiversCount: 0
+  prevBroadcastCSReceiversCount: 0
+  expandBroadcastCS: 0
+  broadcastCSReceivers: []
+  propagateToChildrenCS: 0
+  selectedCustomShape: 0
+  noneShapeIndex: 0
+  excludeEyeShapes: 1
+  dynamicCustomShapes: []
+  customShapeCount: 0
+  expandCustomShapes: 0
+  customShapes: []
+  randomCustomShapes: 1
+  maxCustomShapeInterval: 3
+  randomCSBlendSpeedMin: 0.75
+  randomCSBlendSpeedMax: 2
+  randomCSRangeOfMotionMin: 10
+  randomCSRangeOfMotionMax: 40
+  randomCSDurationMin: 0.25
+  randomCSDurationMax: 2.5
+  csNotRandomToggle: 0
+  useCustomShapesOnly: 0
+  showEyeShapes: 1
+  showTracking: 1
+  showEyeProps: 1
+  showCustom: 1
+  showBroadcast: 1
+  showBroadcastCS: 1
+  expandShapeGroups: 0
+  groups: []
+  shapeGroupCount: 0
+--- !u!82 &334578574
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498333142}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &334578575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498333142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1976067524, guid: 7a255d2e87aae364fbd819c455094253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinnedMeshRenderer: {fileID: 334578570}
+  prevSkinnedMeshRenderer: {fileID: 334578570}
+  getSkndMshRndr: 0
+  audioSrc: {fileID: 334578574}
+  audioClip: {fileID: 0}
+  blendShapes:
+  - ANIMATION:BodyBS.JawOpen
+  - ANIMATION:BodyBS.AI
+  - ANIMATION:BodyBS.O
+  - ANIMATION:BodyBS.E1
+  - ANIMATION:BodyBS.F
+  - ANIMATION:BodyBS.WQ
+  - ANIMATION:BodyBS.MBP
+  - ANIMATION:BodyBS.Pain
+  - ANIMATION:BodyBS.Pain1
+  - ANIMATION:BodyBS.Pain2
+  - ANIMATION:BodyBS.LowerLipDown
+  - ANIMATION:BodyBS.Smile
+  - ANIMATION:BodyBS.Pain3
+  - ANIMATION:BodyBS.NoseFrown
+  - ANIMATION:BodyBS.Blink_Left
+  - ANIMATION:BodyBS.Blink_Right
+  - ANIMATION:BodyBS.sad
+  - ANIMATION:BodyBS.openMouth2
+  - ANIMATION:BodyBS.squint1
+  - ANIMATION:BodyBS.sadBrows
+  - ANIMATION:BodyBS.CH
+  - ANIMATION:BodyBS.DD
+  - ANIMATION:BodyBS.E
+  - ANIMATION:BodyBS.FF
+  - ANIMATION:BodyBS.ih
+  - ANIMATION:BodyBS.KK
+  - ANIMATION:BodyBS.nn
+  - ANIMATION:BodyBS.oh
+  - ANIMATION:BodyBS.ou
+  - ANIMATION:BodyBS.PP
+  - ANIMATION:BodyBS.RR
+  - ANIMATION:BodyBS.SS
+  - ANIMATION:BodyBS.laughter
+  saySmallIndex: 0
+  sayMediumIndex: 0
+  sayLargeIndex: 0
+  saySmallTrigger: 0.0005
+  sayMediumTrigger: 0.0025
+  sayLargeTrigger: 0.005
+  audioUpdateDelay: 0.08
+  blendSpeed: 10
+  rangeOfMotion: 75
+  isTalking: 0
+  prevIsTalking: 0
+  lockShapes: 0
+  broadcast: 0
+  broadcastReceiversCount: 0
+  expandBroadcast: 0
+  broadcastReceivers: []
+  propagateToChildren: 0
+  average: 0
+  say: 
+  sayIndex: 0
+  sayAmount:
+    saySmall: 0
+    sayMedium: 0
+    sayLarge: 0
+  prevAudioUpdateDelay: 0
 --- !u!1 &349323580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4954,6 +5813,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492133511}
   m_Mesh: {fileID: 4300040, guid: d3c35f371947e474b9a1485d34e20bbc, type: 3}
+--- !u!1 &498333142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8473918534342296826, guid: 97f2122a7b104b34f9dcc32d53f5cb74,
+    type: 3}
+  m_PrefabInstance: {fileID: 334578566}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &498333143 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8406777428162622197, guid: 97f2122a7b104b34f9dcc32d53f5cb74,
+    type: 3}
+  m_PrefabInstance: {fileID: 334578566}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &498493911
 GameObject:
   m_ObjectHideFlags: 0
@@ -7699,7 +8570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Profile: {fileID: 11400000, guid: 582adbd84082fdb4faf7cd4beb1ccd14, type: 2}
   m_StaticLightingSkyUniqueID: 1
-  m_SkySettings: {fileID: 1121133825}
+  m_SkySettings: {fileID: 1114478189}
   m_SkySettingsFromProfile: {fileID: 448115243408767295, guid: 582adbd84082fdb4faf7cd4beb1ccd14,
     type: 2}
 --- !u!4 &852862943
@@ -9725,7 +10596,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1102716441}
   m_CullTransparentMesh: 0
---- !u!114 &1121133825
+--- !u!114 &1114478189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16429,7 +17300,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
