@@ -72,7 +72,7 @@ public class Clock : MonoBehaviour
         mR.eulerAngles = new Vector3(minuteRotation-90f, 90f, 0f);
         minuteHand.transform.rotation = mR;
 
-        Debug.Log("SECOND ROTATION "+secondRotation);
+       // Debug.Log("SECOND ROTATION "+secondRotation);
         Quaternion sR = new Quaternion();
         sR.eulerAngles = new Vector3(secondRotation-90f, 90f, 0f);
         secondHand.transform.rotation = sR;

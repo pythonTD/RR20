@@ -31,6 +31,8 @@ public class AnimationManager : MonoBehaviour
     //public int queueLength = 0;
     void Start()
     {
+        patient = gameObject;
+
         animator = patient.GetComponent<Animator>();
         if (animator == null)
             Debug.Log("ANIMATION MANAGER: ANIMATOR NOT FOUND ON PATIENT!");
@@ -57,7 +59,7 @@ public class AnimationManager : MonoBehaviour
     }
     private void Update()
     {
-       if(!initializationLock)
+       if(!initializationLock && animationQueueDisplay != null)
             Display();
     }
 
@@ -171,9 +173,9 @@ public class AnimationManager : MonoBehaviour
             }
 
             
-            if (instrumentInteraction.isInteracting == false && dialogInteraction.isInDialog == false)
+            if (instrumentInteraction.isInteracting == false && (dialogInteraction.isInDialog == false || isCough))
             {
-                Debug.Log("Setting Animation");
+               // Debug.Log("Setting Animation");
                 animator.SetBool(animName, true);
             }
 
@@ -186,6 +188,8 @@ public class AnimationManager : MonoBehaviour
             yield return new WaitForSeconds(animLength);
             if (isCough)
                 audioSource.loop = false;
+
+
             //  Debug.Log("Adjusted Timer For " + animName + " " + adjTimerSeconds + " Played At: " + self.currentActivationTime + " Next playing at: " + nextActivation);
             SetNextActivation(animName, nextActivation);
             animator.SetBool(animName, false);

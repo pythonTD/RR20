@@ -40,19 +40,6 @@ public class DialogInteraction : MonoBehaviour
 
         instrumentInteraction = GetComponent<InstrumentInteraction>();
 
-      
-
-        salsa = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<Salsa3D>();
-        if (salsa == null)
-        {
-            Debug.Log("DIALOGINTERACTION: SALSA COMPONENT NOT FOUND!");
-        }
-
-        //   audioSource = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<AudioSource>();
-        audioSource = salsa.audioSrc;
-        if (audioSource == null)
-            Debug.Log("DIALOGINTERACTION: AUDIO SOURCE NOT FOUND!");
-
         dialogSystem = GameObject.FindGameObjectWithTag("DialogSystem");
         
         if (dialogSystem == null)
@@ -66,6 +53,17 @@ public class DialogInteraction : MonoBehaviour
         dialogSystem.SetActive(isInDialog);
         //result = behaviorManager.loadQuestionsInCategory(2, 1, false, 2, new List<int> { });
         //DisplayQuestions(result);
+
+        salsa = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<Salsa3D>();
+        if (salsa == null)
+        {
+            Debug.Log("DIALOGINTERACTION: SALSA COMPONENT NOT FOUND!");
+        }
+
+        //   audioSource = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<AudioSource>();
+        audioSource = salsa.audioSrc;
+        if (audioSource == null)
+            Debug.Log("DIALOGINTERACTION: AUDIO SOURCE NOT FOUND!");
     }
 
     void DisplayCategories(List<Hashtable> categories)
