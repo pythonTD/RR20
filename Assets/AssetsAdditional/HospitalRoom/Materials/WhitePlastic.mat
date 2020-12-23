@@ -17,10 +17,10 @@ Material:
   stringTagMap: {}
   disabledShaderPasses:
   - DistortionVectors
-  - MOTIONVECTORS
   - TransparentDepthPrepass
   - TransparentDepthPostpass
   - TransparentBackface
+  - MOTIONVECTORS
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -250,11 +250,11 @@ Material:
     - _StencilRefDistortionVec: 64
     - _StencilRefGBuffer: 2
     - _StencilRefMV: 128
-    - _StencilWriteMask: 3
-    - _StencilWriteMaskDepth: 48
+    - _StencilWriteMask: 7
+    - _StencilWriteMaskDepth: 32
     - _StencilWriteMaskDistortionVec: 64
-    - _StencilWriteMaskGBuffer: 51
-    - _StencilWriteMaskMV: 176
+    - _StencilWriteMaskGBuffer: 3
+    - _StencilWriteMaskMV: 128
     - _Stiffness: 1
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
@@ -298,7 +298,7 @@ Material:
     - _UVDetailsMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMask: {r: 1, g: 0, b: 0, a: 0}
     - _UVMappingMaskEmissive: {r: 1, g: 0, b: 0, a: 0}
---- !u!114 &877239704010276502
+--- !u!114 &8679865169957730907
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
