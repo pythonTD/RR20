@@ -8,13 +8,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LatestScenes/ts1test.unity
     guid: daf099851d71be040ac92b86df8e2633
-  - enabled: 1
-    path: Assets/Scenes/LatestScenes/ts2test.unity
-    guid: 3545c9f849477b34f9c7337e5def59e6
-  - enabled: 1
-    path: Assets/Scenes/LatestScenes/ts3test.unity
-    guid: 974f9578e38d6f4448747a2fc7622385
-  - enabled: 1
-    path: Assets/Scenes/LatestScenes/ts4test.unity
-    guid: 8be1f61871b68ec468746e8b68eb7fa6
   m_configObjects: {}
