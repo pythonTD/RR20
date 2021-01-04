@@ -27,7 +27,7 @@ public class DialogInteraction : MonoBehaviour
     public int timestep = 0;
     private bool canInteract = true;
 
-    public Salsa3D salsa;
+    //public Salsa3D salsa;
     void Start()
     {
         behaviorManager = GameObject.FindGameObjectWithTag("Manager").GetComponent<BehaviorManager>();
@@ -54,14 +54,14 @@ public class DialogInteraction : MonoBehaviour
         //result = behaviorManager.loadQuestionsInCategory(2, 1, false, 2, new List<int> { });
         //DisplayQuestions(result);
 
-        salsa = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<Salsa3D>();
-        if (salsa == null)
-        {
-            Debug.Log("DIALOGINTERACTION: SALSA COMPONENT NOT FOUND!");
-        }
+        //salsa = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<Salsa3D>();
+        //if (salsa == null)
+        //{
+        //    Debug.Log("DIALOGINTERACTION: SALSA COMPONENT NOT FOUND!");
+        //}
 
-        //   audioSource = GameObject.FindGameObjectWithTag("Patient").transform.GetChild(0).GetComponent<AudioSource>();
-        audioSource = salsa.audioSrc;
+        audioSource = GameObject.FindGameObjectWithTag("Patient").GetComponent<AudioSource>();
+        //audioSource = salsa.audioSrc;
         if (audioSource == null)
             Debug.Log("DIALOGINTERACTION: AUDIO SOURCE NOT FOUND!");
     }
@@ -100,12 +100,15 @@ public class DialogInteraction : MonoBehaviour
     
     void PlayAnswerAudio(string clipPath)
     {
-        salsa.audioSrc.time = 0;
+        /// salsa.audioSrc.time = 0;
+        audioSource.time = 0;
         Debug.Log("PLAYING AUDI "+ clipPath);
         AudioClip clip = Resources.Load<AudioClip>(clipPath);
-        salsa.SetAudioClip(clip);
+        //salsa.SetAudioClip(clip);
+        audioSource.clip = clip;
         isSpeaking = true;
-        salsa.Play();
+        //salsa.Play();
+        audioSource.Play();
        
 
         
@@ -162,8 +165,10 @@ public class DialogInteraction : MonoBehaviour
     public void SuspendDialog(AudioClip clip, float duration)
     {
         float currentTime = audioSource.time;
-        AudioClip dialogClip = salsa.audioClip;
-        salsa.Stop();
+        //AudioClip dialogClip = salsa.audioClip;
+        AudioClip dialogClip = audioSource.clip;
+        //  salsa.Stop();
+        audioSource.Stop();
         float waitTime = duration - 0.55f;
         isSpeaking = false;
        
@@ -171,9 +176,12 @@ public class DialogInteraction : MonoBehaviour
          StopCoroutine(aduioCoroutine);
         
         Debug.Log("PAUSING AUDIO ");
-        salsa.SetAudioClip(clip);
-        salsa.audioSrc.loop = true;
-        salsa.Play();
+        //salsa.SetAudioClip(clip);
+        audioSource.clip = clip;
+        //salsa.audioSrc.loop = true;
+        audioSource.loop = true;
+        //salsa.Play();
+        audioSource.Play();
         StartCoroutine(CoughInterruptWait(waitTime,currentTime,dialogClip));
         
     }
@@ -185,13 +193,17 @@ public class DialogInteraction : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         Debug.Log("DONE WAITING");
         Debug.Log("RESUMING AUDIO FROM "+ currentTime);
-        salsa.SetAudioClip(dialogClip);
-        salsa.audioSrc.loop = false;
-        salsa.audioSrc.time = currentTime;      
+        //salsa.SetAudioClip(dialogClip);
+        audioSource.clip = dialogClip;
+        //salsa.audioSrc.loop = false;
+        audioSource.loop = false;
+        //salsa.audioSrc.time = currentTime;      
+        audioSource.time = currentTime;      
         dialogCanvasGroup.interactable = true;
         isSpeaking = true;
-        salsa.Play();
-       // StartCoroutine(WaitForAudio(dialogClip.length - currentTime));
+        //salsa.Play();
+        audioSource.Play();
+        StartCoroutine(WaitForAudio(dialogClip.length - currentTime));
     }
 
 

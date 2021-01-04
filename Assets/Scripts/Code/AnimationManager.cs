@@ -53,6 +53,8 @@ public class AnimationManager : MonoBehaviour
         if (animationQueueDisplay == null)
             Debug.Log("ANIMATION MANAGER: QUEUE DISPLAY NOT FOUND!");
 
+        audioSource = gameObject.GetComponent<AudioSource>();
+
         List<Hashtable> result = new List<Hashtable>();
         result = behaviorManager.loadAnimations(2, 0, true);
         SetAnimations(result);
